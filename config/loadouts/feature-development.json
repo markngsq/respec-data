@@ -1,0 +1,66 @@
+{
+  "id": "feature-development",
+  "name": "Build a Full-Stack Feature",
+  "description": "End-to-end feature development from scoping through implementation to QA and review",
+  "source": "curated",
+  "triggers": ["build feature", "new feature", "implement", "full-stack", "saas", "dashboard", "crud"],
+  "skills": [
+    { "skillId": "project-interview", "role": "Requirements gathering", "activeInPhases": ["scope"], "required": true },
+    { "skillId": "product-manager-toolkit", "role": "Prioritization and PRD", "activeInPhases": ["scope"], "required": false },
+    { "skillId": "architecture-patterns", "role": "System design patterns", "activeInPhases": ["design"], "required": true },
+    { "skillId": "senior-architect", "role": "Architecture diagrams", "activeInPhases": ["design"], "required": true },
+    { "skillId": "nextjs", "role": "App Router development", "activeInPhases": ["build"], "required": true },
+    { "skillId": "shadcn", "role": "UI components", "activeInPhases": ["build"], "required": true },
+    { "skillId": "prisma", "role": "ORM and data layer", "activeInPhases": ["build"], "required": false },
+    { "skillId": "sql-expert", "role": "Database queries", "activeInPhases": ["build"], "required": false },
+    { "skillId": "senior-qa", "role": "Test strategy", "activeInPhases": ["test"], "required": true },
+    { "skillId": "playwright-skill", "role": "E2E browser tests", "activeInPhases": ["test"], "required": true },
+    { "skillId": "code-reviewer", "role": "Code review", "activeInPhases": ["review"], "required": true },
+    { "skillId": "software-security", "role": "Security scan", "activeInPhases": ["review"], "required": false }
+  ],
+  "phases": [
+    { "id": "scope", "label": "Scope", "order": 1, "description": "Define requirements and create PRD", "dependsOn": [], "estimate": "small", "parallel": false },
+    { "id": "design", "label": "Design", "order": 2, "description": "Architecture decisions and data models", "dependsOn": ["scope"], "estimate": "medium", "parallel": false },
+    { "id": "build", "label": "Build", "order": 3, "description": "Implement the feature", "dependsOn": ["design"], "estimate": "large", "parallel": false },
+    { "id": "test", "label": "Test", "order": 4, "description": "Write and run tests", "dependsOn": ["build"], "estimate": "medium", "parallel": true },
+    { "id": "review", "label": "Review", "order": 5, "description": "Code review and security scan", "dependsOn": ["build"], "estimate": "small", "parallel": true }
+  ],
+  "interview": [
+    { "id": "q-goal", "question": "What are you building?", "affects": "context", "inputType": "text", "required": true },
+    { "id": "q-db", "question": "Does this feature need a database?", "affects": "skills", "inputType": "select", "options": ["Yes - PostgreSQL", "Yes - SQLite", "No"], "required": true },
+    { "id": "q-auth", "question": "Does this feature need authentication?", "affects": "context", "inputType": "select", "options": ["Yes", "No"], "required": false },
+    { "id": "q-existing", "question": "Is this greenfield or adding to an existing codebase?", "affects": "phases", "inputType": "select", "options": ["Greenfield", "Existing codebase"], "required": true }
+  ],
+  "rules": {
+    "prerequisites": [
+      { "skillId": "nextjs", "reason": "Full-stack UI development requires Next.js", "severity": "required" }
+    ],
+    "keywordTriggers": [
+      { "keywords": ["feature", "build", "implement", "full-stack"], "match": "any", "weight": 1.0 },
+      { "keywords": ["saas", "dashboard", "crud", "app"], "match": "any", "weight": 0.8 }
+    ],
+    "suggestions": [
+      {
+        "when": { "type": "interview_answer", "questionId": "q-db", "contains": "PostgreSQL" },
+        "suggest": { "type": "skill", "id": "docker-containerization", "reason": "PostgreSQL typically runs in a container for local dev" }
+      },
+      {
+        "when": { "type": "goal_contains", "keywords": ["ai", "llm", "gpt", "claude"] },
+        "suggest": { "type": "loadout", "id": "ai-app-development", "reason": "Your project mentions AI — consider the AI Builder loadout" }
+      },
+      {
+        "when": { "type": "skill_absent", "skillId": "senior-qa" },
+        "suggest": { "type": "skill", "id": "senior-qa", "reason": "No QA skill detected — add testing to your workflow" }
+      }
+    ]
+  },
+  "extends": {
+    "molecules": ["full-stack-ui", "database-layer", "product-scoping", "testing-suite", "code-quality-pipeline"],
+    "workflows": ["feature-development"]
+  },
+  "meta": {
+    "createdAt": "2026-02-02T00:00:00Z",
+    "updatedAt": "2026-02-02T00:00:00Z",
+    "contentHash": ""
+  }
+}

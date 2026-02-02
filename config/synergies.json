@@ -1,0 +1,82 @@
+{
+  "synergies": [
+    {
+      "skills": ["skill-orchestrator", "gastown"],
+      "label": "Orchestration Layer",
+      "strength": 0.9,
+      "description": "Both coordinate multi-skill execution"
+    },
+    {
+      "skills": ["nextjs", "shadcn"],
+      "label": "Full-Stack UI",
+      "strength": 0.95,
+      "description": "Next.js App Router + shadcn/ui component library"
+    },
+    {
+      "skills": ["nextjs", "vercel-react-best-practices"],
+      "label": "React Performance",
+      "strength": 0.85,
+      "description": "Next.js with Vercel-recommended optimizations"
+    },
+    {
+      "skills": ["sql-expert", "prisma"],
+      "label": "Database Layer",
+      "strength": 0.9,
+      "description": "SQL expertise paired with Prisma ORM"
+    },
+    {
+      "skills": ["senior-qa", "javascript-testing-patterns"],
+      "label": "Testing Suite",
+      "strength": 0.85,
+      "description": "QA strategy with JS/TS test patterns"
+    },
+    {
+      "skills": ["senior-qa", "playwright-skill"],
+      "label": "E2E Testing",
+      "strength": 0.9,
+      "description": "QA strategy with browser automation"
+    },
+    {
+      "skills": ["software-security", "llm-security"],
+      "label": "Security Coverage",
+      "strength": 0.8,
+      "description": "General OWASP + LLM-specific security"
+    },
+    {
+      "skills": ["senior-prompt-engineer", "llm-app-patterns"],
+      "label": "AI Engineering",
+      "strength": 0.85,
+      "description": "Prompt optimization + LLM app architecture"
+    },
+    {
+      "skills": ["architecture-patterns", "senior-architect"],
+      "label": "System Design",
+      "strength": 0.9,
+      "description": "Architecture patterns + system design expertise"
+    },
+    {
+      "skills": ["code-reviewer", "code-refactor"],
+      "label": "Code Quality",
+      "strength": 0.85,
+      "description": "Review findings flow into refactoring actions"
+    },
+    {
+      "skills": ["project-interview", "product-manager-toolkit"],
+      "label": "Product Scoping",
+      "strength": 0.9,
+      "description": "Technical specs meet product strategy"
+    },
+    {
+      "skills": ["docker-containerization", "nextjs"],
+      "label": "Deployment",
+      "strength": 0.75,
+      "description": "Containerize Next.js applications"
+    },
+    {
+      "skills": ["skill-from-masters", "slash-command-factory"],
+      "label": "Skill Creation",
+      "strength": 0.95,
+      "description": "Research experts then generate skill boilerplate"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "categories": [
+    {
+      "id": "orchestration",
+      "label": "Orchestration",
+      "color": "#a855f7",
+      "gridPosition": { "x": 0, "y": 0 }
+    },
+    {
+      "id": "discovery",
+      "label": "Discovery & Search",
+      "color": "#3b82f6",
+      "gridPosition": { "x": 1, "y": 0 }
+    },
+    {
+      "id": "reasoning",
+      "label": "Reasoning & Analysis",
+      "color": "#f97316",
+      "gridPosition": { "x": 2, "y": 0 }
+    },
+    {
+      "id": "knowledge",
+      "label": "Knowledge & Learning",
+      "color": "#22c55e",
+      "gridPosition": { "x": 3, "y": 0 }
+    },
+    {
+      "id": "scoping",
+      "label": "Project Scoping",
+      "color": "#eab308",
+      "gridPosition": { "x": 4, "y": 0 }
+    },
+    {
+      "id": "documentation",
+      "label": "Documentation",
+      "color": "#06b6d4",
+      "gridPosition": { "x": 0, "y": 1 }
+    },
+    {
+      "id": "ai-llm",
+      "label": "AI / LLM Tooling",
+      "color": "#ec4899",
+      "gridPosition": { "x": 1, "y": 1 }
+    },
+    {
+      "id": "database",
+      "label": "Database",
+      "color": "#14b8a6",
+      "gridPosition": { "x": 2, "y": 1 }
+    },
+    {
+      "id": "fullstack",
+      "label": "Full-Stack Framework",
+      "color": "#8b5cf6",
+      "gridPosition": { "x": 3, "y": 1 }
+    },
+    {
+      "id": "infrastructure",
+      "label": "Infrastructure",
+      "color": "#64748b",
+      "gridPosition": { "x": 4, "y": 1 }
+    },
+    {
+      "id": "data-science",
+      "label": "Data Science",
+      "color": "#f59e0b",
+      "gridPosition": { "x": 0, "y": 2 }
+    },
+    {
+      "id": "git",
+      "label": "Git Workflows",
+      "color": "#ef4444",
+      "gridPosition": { "x": 1, "y": 2 }
+    },
+    {
+      "id": "architecture",
+      "label": "Architecture & Design",
+      "color": "#6366f1",
+      "gridPosition": { "x": 2, "y": 2 }
+    },
+    {
+      "id": "testing",
+      "label": "Testing & QA",
+      "color": "#10b981",
+      "gridPosition": { "x": 3, "y": 2 }
+    },
+    {
+      "id": "code-quality",
+      "label": "Code Quality",
+      "color": "#f472b6",
+      "gridPosition": { "x": 4, "y": 2 }
+    },
+    {
+      "id": "performance",
+      "label": "Performance",
+      "color": "#fbbf24",
+      "gridPosition": { "x": 0, "y": 3 }
+    },
+    {
+      "id": "security",
+      "label": "Security",
+      "color": "#dc2626",
+      "gridPosition": { "x": 1, "y": 3 }
+    },
+    {
+      "id": "customization",
+      "label": "Advanced Customization",
+      "color": "#7c3aed",
+      "gridPosition": { "x": 2, "y": 3 }
+    },
+    {
+      "id": "maintenance",
+      "label": "Maintenance",
+      "color": "#78716c",
+      "gridPosition": { "x": 3, "y": 3 }
+    },
+    {
+      "id": "development",
+      "label": "Development",
+      "color": "#0ea5e9",
+      "gridPosition": { "x": 4, "y": 3 }
+    },
+    {
+      "id": "uncategorized",
+      "label": "Uncategorized",
+      "color": "#6b7280",
+      "gridPosition": { "x": 0, "y": 4 }
+    }
+  ]
+}

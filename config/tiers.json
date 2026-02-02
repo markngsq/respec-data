@@ -1,0 +1,246 @@
+{
+  "tierLevels": [
+    {
+      "id": "meta",
+      "label": "Meta",
+      "color": "#a855f7",
+      "icon": "◎",
+      "description": "Orchestration and meta-level skills that coordinate other skills"
+    },
+    {
+      "id": "atom",
+      "label": "Atom",
+      "color": "#3b82f6",
+      "icon": "⚛",
+      "description": "Single-purpose skills that do one thing well"
+    },
+    {
+      "id": "molecule",
+      "label": "Molecule",
+      "color": "#22c55e",
+      "icon": "🧬",
+      "description": "Composite skills formed by combining multiple atoms"
+    },
+    {
+      "id": "workflow",
+      "label": "Workflow",
+      "color": "#f59e0b",
+      "icon": "⚡",
+      "description": "Multi-phase execution pipelines with ordered steps"
+    }
+  ],
+  "skillTiers": {
+    "skill-orchestrator": "meta",
+    "gastown": "meta",
+    "skills-discovery": "atom",
+    "thought-based-reasoning": "atom",
+    "system-learn": "atom",
+    "brain-dump-assistant": "atom",
+    "product-manager-toolkit": "atom",
+    "project-interview": "atom",
+    "docs-management": "atom",
+    "rustie-docs": "atom",
+    "smart-docs": "atom",
+    "cc-plugin-expert": "atom",
+    "senior-prompt-engineer": "atom",
+    "llm-app-patterns": "atom",
+    "llm-security": "atom",
+    "sql-expert": "atom",
+    "prisma": "atom",
+    "git-advanced-workflows": "atom",
+    "nextjs": "atom",
+    "shadcn": "atom",
+    "docker-containerization": "atom",
+    "senior-data-scientist": "atom",
+    "architecture-patterns": "atom",
+    "senior-architect": "atom",
+    "playwright-skill": "atom",
+    "senior-qa": "atom",
+    "javascript-testing-patterns": "atom",
+    "code-reviewer": "atom",
+    "code-refactor": "atom",
+    "vercel-react-best-practices": "atom",
+    "modern-javascript-patterns": "atom",
+    "software-security": "atom",
+    "skill-from-masters": "atom",
+    "hook-development": "atom",
+    "mcp-builder": "atom",
+    "skill-composer-studio": "atom",
+    "skill-evaluator": "atom",
+    "slash-command-factory": "atom",
+    "nightly": "atom"
+  },
+  "molecules": [
+    {
+      "id": "full-stack-ui",
+      "name": "Full-Stack UI",
+      "description": "Next.js App Router with shadcn/ui component library",
+      "atoms": ["nextjs", "shadcn"],
+      "category": "fullstack"
+    },
+    {
+      "id": "database-layer",
+      "name": "Database Layer",
+      "description": "SQL expertise paired with Prisma ORM for complete database management",
+      "atoms": ["sql-expert", "prisma"],
+      "category": "database"
+    },
+    {
+      "id": "testing-suite",
+      "name": "Testing Suite",
+      "description": "Comprehensive QA with unit tests, integration tests, and E2E browser automation",
+      "atoms": ["senior-qa", "javascript-testing-patterns", "playwright-skill"],
+      "category": "testing"
+    },
+    {
+      "id": "security-coverage",
+      "name": "Security Coverage",
+      "description": "Full security coverage combining OWASP Top 10 with LLM-specific security",
+      "atoms": ["software-security", "llm-security"],
+      "category": "security"
+    },
+    {
+      "id": "ai-engineering",
+      "name": "AI Engineering",
+      "description": "Prompt optimization combined with production LLM app patterns",
+      "atoms": ["senior-prompt-engineer", "llm-app-patterns"],
+      "category": "ai-llm"
+    },
+    {
+      "id": "system-design",
+      "name": "System Design",
+      "description": "Architecture patterns combined with system design expertise",
+      "atoms": ["architecture-patterns", "senior-architect"],
+      "category": "architecture"
+    },
+    {
+      "id": "code-quality-pipeline",
+      "name": "Code Quality Pipeline",
+      "description": "Code review findings flow into bulk refactoring operations",
+      "atoms": ["code-reviewer", "code-refactor"],
+      "category": "code-quality"
+    },
+    {
+      "id": "product-scoping",
+      "name": "Product Scoping",
+      "description": "Technical specification interviews meet product strategy and prioritization",
+      "atoms": ["project-interview", "product-manager-toolkit"],
+      "category": "scoping"
+    },
+    {
+      "id": "skill-creation",
+      "name": "Skill Creation",
+      "description": "Research expert methodologies then generate and evaluate skill boilerplate",
+      "atoms": ["skill-from-masters", "slash-command-factory", "skill-evaluator"],
+      "category": "customization"
+    },
+    {
+      "id": "documentation-suite",
+      "name": "Documentation Suite",
+      "description": "Complete documentation management, auditing, and AI-powered generation",
+      "atoms": ["docs-management", "rustie-docs", "smart-docs"],
+      "category": "documentation"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "feature-development",
+      "name": "Feature Development",
+      "description": "End-to-end feature development from scoping through implementation to QA",
+      "phases": [
+        {
+          "order": 1,
+          "label": "Scope",
+          "refs": ["product-scoping"],
+          "refType": "molecule"
+        },
+        {
+          "order": 2,
+          "label": "Design",
+          "refs": ["system-design"],
+          "refType": "molecule"
+        },
+        {
+          "order": 3,
+          "label": "Build",
+          "refs": ["full-stack-ui", "database-layer"],
+          "refType": "molecule"
+        },
+        {
+          "order": 4,
+          "label": "Test",
+          "refs": ["testing-suite"],
+          "refType": "molecule"
+        },
+        {
+          "order": 5,
+          "label": "Review",
+          "refs": ["code-quality-pipeline", "security-coverage"],
+          "refType": "molecule"
+        }
+      ]
+    },
+    {
+      "id": "skill-lifecycle",
+      "name": "Skill Lifecycle",
+      "description": "Complete skill creation pipeline from research to deployment",
+      "phases": [
+        {
+          "order": 1,
+          "label": "Research",
+          "refs": ["skill-from-masters"],
+          "refType": "atom"
+        },
+        {
+          "order": 2,
+          "label": "Create",
+          "refs": ["slash-command-factory"],
+          "refType": "atom"
+        },
+        {
+          "order": 3,
+          "label": "Evaluate",
+          "refs": ["skill-evaluator"],
+          "refType": "atom"
+        },
+        {
+          "order": 4,
+          "label": "Document",
+          "refs": ["documentation-suite"],
+          "refType": "molecule"
+        }
+      ]
+    },
+    {
+      "id": "ai-app-development",
+      "name": "AI App Development",
+      "description": "Build and secure AI-powered applications",
+      "phases": [
+        {
+          "order": 1,
+          "label": "Design Prompts",
+          "refs": ["senior-prompt-engineer"],
+          "refType": "atom"
+        },
+        {
+          "order": 2,
+          "label": "Build App",
+          "refs": ["llm-app-patterns", "full-stack-ui"],
+          "refType": "molecule"
+        },
+        {
+          "order": 3,
+          "label": "Secure",
+          "refs": ["security-coverage"],
+          "refType": "molecule"
+        },
+        {
+          "order": 4,
+          "label": "Deploy",
+          "refs": ["docker-containerization"],
+          "refType": "atom"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "maturity": {
+    "level": "grown",
+    "score": 50,
+    "useCount": 3,
+    "firstSeen": "2026-02-01T03:17:56.727Z",
+    "lastUsed": "2026-02-01T03:17:57.237Z"
+  },
+  "version": {
+    "contentHash": "",
+    "lastChecked": "2026-02-01T03:17:56.727Z",
+    "status": "current"
+  }
+}

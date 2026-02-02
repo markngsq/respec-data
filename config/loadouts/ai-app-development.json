@@ -1,0 +1,65 @@
+{
+  "id": "ai-app-development",
+  "name": "Build an AI-Powered Application",
+  "description": "Build and secure AI-powered applications with prompt engineering, LLM patterns, and production deployment",
+  "source": "curated",
+  "triggers": ["ai app", "llm app", "chatbot", "rag", "agent", "gpt", "claude api", "ai product"],
+  "skills": [
+    { "skillId": "senior-prompt-engineer", "role": "Prompt design and optimization", "activeInPhases": ["design-prompts"], "required": true },
+    { "skillId": "llm-app-patterns", "role": "Production LLM patterns", "activeInPhases": ["design-prompts", "build"], "required": true },
+    { "skillId": "nextjs", "role": "App Router development", "activeInPhases": ["build"], "required": true },
+    { "skillId": "shadcn", "role": "UI components", "activeInPhases": ["build"], "required": true },
+    { "skillId": "prisma", "role": "ORM and data layer", "activeInPhases": ["build"], "required": false },
+    { "skillId": "software-security", "role": "General security scan", "activeInPhases": ["secure"], "required": true },
+    { "skillId": "llm-security", "role": "LLM-specific security", "activeInPhases": ["secure"], "required": true },
+    { "skillId": "docker-containerization", "role": "Container deployment", "activeInPhases": ["deploy"], "required": true },
+    { "skillId": "senior-qa", "role": "Test strategy", "activeInPhases": ["build"], "required": false },
+    { "skillId": "playwright-skill", "role": "E2E testing", "activeInPhases": ["build"], "required": false }
+  ],
+  "phases": [
+    { "id": "design-prompts", "label": "Design Prompts", "order": 1, "description": "Design prompt templates, RAG pipelines, and agent architecture", "dependsOn": [], "estimate": "medium", "parallel": false },
+    { "id": "build", "label": "Build App", "order": 2, "description": "Implement the application with LLM integrations", "dependsOn": ["design-prompts"], "estimate": "large", "parallel": false },
+    { "id": "secure", "label": "Secure", "order": 3, "description": "Security audit for OWASP and LLM-specific vulnerabilities", "dependsOn": ["build"], "estimate": "medium", "parallel": false },
+    { "id": "deploy", "label": "Deploy", "order": 4, "description": "Containerize and deploy to production", "dependsOn": ["secure"], "estimate": "medium", "parallel": false }
+  ],
+  "interview": [
+    { "id": "q-goal", "question": "What AI-powered feature are you building?", "affects": "context", "inputType": "text", "required": true },
+    { "id": "q-model", "question": "Which LLM provider are you using?", "affects": "context", "inputType": "select", "options": ["Anthropic (Claude)", "OpenAI (GPT)", "Open-source (Ollama/HuggingFace)", "Multiple providers"], "required": true },
+    { "id": "q-pattern", "question": "What AI pattern does this use?", "affects": "skills", "inputType": "multiselect", "options": ["RAG (retrieval-augmented generation)", "Conversational agent", "Structured outputs / extraction", "Code generation"], "required": true },
+    { "id": "q-data", "question": "Does this need a vector database?", "affects": "skills", "inputType": "select", "options": ["Yes", "No", "Not sure"], "required": false }
+  ],
+  "rules": {
+    "prerequisites": [
+      { "skillId": "senior-prompt-engineer", "reason": "AI apps require prompt engineering expertise", "severity": "required" },
+      { "skillId": "llm-security", "reason": "LLM apps need security hardening against prompt injection", "severity": "recommended" }
+    ],
+    "keywordTriggers": [
+      { "keywords": ["ai", "llm", "gpt", "claude", "chatbot"], "match": "any", "weight": 1.0 },
+      { "keywords": ["rag", "agent", "prompt", "embedding"], "match": "any", "weight": 0.9 },
+      { "keywords": ["ai product", "ai app", "ai feature"], "match": "any", "weight": 1.0 }
+    ],
+    "suggestions": [
+      {
+        "when": { "type": "interview_answer", "questionId": "q-data", "contains": "Yes" },
+        "suggest": { "type": "skill", "id": "docker-containerization", "reason": "Vector databases typically run in containers for local dev" }
+      },
+      {
+        "when": { "type": "interview_answer", "questionId": "q-pattern", "contains": "RAG" },
+        "suggest": { "type": "skill", "id": "sql-expert", "reason": "RAG pipelines often need hybrid search with SQL + vector queries" }
+      },
+      {
+        "when": { "type": "skill_absent", "skillId": "llm-security" },
+        "suggest": { "type": "skill", "id": "llm-security", "reason": "AI apps need prompt injection prevention — install llm-security" }
+      }
+    ]
+  },
+  "extends": {
+    "molecules": ["ai-engineering", "full-stack-ui", "security-coverage"],
+    "workflows": ["ai-app-development"]
+  },
+  "meta": {
+    "createdAt": "2026-02-02T00:00:00Z",
+    "updatedAt": "2026-02-02T00:00:00Z",
+    "contentHash": ""
+  }
+}

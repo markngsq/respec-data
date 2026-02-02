@@ -1,0 +1,55 @@
+{
+  "id": "skill-lifecycle",
+  "name": "Create a Claude Code Skill",
+  "description": "Complete skill creation pipeline from researching expert methodologies to building, evaluating, and documenting a new skill",
+  "source": "curated",
+  "triggers": ["create skill", "new skill", "build plugin", "skill development", "slash command"],
+  "skills": [
+    { "skillId": "skill-from-masters", "role": "Research expert methodologies", "activeInPhases": ["research"], "required": true },
+    { "skillId": "slash-command-factory", "role": "Generate skill boilerplate", "activeInPhases": ["create"], "required": true },
+    { "skillId": "cc-plugin-expert", "role": "Plugin development guidance", "activeInPhases": ["create"], "required": true },
+    { "skillId": "skill-evaluator", "role": "Quality and security evaluation", "activeInPhases": ["evaluate"], "required": true },
+    { "skillId": "docs-management", "role": "Documentation search", "activeInPhases": ["document"], "required": false },
+    { "skillId": "rustie-docs", "role": "Documentation auditing", "activeInPhases": ["document"], "required": false },
+    { "skillId": "smart-docs", "role": "Auto-generate documentation", "activeInPhases": ["document"], "required": true }
+  ],
+  "phases": [
+    { "id": "research", "label": "Research", "order": 1, "description": "Discover expert methodologies and best practices in the target domain", "dependsOn": [], "estimate": "small", "parallel": false },
+    { "id": "create", "label": "Create", "order": 2, "description": "Generate SKILL.md with proper structure and implementation", "dependsOn": ["research"], "estimate": "medium", "parallel": false },
+    { "id": "evaluate", "label": "Evaluate", "order": 3, "description": "Run quality checks, security scans, and compliance validation", "dependsOn": ["create"], "estimate": "small", "parallel": false },
+    { "id": "document", "label": "Document", "order": 4, "description": "Create and audit documentation for the new skill", "dependsOn": ["create"], "estimate": "small", "parallel": true }
+  ],
+  "interview": [
+    { "id": "q-domain", "question": "What domain or technology is this skill for?", "affects": "context", "inputType": "text", "required": true },
+    { "id": "q-type", "question": "What type of skill is this?", "affects": "phases", "inputType": "select", "options": ["Slash command", "Auto-triggering skill", "Orchestrator/meta skill", "Integration (MCP)"], "required": true },
+    { "id": "q-existing", "question": "Is there an existing skill to extend or is this from scratch?", "affects": "context", "inputType": "select", "options": ["From scratch", "Extending existing skill", "Forking/modifying existing"], "required": true }
+  ],
+  "rules": {
+    "prerequisites": [
+      { "skillId": "cc-plugin-expert", "reason": "Need plugin development expertise to create skills", "severity": "required" }
+    ],
+    "keywordTriggers": [
+      { "keywords": ["skill", "plugin", "slash command"], "match": "any", "weight": 1.0 },
+      { "keywords": ["create", "build", "develop", "new"], "match": "any", "weight": 0.5 }
+    ],
+    "suggestions": [
+      {
+        "when": { "type": "interview_answer", "questionId": "q-type", "contains": "MCP" },
+        "suggest": { "type": "skill", "id": "mcp-builder", "reason": "MCP integrations need the mcp-builder skill" }
+      },
+      {
+        "when": { "type": "interview_answer", "questionId": "q-type", "contains": "Orchestrator" },
+        "suggest": { "type": "skill", "id": "skill-composer-studio", "reason": "Orchestrators benefit from skill composition patterns" }
+      }
+    ]
+  },
+  "extends": {
+    "molecules": ["skill-creation", "documentation-suite"],
+    "workflows": ["skill-lifecycle"]
+  },
+  "meta": {
+    "createdAt": "2026-02-02T00:00:00Z",
+    "updatedAt": "2026-02-02T00:00:00Z",
+    "contentHash": ""
+  }
+}
