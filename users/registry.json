@@ -87,6 +87,14 @@
       "role": "user",
       "branch": "users/lifecycle-1770105048521-rrfq",
       "createdAt": "2026-02-03T07:50:57.422Z"
+    },
+    {
+      "id": "iso-a-1770105110594-dkwc",
+      "email": "iso-a-1770105110594-dkwc@test.local",
+      "passwordHash": "$2b$10$ME5OieoorjbM8gKo/y01jOwh2c2qMbXVC3EYcOtfps3pu.EVhiIdy",
+      "role": "user",
+      "branch": "users/iso-a-1770105110594-dkwc",
+      "createdAt": "2026-02-03T07:52:00.357Z"
     }
   ]
 }
