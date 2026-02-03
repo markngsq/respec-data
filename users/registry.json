@@ -71,6 +71,14 @@
       "role": "user",
       "branch": "users/lifecycle-1770104732036-hqdc",
       "createdAt": "2026-02-03T07:45:40.827Z"
+    },
+    {
+      "id": "lifecycle-1770104988449-fu4x",
+      "email": "lifecycle-1770104988449-fu4x@test.local",
+      "passwordHash": "$2b$10$jEB2D4YS24lfJbDN8qTqQeBsWIxASWRXrfqYfKaFiuyVTcjs4e03S",
+      "role": "user",
+      "branch": "users/lifecycle-1770104988449-fu4x",
+      "createdAt": "2026-02-03T07:50:00.688Z"
     }
   ]
 }
