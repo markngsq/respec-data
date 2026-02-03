@@ -55,6 +55,14 @@
       "role": "user",
       "branch": "users/lifecycle-1770104600884-ma19",
       "createdAt": "2026-02-03T07:43:31.687Z"
+    },
+    {
+      "id": "iso-a-1770104653407-hbox",
+      "email": "iso-a-1770104653407-hbox@test.local",
+      "passwordHash": "$2b$10$ND5fFUV0L3jYYTR8xmT.Jut/Xerrn8l1iba2trq0gt32t0/sVVyR.",
+      "role": "user",
+      "branch": "users/iso-a-1770104653407-hbox",
+      "createdAt": "2026-02-03T07:44:21.640Z"
     }
   ]
 }
