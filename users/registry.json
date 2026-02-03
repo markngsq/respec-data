@@ -9,14 +9,6 @@
       "createdAt": "2026-02-03T07:36:45.888Z"
     },
     {
-      "id": "lifecycle-1770105221616-yovb",
-      "email": "lifecycle-1770105221616-yovb@test.local",
-      "passwordHash": "$2b$10$NVu.Lkj3AnVzURoes3JJX.Qyvg/rLD8gtYdmQJamV9iveJtg3NO1y",
-      "role": "user",
-      "branch": "users/lifecycle-1770105221616-yovb",
-      "createdAt": "2026-02-03T07:53:51.876Z"
-    },
-    {
       "id": "iso-a-1770105276653-2ge4",
       "email": "iso-a-1770105276653-2ge4@test.local",
       "passwordHash": "$2b$10$yUNzn1p10Nh8E8DAD.5ApOuR2FzKlwKUbqDfD40UzxDarY5Yc5WFy",
