@@ -9,14 +9,6 @@
       "createdAt": "2026-02-03T07:36:45.888Z"
     },
     {
-      "id": "lifecycle-1770105048521-rrfq",
-      "email": "lifecycle-1770105048521-rrfq@test.local",
-      "passwordHash": "$2b$10$y6/jtcIeLJkfZungVZjZmuI2FYktLCKIfH76g3fX8rW3LXjrkHMGi",
-      "role": "user",
-      "branch": "users/lifecycle-1770105048521-rrfq",
-      "createdAt": "2026-02-03T07:50:57.422Z"
-    },
-    {
       "id": "iso-a-1770105110594-dkwc",
       "email": "iso-a-1770105110594-dkwc@test.local",
       "passwordHash": "$2b$10$ME5OieoorjbM8gKo/y01jOwh2c2qMbXVC3EYcOtfps3pu.EVhiIdy",
