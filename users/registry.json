@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": "lifecycle-1770104167669-ph37",
+      "email": "lifecycle-1770104167669-ph37@test.local",
+      "passwordHash": "$2b$10$gzXDcqC6LMTQbbdNz9zTK.RfMMo6zOxgAjSBeTZHadJwnwBhsjqZS",
+      "role": "user",
+      "branch": "users/lifecycle-1770104167669-ph37",
+      "createdAt": "2026-02-03T07:36:17.499Z"
+    }
+  ]
+}
