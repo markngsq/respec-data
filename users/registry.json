@@ -7,6 +7,14 @@
       "role": "user",
       "branch": "users/lifecycle-1770104167669-ph37",
       "createdAt": "2026-02-03T07:36:17.499Z"
+    },
+    {
+      "id": "curltest2",
+      "email": "curltest2@test.local",
+      "passwordHash": "$2b$10$2VnrQ/lRpr2QLN0CCn1qqueV9/6yTjdH8zwkF2/ma5ZRoSqbQV5Ci",
+      "role": "user",
+      "branch": "users/curltest2",
+      "createdAt": "2026-02-03T07:36:45.888Z"
     }
   ]
 }
