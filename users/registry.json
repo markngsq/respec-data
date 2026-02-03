@@ -9,14 +9,6 @@
       "createdAt": "2026-02-03T07:36:45.888Z"
     },
     {
-      "id": "iso-a-1770104231044-i9tf",
-      "email": "iso-a-1770104231044-i9tf@test.local",
-      "passwordHash": "$2b$10$DWsIoYzhJ8PgMYCKXOs6NOn5QdqRi6DVKjBbTJlxVCiR.3iwbNTgW",
-      "role": "user",
-      "branch": "users/iso-a-1770104231044-i9tf",
-      "createdAt": "2026-02-03T07:37:21.239Z"
-    },
-    {
       "id": "lifecycle-1770104312686-06hi",
       "email": "lifecycle-1770104312686-06hi@test.local",
       "passwordHash": "$2b$10$ZgRbY42wNCC2fYCLW7rJ0.R0CauasDtXHzUxnPfPJr66eIpQnYH1W",
