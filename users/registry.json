@@ -9,14 +9,6 @@
       "createdAt": "2026-02-03T07:36:45.888Z"
     },
     {
-      "id": "iso-a-1770104653407-hbox",
-      "email": "iso-a-1770104653407-hbox@test.local",
-      "passwordHash": "$2b$10$ND5fFUV0L3jYYTR8xmT.Jut/Xerrn8l1iba2trq0gt32t0/sVVyR.",
-      "role": "user",
-      "branch": "users/iso-a-1770104653407-hbox",
-      "createdAt": "2026-02-03T07:44:21.640Z"
-    },
-    {
       "id": "lifecycle-1770104732036-hqdc",
       "email": "lifecycle-1770104732036-hqdc@test.local",
       "passwordHash": "$2b$10$wyy.9Xu9aQ.fIO/9b32T9.kFGZGqeeHZQEFpc6DqSlRi8ik8BzQVK",
