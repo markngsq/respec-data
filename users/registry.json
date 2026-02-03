@@ -199,6 +199,14 @@
       "role": "user",
       "branch": "users/iso-a-1770108662000-mh1u",
       "createdAt": "2026-02-03T08:51:11.300Z"
+    },
+    {
+      "id": "iso-b-1770108662000-wz5w",
+      "email": "iso-b-1770108662000-wz5w@test.local",
+      "passwordHash": "$2b$10$dWoG.Oa8HEysNQrjCWqe9OW6npCxfbaTLbADjgYN8bz9Twsevzg3O",
+      "role": "user",
+      "branch": "users/iso-b-1770108662000-wz5w",
+      "createdAt": "2026-02-03T08:51:36.956Z"
     }
   ]
 }
