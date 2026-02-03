@@ -17,14 +17,6 @@
       "createdAt": "2026-02-03T08:01:50.495Z"
     },
     {
-      "id": "iso-b-1770107210454-owwp",
-      "email": "iso-b-1770107210454-owwp@test.local",
-      "passwordHash": "$2b$10$2Nd2MQ3hBWb1ou6k4RRcrOlLvn5UAVFXCmqTvmeigp51kOUwvvCoS",
-      "role": "user",
-      "branch": "users/iso-b-1770107210454-owwp",
-      "createdAt": "2026-02-03T08:27:25.536Z"
-    },
-    {
       "id": "lifecycle-1770108620587-e1xe",
       "email": "lifecycle-1770108620587-e1xe@test.local",
       "passwordHash": "$2b$10$qPTQiSPwcNdvcbASbP.OvOxuMWIWmTdeIobTNvHHU3s6TFowcbyNy",
