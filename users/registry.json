@@ -215,6 +215,14 @@
       "role": "user",
       "branch": "users/sync-1770126004037-xasc",
       "createdAt": "2026-02-03T13:40:15.030Z"
+    },
+    {
+      "id": "localtest",
+      "email": "localtest@test.local",
+      "passwordHash": "$2b$10$l.qjgx5q8P641V0OMA3gYOD.4K7gEVP8TLwd.MtUDHrijil.OVZrC",
+      "role": "user",
+      "branch": "users/localtest",
+      "createdAt": "2026-02-03T14:33:26.077Z"
     }
   ]
 }
