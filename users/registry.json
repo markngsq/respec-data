@@ -9,14 +9,6 @@
       "createdAt": "2026-02-03T07:36:45.888Z"
     },
     {
-      "id": "iso-a-1770105110594-dkwc",
-      "email": "iso-a-1770105110594-dkwc@test.local",
-      "passwordHash": "$2b$10$ME5OieoorjbM8gKo/y01jOwh2c2qMbXVC3EYcOtfps3pu.EVhiIdy",
-      "role": "user",
-      "branch": "users/iso-a-1770105110594-dkwc",
-      "createdAt": "2026-02-03T07:52:00.357Z"
-    },
-    {
       "id": "iso-b-1770105110594-sycr",
       "email": "iso-b-1770105110594-sycr@test.local",
       "passwordHash": "$2b$10$1Cj9HZjq2AM4hZ8b/BX7U.b95.7srgemEzYEFzbiI0JCJ7YkxsmXq",
