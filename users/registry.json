@@ -143,6 +143,14 @@
       "role": "user",
       "branch": "users/lifecycle-1770106382013-qxbp",
       "createdAt": "2026-02-03T08:13:11.994Z"
+    },
+    {
+      "id": "iso-a-1770106425839-s79v",
+      "email": "iso-a-1770106425839-s79v@test.local",
+      "passwordHash": "$2b$10$4ZgP4DLQAjYWP7FNDUXjW.90oLytffDnb/8SZA2FUWBnP7Gr5qleS",
+      "role": "user",
+      "branch": "users/iso-a-1770106425839-s79v",
+      "createdAt": "2026-02-03T08:13:55.591Z"
     }
   ]
 }
