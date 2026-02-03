@@ -183,6 +183,14 @@
       "role": "user",
       "branch": "users/iso-b-1770107210454-owwp",
       "createdAt": "2026-02-03T08:27:25.536Z"
+    },
+    {
+      "id": "lifecycle-1770108620587-e1xe",
+      "email": "lifecycle-1770108620587-e1xe@test.local",
+      "passwordHash": "$2b$10$qPTQiSPwcNdvcbASbP.OvOxuMWIWmTdeIobTNvHHU3s6TFowcbyNy",
+      "role": "user",
+      "branch": "users/lifecycle-1770108620587-e1xe",
+      "createdAt": "2026-02-03T08:50:30.998Z"
     }
   ]
 }
