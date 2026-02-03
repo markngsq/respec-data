@@ -23,6 +23,14 @@
       "role": "user",
       "branch": "users/iso-a-1770104231044-i9tf",
       "createdAt": "2026-02-03T07:37:21.239Z"
+    },
+    {
+      "id": "lifecycle-1770104312686-06hi",
+      "email": "lifecycle-1770104312686-06hi@test.local",
+      "passwordHash": "$2b$10$ZgRbY42wNCC2fYCLW7rJ0.R0CauasDtXHzUxnPfPJr66eIpQnYH1W",
+      "role": "user",
+      "branch": "users/lifecycle-1770104312686-06hi",
+      "createdAt": "2026-02-03T07:38:42.375Z"
     }
   ]
 }
