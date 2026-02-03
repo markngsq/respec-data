@@ -127,6 +127,14 @@
       "role": "user",
       "branch": "users/iso-b-1770105276653-941k",
       "createdAt": "2026-02-03T07:55:31.318Z"
+    },
+    {
+      "id": "markng",
+      "email": "markngshiqiang@gmail.com",
+      "passwordHash": "$2b$10$c5mRAmqkE5BsI5HTEemQTegEpBW8vFQleDC1hdvqKXHhCQ1hXGKcy",
+      "role": "user",
+      "branch": "users/markng",
+      "createdAt": "2026-02-03T08:01:50.495Z"
     }
   ]
 }
