@@ -132,7 +132,7 @@
       "id": "markng",
       "email": "markngshiqiang@gmail.com",
       "passwordHash": "$2b$10$c5mRAmqkE5BsI5HTEemQTegEpBW8vFQleDC1hdvqKXHhCQ1hXGKcy",
-      "role": "user",
+      "role": "admin",
       "branch": "users/markng",
       "createdAt": "2026-02-03T08:01:50.495Z"
     },
