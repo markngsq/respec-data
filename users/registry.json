@@ -95,6 +95,14 @@
       "role": "user",
       "branch": "users/iso-a-1770105110594-dkwc",
       "createdAt": "2026-02-03T07:52:00.357Z"
+    },
+    {
+      "id": "iso-b-1770105110594-sycr",
+      "email": "iso-b-1770105110594-sycr@test.local",
+      "passwordHash": "$2b$10$1Cj9HZjq2AM4hZ8b/BX7U.b95.7srgemEzYEFzbiI0JCJ7YkxsmXq",
+      "role": "user",
+      "branch": "users/iso-b-1770105110594-sycr",
+      "createdAt": "2026-02-03T07:52:48.372Z"
     }
   ]
 }
