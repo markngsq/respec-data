@@ -47,6 +47,14 @@
       "role": "user",
       "branch": "users/iso-a-1770104489538-hjql",
       "createdAt": "2026-02-03T07:41:38.455Z"
+    },
+    {
+      "id": "lifecycle-1770104600884-ma19",
+      "email": "lifecycle-1770104600884-ma19@test.local",
+      "passwordHash": "$2b$10$0cwPhg6Dz0UNke4TeQmgQOj18rwegb5pOeZIlLa6sv7ZZMssV7GVC",
+      "role": "user",
+      "branch": "users/lifecycle-1770104600884-ma19",
+      "createdAt": "2026-02-03T07:43:31.687Z"
     }
   ]
 }
