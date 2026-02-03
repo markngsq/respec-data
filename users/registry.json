@@ -151,6 +151,14 @@
       "role": "user",
       "branch": "users/iso-a-1770106425839-s79v",
       "createdAt": "2026-02-03T08:13:55.591Z"
+    },
+    {
+      "id": "iso-b-1770106425839-35lr",
+      "email": "iso-b-1770106425839-35lr@test.local",
+      "passwordHash": "$2b$10$vM9Do7QwNjCXMqbSNvGaKe16gM8MaRLZUE1uCs64Vo1r/DRyfSA9C",
+      "role": "user",
+      "branch": "users/iso-b-1770106425839-35lr",
+      "createdAt": "2026-02-03T08:14:22.040Z"
     }
   ]
 }
