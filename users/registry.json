@@ -135,6 +135,78 @@
       "role": "user",
       "branch": "users/markng",
       "createdAt": "2026-02-03T08:01:50.495Z"
+    },
+    {
+      "id": "lifecycle-1770106382013-qxbp",
+      "email": "lifecycle-1770106382013-qxbp@test.local",
+      "passwordHash": "$2b$10$dKaWKo0QbWFKSJMLfZkNzOMIi2J2TLHBf5tIG0qbCi/0/eLVUEYci",
+      "role": "user",
+      "branch": "users/lifecycle-1770106382013-qxbp",
+      "createdAt": "2026-02-03T08:13:11.994Z"
+    },
+    {
+      "id": "iso-a-1770106425839-s79v",
+      "email": "iso-a-1770106425839-s79v@test.local",
+      "passwordHash": "$2b$10$4ZgP4DLQAjYWP7FNDUXjW.90oLytffDnb/8SZA2FUWBnP7Gr5qleS",
+      "role": "user",
+      "branch": "users/iso-a-1770106425839-s79v",
+      "createdAt": "2026-02-03T08:13:55.591Z"
+    },
+    {
+      "id": "iso-b-1770106425839-35lr",
+      "email": "iso-b-1770106425839-35lr@test.local",
+      "passwordHash": "$2b$10$vM9Do7QwNjCXMqbSNvGaKe16gM8MaRLZUE1uCs64Vo1r/DRyfSA9C",
+      "role": "user",
+      "branch": "users/iso-b-1770106425839-35lr",
+      "createdAt": "2026-02-03T08:14:22.040Z"
+    },
+    {
+      "id": "lifecycle-1770107168068-hyja",
+      "email": "lifecycle-1770107168068-hyja@test.local",
+      "passwordHash": "$2b$10$JmyrucIRYiQGkSox9UTY8u0dBODDP4ZlatA3BgiDbH1Y1SaGJgt.K",
+      "role": "user",
+      "branch": "users/lifecycle-1770107168068-hyja",
+      "createdAt": "2026-02-03T08:26:19.329Z"
+    },
+    {
+      "id": "iso-a-1770107210454-v4hg",
+      "email": "iso-a-1770107210454-v4hg@test.local",
+      "passwordHash": "$2b$10$s2duhOm/aARGBgKvHOvaSuAayJCkNR0svrqsWUq6GInHh.bu5ft7W",
+      "role": "user",
+      "branch": "users/iso-a-1770107210454-v4hg",
+      "createdAt": "2026-02-03T08:26:59.794Z"
+    },
+    {
+      "id": "iso-b-1770107210454-owwp",
+      "email": "iso-b-1770107210454-owwp@test.local",
+      "passwordHash": "$2b$10$2Nd2MQ3hBWb1ou6k4RRcrOlLvn5UAVFXCmqTvmeigp51kOUwvvCoS",
+      "role": "user",
+      "branch": "users/iso-b-1770107210454-owwp",
+      "createdAt": "2026-02-03T08:27:25.536Z"
+    },
+    {
+      "id": "lifecycle-1770108620587-e1xe",
+      "email": "lifecycle-1770108620587-e1xe@test.local",
+      "passwordHash": "$2b$10$qPTQiSPwcNdvcbASbP.OvOxuMWIWmTdeIobTNvHHU3s6TFowcbyNy",
+      "role": "user",
+      "branch": "users/lifecycle-1770108620587-e1xe",
+      "createdAt": "2026-02-03T08:50:30.998Z"
+    },
+    {
+      "id": "iso-a-1770108662000-mh1u",
+      "email": "iso-a-1770108662000-mh1u@test.local",
+      "passwordHash": "$2b$10$nzFk4wM9WWGEvrVZVXt9o.YtNL8iWXJhh0l.T83jaZo5znZDkBif.",
+      "role": "user",
+      "branch": "users/iso-a-1770108662000-mh1u",
+      "createdAt": "2026-02-03T08:51:11.300Z"
+    },
+    {
+      "id": "iso-b-1770108662000-wz5w",
+      "email": "iso-b-1770108662000-wz5w@test.local",
+      "passwordHash": "$2b$10$dWoG.Oa8HEysNQrjCWqe9OW6npCxfbaTLbADjgYN8bz9Twsevzg3O",
+      "role": "user",
+      "branch": "users/iso-b-1770108662000-wz5w",
+      "createdAt": "2026-02-03T08:51:36.956Z"
     }
   ]
 }
