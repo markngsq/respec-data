@@ -167,6 +167,14 @@
       "role": "user",
       "branch": "users/lifecycle-1770107168068-hyja",
       "createdAt": "2026-02-03T08:26:19.329Z"
+    },
+    {
+      "id": "iso-a-1770107210454-v4hg",
+      "email": "iso-a-1770107210454-v4hg@test.local",
+      "passwordHash": "$2b$10$s2duhOm/aARGBgKvHOvaSuAayJCkNR0svrqsWUq6GInHh.bu5ft7W",
+      "role": "user",
+      "branch": "users/iso-a-1770107210454-v4hg",
+      "createdAt": "2026-02-03T08:26:59.794Z"
     }
   ]
 }
