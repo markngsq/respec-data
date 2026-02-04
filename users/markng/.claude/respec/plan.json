@@ -86,7 +86,14 @@
     }
   ],
   "tasks": [],
-  "members": {},
+  "members": {
+    "markng": {
+      "name": "markng",
+      "email": "markng@respec.local",
+      "lastActive": "2026-02-04T02:36:32.446Z",
+      "sessionStatus": "online"
+    }
+  },
   "interview": [
     {
       "questionId": "q-goal",
@@ -120,12 +127,19 @@
       "actor": "markng",
       "action": "plan_created",
       "detail": "Plan \"Build a Full-Stack Feature\" created"
+    },
+    {
+      "id": "9bf1730c-0205-420e-b948-83f90f5bf1ed",
+      "timestamp": "2026-02-04T02:36:32.446Z",
+      "actor": "markng",
+      "action": "member_joined",
+      "detail": "markng"
     }
   ],
   "meta": {
     "createdAt": "2026-02-04T02:36:07.061Z",
-    "updatedAt": "2026-02-04T02:36:07.061Z",
+    "updatedAt": "2026-02-04T02:36:32.446Z",
     "lastWriter": "markng",
-    "revision": 1
+    "revision": 2
   }
 }
