@@ -1,145 +1,117 @@
 {
   "version": 1,
-  "id": "d56f1fa1-b1e2-467b-a54d-ba5b1a24dc2e",
-  "name": "Build a Full-Stack Feature",
+  "id": "56795326-c5f0-47e5-9a33-5fe48b653366",
+  "name": "Build an AI-Powered Application",
   "goal": "",
   "loadoutRef": {
-    "loadoutId": "feature-development",
-    "templateHash": "9f6a60378e8f1291",
+    "loadoutId": "ai-app-development",
+    "templateHash": "6c0bf40ed83657e1",
     "source": "curated"
   },
   "steps": [
     {
-      "id": "scope",
-      "label": "Scope",
+      "id": "design-prompts",
+      "label": "Design Prompts",
       "order": 1,
-      "description": "Define requirements and create PRD",
+      "description": "Design prompt templates, RAG pipelines, and agent architecture",
       "skills": [
-        "project-interview",
-        "product-manager-toolkit"
+        "senior-prompt-engineer",
+        "llm-app-patterns"
       ],
       "dependsOn": [],
       "status": "active",
       "notes": []
     },
     {
-      "id": "design",
-      "label": "Design",
-      "order": 2,
-      "description": "Architecture decisions and data models",
-      "skills": [
-        "architecture-patterns",
-        "senior-architect"
-      ],
-      "dependsOn": [
-        "scope"
-      ],
-      "status": "pending",
-      "notes": []
-    },
-    {
       "id": "build",
-      "label": "Build",
-      "order": 3,
-      "description": "Implement the feature",
+      "label": "Build App",
+      "order": 2,
+      "description": "Implement the application with LLM integrations",
       "skills": [
+        "llm-app-patterns",
         "nextjs",
         "shadcn",
         "prisma",
-        "sql-expert"
-      ],
-      "dependsOn": [
-        "design"
-      ],
-      "status": "pending",
-      "notes": []
-    },
-    {
-      "id": "test",
-      "label": "Test",
-      "order": 4,
-      "description": "Write and run tests",
-      "skills": [
         "senior-qa",
         "playwright-skill"
       ],
       "dependsOn": [
+        "design-prompts"
+      ],
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "secure",
+      "label": "Secure",
+      "order": 3,
+      "description": "Security audit for OWASP and LLM-specific vulnerabilities",
+      "skills": [
+        "software-security",
+        "llm-security"
+      ],
+      "dependsOn": [
         "build"
       ],
       "status": "pending",
       "notes": []
     },
     {
-      "id": "review",
-      "label": "Review",
-      "order": 5,
-      "description": "Code review and security scan",
+      "id": "deploy",
+      "label": "Deploy",
+      "order": 4,
+      "description": "Containerize and deploy to production",
       "skills": [
-        "code-reviewer",
-        "software-security"
+        "docker-containerization"
       ],
       "dependsOn": [
-        "build"
+        "secure"
       ],
       "status": "pending",
       "notes": []
     }
   ],
   "tasks": [],
-  "members": {
-    "markng": {
-      "name": "markng",
-      "email": "markng@respec.local",
-      "lastActive": "2026-02-04T02:36:32.446Z",
-      "sessionStatus": "online"
-    }
-  },
+  "members": {},
   "interview": [
     {
       "questionId": "q-goal",
-      "question": "What are you building?",
-      "answer": "management system",
+      "question": "What AI-powered feature are you building?",
+      "answer": "a",
       "answeredBy": "user"
     },
     {
-      "questionId": "q-db",
-      "question": "Does this feature need a database?",
-      "answer": "Yes - PostgreSQL",
+      "questionId": "q-model",
+      "question": "Which LLM provider are you using?",
+      "answer": "Anthropic (Claude)",
       "answeredBy": "user"
     },
     {
-      "questionId": "q-auth",
-      "question": "Does this feature need authentication?",
+      "questionId": "q-pattern",
+      "question": "What AI pattern does this use?",
+      "answer": "Conversational agent",
+      "answeredBy": "user"
+    },
+    {
+      "questionId": "q-data",
+      "question": "Does this need a vector database?",
       "answer": "No",
-      "answeredBy": "user"
-    },
-    {
-      "questionId": "q-existing",
-      "question": "Is this greenfield or adding to an existing codebase?",
-      "answer": "Greenfield",
       "answeredBy": "user"
     }
   ],
   "audit": [
     {
-      "id": "cf154d94-c324-4dc6-a485-2a3dc3a2fa6f",
-      "timestamp": "2026-02-04T02:36:07.061Z",
+      "id": "27845bb1-4c9e-460e-89de-e4d339646a82",
+      "timestamp": "2026-02-04T02:57:38.531Z",
       "actor": "markng",
       "action": "plan_created",
-      "detail": "Plan \"Build a Full-Stack Feature\" created"
-    },
-    {
-      "id": "9bf1730c-0205-420e-b948-83f90f5bf1ed",
-      "timestamp": "2026-02-04T02:36:32.446Z",
-      "actor": "markng",
-      "action": "member_joined",
-      "detail": "markng"
+      "detail": "Plan \"Build an AI-Powered Application\" created"
     }
   ],
   "meta": {
-    "createdAt": "2026-02-04T02:36:07.061Z",
-    "updatedAt": "2026-02-04T02:36:32.446Z",
+    "createdAt": "2026-02-04T02:57:38.531Z",
+    "updatedAt": "2026-02-04T02:57:38.535Z",
     "lastWriter": "markng",
-    "revision": 2
+    "revision": 1
   }
 }
