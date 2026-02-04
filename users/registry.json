@@ -247,6 +247,14 @@
       "role": "user",
       "branch": "users/qq",
       "createdAt": "2026-02-04T06:03:12.346Z"
+    },
+    {
+      "id": "aliciatan",
+      "email": "aliciatan@gmail.com",
+      "passwordHash": "$2b$10$uvUxdrGFhYEzZrPVFvullezPKEHOD/Dotw37DzpmKh9o5cNT44r3W",
+      "role": "user",
+      "branch": "users/aliciatan",
+      "createdAt": "2026-02-04T06:27:42.901Z"
     }
   ]
 }
