@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "id": "b638c9ba-7c31-41c1-b9c2-554eb5a017ee",
+  "id": "6a550499-45c1-4f83-b55c-d32d77b8a507",
   "name": "Build a Full-Stack Feature",
   "goal": "",
   "loadoutRef": {
@@ -86,31 +86,24 @@
     }
   ],
   "tasks": [],
-  "members": {
-    "markng": {
-      "name": "markng",
-      "email": "markng@respec.local",
-      "lastActive": "2026-02-04T05:52:16.238Z",
-      "sessionStatus": "online"
-    }
-  },
+  "members": {},
   "interview": [
     {
       "questionId": "q-goal",
       "question": "What are you building?",
-      "answer": "form",
+      "answer": "a",
       "answeredBy": "user"
     },
     {
       "questionId": "q-db",
       "question": "Does this feature need a database?",
-      "answer": "No",
+      "answer": "Yes - SQLite",
       "answeredBy": "user"
     },
     {
       "questionId": "q-auth",
       "question": "Does this feature need authentication?",
-      "answer": "No",
+      "answer": "Yes",
       "answeredBy": "user"
     },
     {
@@ -122,24 +115,17 @@
   ],
   "audit": [
     {
-      "id": "3c042f7b-1977-4b13-a365-79909c579130",
-      "timestamp": "2026-02-04T03:06:58.614Z",
+      "id": "9a7b6ad8-be0e-42c2-8b45-afdff67678e5",
+      "timestamp": "2026-02-04T07:10:01.026Z",
       "actor": "markng",
       "action": "plan_created",
       "detail": "Plan \"Build a Full-Stack Feature\" created"
-    },
-    {
-      "id": "afded30c-b59c-4215-ae83-6299342ad1c7",
-      "timestamp": "2026-02-04T03:07:06.587Z",
-      "actor": "markng",
-      "action": "member_joined",
-      "detail": "markng"
     }
   ],
   "meta": {
-    "createdAt": "2026-02-04T03:06:58.614Z",
-    "updatedAt": "2026-02-04T05:52:16.238Z",
+    "createdAt": "2026-02-04T07:10:01.026Z",
+    "updatedAt": "2026-02-04T07:10:01.027Z",
     "lastWriter": "markng",
-    "revision": 5
+    "revision": 1
   }
 }
