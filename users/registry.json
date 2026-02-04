@@ -231,6 +231,14 @@
       "role": "user",
       "branch": "users/nav",
       "createdAt": "2026-02-04T01:32:37.043Z"
+    },
+    {
+      "id": "alexavonc",
+      "email": "alexavonc@gmail.com",
+      "passwordHash": "$2b$10$Z8i1bmybvgXP0eqFlGyrR.prAWJ9po10D0bYvqJe0LAJ/laxwuNF.",
+      "role": "user",
+      "branch": "users/alexavonc",
+      "createdAt": "2026-02-04T05:38:38.978Z"
     }
   ]
 }
