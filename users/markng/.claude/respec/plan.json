@@ -1,54 +1,67 @@
 {
   "version": 1,
-  "id": "7dce7f29-3da5-4b33-a272-b52f2f7c4908",
-  "name": "Build an AI-Powered Application",
+  "id": "ec647d9e-eed5-4704-ac7e-ab3d872d9dc2",
+  "name": "Build a Full-Stack Feature",
   "goal": "",
   "loadoutRef": {
-    "loadoutId": "ai-app-development",
-    "templateHash": "6c0bf40ed83657e1",
+    "loadoutId": "feature-development",
+    "templateHash": "9f6a60378e8f1291",
     "source": "curated"
   },
   "steps": [
     {
-      "id": "design-prompts",
-      "label": "Design Prompts",
+      "id": "scope",
+      "label": "Scope",
       "order": 1,
-      "description": "Design prompt templates, RAG pipelines, and agent architecture",
+      "description": "Define requirements and create PRD",
       "skills": [
-        "senior-prompt-engineer",
-        "llm-app-patterns"
+        "project-interview",
+        "product-manager-toolkit"
       ],
       "dependsOn": [],
       "status": "active",
       "notes": []
     },
     {
-      "id": "build",
-      "label": "Build App",
+      "id": "design",
+      "label": "Design",
       "order": 2,
-      "description": "Implement the application with LLM integrations",
+      "description": "Architecture decisions and data models",
       "skills": [
-        "llm-app-patterns",
-        "nextjs",
-        "shadcn",
-        "prisma",
-        "senior-qa",
-        "playwright-skill"
+        "architecture-patterns",
+        "senior-architect"
       ],
       "dependsOn": [
-        "design-prompts"
+        "scope"
       ],
       "status": "pending",
       "notes": []
     },
     {
-      "id": "secure",
-      "label": "Secure",
+      "id": "build",
+      "label": "Build",
       "order": 3,
-      "description": "Security audit for OWASP and LLM-specific vulnerabilities",
+      "description": "Implement the feature",
       "skills": [
-        "software-security",
-        "llm-security"
+        "nextjs",
+        "shadcn",
+        "prisma",
+        "sql-expert"
+      ],
+      "dependsOn": [
+        "design"
+      ],
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "test",
+      "label": "Test",
+      "order": 4,
+      "description": "Write and run tests",
+      "skills": [
+        "senior-qa",
+        "playwright-skill"
       ],
       "dependsOn": [
         "build"
@@ -57,69 +70,62 @@
       "notes": []
     },
     {
-      "id": "deploy",
-      "label": "Deploy",
-      "order": 4,
-      "description": "Containerize and deploy to production",
+      "id": "review",
+      "label": "Review",
+      "order": 5,
+      "description": "Code review and security scan",
       "skills": [
-        "docker-containerization"
+        "code-reviewer",
+        "software-security"
       ],
       "dependsOn": [
-        "secure"
+        "build"
       ],
       "status": "pending",
       "notes": []
     }
   ],
   "tasks": [],
-  "members": {
-    "markng": {
-      "name": "markng",
-      "email": "markng@respec.local",
-      "lastActive": "2026-02-03T15:41:03.547Z",
-      "sessionStatus": "online"
-    }
-  },
+  "members": {},
   "interview": [
     {
       "questionId": "q-goal",
-      "question": "What AI-powered feature are you building?",
-      "answer": "FOrm",
+      "question": "What are you building?",
+      "answer": "management system",
       "answeredBy": "user"
     },
     {
-      "questionId": "q-model",
-      "question": "Which LLM provider are you using?",
-      "answer": "Anthropic (Claude)",
+      "questionId": "q-db",
+      "question": "Does this feature need a database?",
+      "answer": "Yes - PostgreSQL",
       "answeredBy": "user"
     },
     {
-      "questionId": "q-pattern",
-      "question": "What AI pattern does this use?",
-      "answer": "RAG (retrieval-augmented generation)",
+      "questionId": "q-auth",
+      "question": "Does this feature need authentication?",
+      "answer": "No",
+      "answeredBy": "user"
+    },
+    {
+      "questionId": "q-existing",
+      "question": "Is this greenfield or adding to an existing codebase?",
+      "answer": "Greenfield",
       "answeredBy": "user"
     }
   ],
   "audit": [
     {
-      "id": "a4c8c3c8-76ae-4f36-9c51-01c71a474e6a",
-      "timestamp": "2026-02-03T15:30:14.338Z",
+      "id": "0c82679f-7f6a-4a28-afa5-c51eb4d40cbf",
+      "timestamp": "2026-02-04T02:36:04.339Z",
       "actor": "markng",
       "action": "plan_created",
-      "detail": "Plan \"Build an AI-Powered Application\" created"
-    },
-    {
-      "id": "a3bd422b-e2b8-4dbc-9df3-37b2ec5cf25a",
-      "timestamp": "2026-02-03T15:30:35.935Z",
-      "actor": "markng",
-      "action": "member_joined",
-      "detail": "markng"
+      "detail": "Plan \"Build a Full-Stack Feature\" created"
     }
   ],
   "meta": {
-    "createdAt": "2026-02-03T15:30:14.338Z",
-    "updatedAt": "2026-02-03T15:41:03.547Z",
+    "createdAt": "2026-02-04T02:36:04.338Z",
+    "updatedAt": "2026-02-04T02:36:04.340Z",
     "lastWriter": "markng",
-    "revision": 7
+    "revision": 1
   }
 }
