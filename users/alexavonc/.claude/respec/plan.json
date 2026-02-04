@@ -72,7 +72,14 @@
     }
   ],
   "tasks": [],
-  "members": {},
+  "members": {
+    "alexavonc": {
+      "name": "alexavonc",
+      "email": "alexavonc@respec.local",
+      "lastActive": "2026-02-04T05:42:32.848Z",
+      "sessionStatus": "online"
+    }
+  },
   "interview": [
     {
       "questionId": "q-goal",
@@ -106,12 +113,19 @@
       "actor": "alexavonc",
       "action": "plan_created",
       "detail": "Plan \"Build an AI-Powered Application\" created"
+    },
+    {
+      "id": "28cc290c-f087-4fc0-ba2f-4b891ccd0b1a",
+      "timestamp": "2026-02-04T05:42:32.848Z",
+      "actor": "alexavonc",
+      "action": "member_joined",
+      "detail": "alexavonc"
     }
   ],
   "meta": {
     "createdAt": "2026-02-04T05:42:21.638Z",
-    "updatedAt": "2026-02-04T05:42:21.640Z",
+    "updatedAt": "2026-02-04T05:42:32.848Z",
     "lastWriter": "alexavonc",
-    "revision": 1
+    "revision": 2
   }
 }
