@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "id": "4e91255e-0cfe-400d-afe6-e4a67fa6e49f",
+  "name": "Build an AI-Powered Application",
+  "goal": "",
+  "loadoutRef": {
+    "loadoutId": "ai-app-development",
+    "templateHash": "6c0bf40ed83657e1",
+    "source": "curated"
+  },
+  "steps": [
+    {
+      "id": "design-prompts",
+      "label": "Design Prompts",
+      "order": 1,
+      "description": "Design prompt templates, RAG pipelines, and agent architecture",
+      "skills": [
+        "senior-prompt-engineer",
+        "llm-app-patterns"
+      ],
+      "dependsOn": [],
+      "status": "active",
+      "notes": []
+    },
+    {
+      "id": "build",
+      "label": "Build App",
+      "order": 2,
+      "description": "Implement the application with LLM integrations",
+      "skills": [
+        "llm-app-patterns",
+        "nextjs",
+        "shadcn",
+        "prisma",
+        "senior-qa",
+        "playwright-skill"
+      ],
+      "dependsOn": [
+        "design-prompts"
+      ],
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "secure",
+      "label": "Secure",
+      "order": 3,
+      "description": "Security audit for OWASP and LLM-specific vulnerabilities",
+      "skills": [
+        "software-security",
+        "llm-security"
+      ],
+      "dependsOn": [
+        "build"
+      ],
+      "status": "pending",
+      "notes": []
+    },
+    {
+      "id": "deploy",
+      "label": "Deploy",
+      "order": 4,
+      "description": "Containerize and deploy to production",
+      "skills": [
+        "docker-containerization"
+      ],
+      "dependsOn": [
+        "secure"
+      ],
+      "status": "pending",
+      "notes": []
+    }
+  ],
+  "tasks": [],
+  "members": {},
+  "interview": [
+    {
+      "questionId": "q-goal",
+      "question": "What AI-powered feature are you building?",
+      "answer": "I want to build a platform that comprises of several agents that cover the entire product design skillset, so for example a heuristics agent, a UI agent and so on. I want it to be able to analyse certain existing sales funnels and then churn out potential improvements",
+      "answeredBy": "user"
+    },
+    {
+      "questionId": "q-model",
+      "question": "Which LLM provider are you using?",
+      "answer": "Anthropic (Claude)",
+      "answeredBy": "user"
+    },
+    {
+      "questionId": "q-pattern",
+      "question": "What AI pattern does this use?",
+      "answer": "Structured outputs / extraction",
+      "answeredBy": "user"
+    },
+    {
+      "questionId": "q-data",
+      "question": "Does this need a vector database?",
+      "answer": "Yes",
+      "answeredBy": "user"
+    }
+  ],
+  "audit": [
+    {
+      "id": "2ed52d1b-3d72-4975-8090-7edb36c44d0d",
+      "timestamp": "2026-02-04T05:42:19.202Z",
+      "actor": "alexavonc",
+      "action": "plan_created",
+      "detail": "Plan \"Build an AI-Powered Application\" created"
+    }
+  ],
+  "meta": {
+    "createdAt": "2026-02-04T05:42:19.201Z",
+    "updatedAt": "2026-02-04T05:42:19.202Z",
+    "lastWriter": "alexavonc",
+    "revision": 1
+  }
+}
