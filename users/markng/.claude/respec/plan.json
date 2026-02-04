@@ -72,7 +72,14 @@
     }
   ],
   "tasks": [],
-  "members": {},
+  "members": {
+    "markng": {
+      "name": "markng",
+      "email": "markng@respec.local",
+      "lastActive": "2026-02-04T02:57:50.954Z",
+      "sessionStatus": "online"
+    }
+  },
   "interview": [
     {
       "questionId": "q-goal",
@@ -106,12 +113,19 @@
       "actor": "markng",
       "action": "plan_created",
       "detail": "Plan \"Build an AI-Powered Application\" created"
+    },
+    {
+      "id": "9619ef05-f0f7-4a4e-81ae-f17bc3080a3b",
+      "timestamp": "2026-02-04T02:57:50.954Z",
+      "actor": "markng",
+      "action": "member_joined",
+      "detail": "markng"
     }
   ],
   "meta": {
     "createdAt": "2026-02-04T02:57:41.314Z",
-    "updatedAt": "2026-02-04T02:57:41.315Z",
+    "updatedAt": "2026-02-04T02:57:50.954Z",
     "lastWriter": "markng",
-    "revision": 1
+    "revision": 2
   }
 }
