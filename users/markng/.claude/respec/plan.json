@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "id": "9452f935-7be7-413c-989e-47df49e58009",
+  "id": "b638c9ba-7c31-41c1-b9c2-554eb5a017ee",
   "name": "Build a Full-Stack Feature",
   "goal": "",
   "loadoutRef": {
@@ -115,16 +115,16 @@
   ],
   "audit": [
     {
-      "id": "85ca0ec3-6249-4ee2-aa5a-30dc02452581",
-      "timestamp": "2026-02-04T03:06:52.109Z",
+      "id": "3c042f7b-1977-4b13-a365-79909c579130",
+      "timestamp": "2026-02-04T03:06:58.614Z",
       "actor": "markng",
       "action": "plan_created",
       "detail": "Plan \"Build a Full-Stack Feature\" created"
     }
   ],
   "meta": {
-    "createdAt": "2026-02-04T03:06:52.106Z",
-    "updatedAt": "2026-02-04T03:06:52.110Z",
+    "createdAt": "2026-02-04T03:06:58.614Z",
+    "updatedAt": "2026-02-04T03:06:58.615Z",
     "lastWriter": "markng",
     "revision": 1
   }
