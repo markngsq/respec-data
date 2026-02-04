@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "id": "56795326-c5f0-47e5-9a33-5fe48b653366",
+  "id": "6125386c-3888-40ba-b5ff-bfed37d66ef5",
   "name": "Build an AI-Powered Application",
   "goal": "",
   "loadoutRef": {
@@ -101,16 +101,16 @@
   ],
   "audit": [
     {
-      "id": "27845bb1-4c9e-460e-89de-e4d339646a82",
-      "timestamp": "2026-02-04T02:57:38.531Z",
+      "id": "fa321011-f1ff-4aae-8416-4864bd2f2abb",
+      "timestamp": "2026-02-04T02:57:41.315Z",
       "actor": "markng",
       "action": "plan_created",
       "detail": "Plan \"Build an AI-Powered Application\" created"
     }
   ],
   "meta": {
-    "createdAt": "2026-02-04T02:57:38.531Z",
-    "updatedAt": "2026-02-04T02:57:38.535Z",
+    "createdAt": "2026-02-04T02:57:41.314Z",
+    "updatedAt": "2026-02-04T02:57:41.315Z",
     "lastWriter": "markng",
     "revision": 1
   }
