@@ -239,6 +239,14 @@
       "role": "user",
       "branch": "users/alexavonc",
       "createdAt": "2026-02-04T05:38:38.978Z"
+    },
+    {
+      "id": "qq",
+      "email": "qiaoqi.song@mgial.com",
+      "passwordHash": "$2b$10$IZXHTtmPXmYaFxtoCo2Sh.tC/LFMEk7.m0R60p5sGSUZ4/15J6bxK",
+      "role": "user",
+      "branch": "users/qq",
+      "createdAt": "2026-02-04T06:03:12.346Z"
     }
   ]
 }
