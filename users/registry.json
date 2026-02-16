@@ -39,6 +39,14 @@
       "role": "user",
       "branch": "users/aliciatan",
       "createdAt": "2026-02-04T06:27:42.901Z"
+    },
+    {
+      "id": "quinnyvu",
+      "email": "quinny.vu@gmail.com",
+      "passwordHash": "$2b$10$0fPhytBgugUxZjXVqNP7WO5YurPKYd773WLamCjYrM8uIOtlqa.NO",
+      "role": "user",
+      "branch": "users/quinnyvu",
+      "createdAt": "2026-02-16T08:44:11.118Z"
     }
   ]
 }
