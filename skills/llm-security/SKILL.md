@@ -1,12 +1,19 @@
 ---
 name: llm-security
-description: Security guidelines for LLM applications based on OWASP Top 10 for LLM 2025. Use when building LLM apps, reviewing AI security, implementing RAG systems, or asking about LLM vulnerabilities like "prompt injection" or "check LLM security".
+description: >-
+  Security guidelines for LLM applications based on OWASP Top 10 for LLM 2025.
+  Use when building LLM apps, reviewing AI security, implementing RAG systems,
+  or asking about LLM vulnerabilities like "prompt injection" or "check LLM
+  security".
+maturity: seed
+evolution_count: 0
 ---
 
 # LLM Security Guidelines (OWASP Top 10 for LLM 2025)
 
 Comprehensive security rules for building secure LLM applications. Based on the OWASP Top 10 for Large Language Model Applications 2025 - the authoritative guide to LLM security risks.
 
+<!-- ZONE:STABLE -->
 ## How It Works
 
 1. When building or reviewing LLM applications, reference these security guidelines
@@ -73,3 +80,9 @@ Reference the rules in `rules/` directory for detailed examples:
 - [OWASP Top 10 for LLM Applications 2025](https://genai.owasp.org/llm-top-10/)
 - [MITRE ATLAS - Adversarial Threat Landscape for AI Systems](https://atlas.mitre.org/)
 - [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework)
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
