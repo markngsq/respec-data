@@ -1,10 +1,19 @@
 ---
 name: docker-containerization
-description: This skill should be used when containerizing applications with Docker, creating Dockerfiles, docker-compose configurations, or deploying containers to various platforms. Ideal for Next.js, React, Node.js applications requiring containerization for development, production, or CI/CD pipelines. Use this skill when users need Docker configurations, multi-stage builds, container orchestration, or deployment to Kubernetes, ECS, Cloud Run, etc.
+description: >-
+  This skill should be used when containerizing applications with Docker,
+  creating Dockerfiles, docker-compose configurations, or deploying containers
+  to various platforms. Ideal for Next.js, React, Node.js applications requiring
+  containerization for development, production, or CI/CD pipelines. Use this
+  skill when users need Docker configurations, multi-stage builds, container
+  orchestration, or deployment to Kubernetes, ECS, Cloud Run, etc.
+maturity: seed
+evolution_count: 0
 ---
 
 # Docker Containerization Skill
 
+<!-- ZONE:STABLE -->
 ## Overview
 
 Generate production-ready Docker configurations for modern web applications, particularly Next.js and Node.js projects. This skill provides Dockerfiles, docker-compose setups, bash scripts for container management, and comprehensive deployment guides for various orchestration platforms.
@@ -263,3 +272,9 @@ Ready-to-use templates:
 - `docker-compose.yml` - Multi-container orchestration
 - `.dockerignore` - Optimized exclusion rules
 - `nginx.conf` - Production Nginx configuration
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
