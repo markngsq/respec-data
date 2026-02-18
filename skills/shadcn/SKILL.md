@@ -1,14 +1,21 @@
 ---
 name: shadcn
 displayName: shadcn/ui
-description: shadcn/ui component library patterns with Radix UI primitives and Tailwind CSS. Use when creating tables, forms, dialogs, cards, buttons, or any UI component using shadcn/ui, installing shadcn components, or styling with shadcn patterns.
+description: >-
+  shadcn/ui component library patterns with Radix UI primitives and Tailwind
+  CSS. Use when creating tables, forms, dialogs, cards, buttons, or any UI
+  component using shadcn/ui, installing shadcn components, or styling with
+  shadcn patterns.
 version: 1.0.0
+maturity: seed
+evolution_count: 0
 ---
 
 # shadcn/ui Development Guidelines
 
 Best practices for using shadcn/ui components with Tailwind CSS and Radix UI primitives.
 
+<!-- ZONE:STABLE -->
 ## Core Principles
 
 1. **Copy, Don't Install**: Components are copied to your project, not installed as dependencies
@@ -516,3 +523,9 @@ For detailed information, see:
 - [Component Catalog](resources/component-catalog.md)
 - [Form Patterns](resources/form-patterns.md)
 - [Theming Guide](resources/theming.md)
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
