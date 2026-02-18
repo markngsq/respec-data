@@ -1,11 +1,22 @@
 ---
 name: Hook Development
-description: This skill should be used when the user asks to "create a hook", "add a PreToolUse/PostToolUse/Stop hook", "validate tool use", "implement prompt-based hooks", "use ${CLAUDE_PLUGIN_ROOT}", "set up event-driven automation", "block dangerous commands", or mentions hook events (PreToolUse, PostToolUse, Stop, SubagentStop, SessionStart, SessionEnd, UserPromptSubmit, PreCompact, Notification). Provides comprehensive guidance for creating and implementing Claude Code plugin hooks with focus on advanced prompt-based hooks API.
+description: >-
+  This skill should be used when the user asks to "create a hook", "add a
+  PreToolUse/PostToolUse/Stop hook", "validate tool use", "implement
+  prompt-based hooks", "use ${CLAUDE_PLUGIN_ROOT}", "set up event-driven
+  automation", "block dangerous commands", or mentions hook events (PreToolUse,
+  PostToolUse, Stop, SubagentStop, SessionStart, SessionEnd, UserPromptSubmit,
+  PreCompact, Notification). Provides comprehensive guidance for creating and
+  implementing Claude Code plugin hooks with focus on advanced prompt-based
+  hooks API.
 version: 0.1.0
+maturity: seed
+evolution_count: 0
 ---
 
 # Hook Development for Claude Code Plugins
 
+<!-- ZONE:STABLE -->
 ## Overview
 
 Hooks are event-driven automation scripts that execute in response to Claude Code events. Use hooks to validate operations, enforce policies, add context, and integrate external tools into workflows.
@@ -710,3 +721,9 @@ To implement hooks in a plugin:
 9. Document hooks in plugin README
 
 Focus on prompt-based hooks for most use cases. Reserve command hooks for performance-critical or deterministic checks.
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
