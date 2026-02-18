@@ -1,62 +1,66 @@
 ---
 name: cc-plugin-expert
-description: 'Comprehensive Claude Code plugin development expert providing guidance for creation, maintenance, installation, configuration, and troubleshooting of plugins and skills'
+description: >-
+  Comprehensive Claude Code plugin development expert providing guidance for
+  creation, maintenance, installation, configuration, and troubleshooting of
+  plugins and skills
 category: development
 tags:
-  [
-    'claude-code',
-    'plugin-development',
-    'skill-creation',
-    'maintenance',
-    'troubleshooting',
-    'best-practices',
-  ]
+  - claude-code
+  - plugin-development
+  - skill-creation
+  - maintenance
+  - troubleshooting
+  - best-practices
 triggers:
   - type: keyword
-    pattern: 'create plugin'
+    pattern: create plugin
     priority: 3
   - type: keyword
-    pattern: 'plugin development'
+    pattern: plugin development
     priority: 3
   - type: keyword
-    pattern: 'claude code plugin'
+    pattern: claude code plugin
     priority: 3
   - type: keyword
-    pattern: 'skill creation'
+    pattern: skill creation
     priority: 3
   - type: keyword
-    pattern: 'plugin troubleshooting'
+    pattern: plugin troubleshooting
     priority: 2
   - type: keyword
-    pattern: 'plugin installation'
+    pattern: plugin installation
     priority: 2
   - type: keyword
-    pattern: 'plugin configuration'
+    pattern: plugin configuration
     priority: 2
   - type: keyword
-    pattern: 'plugin maintenance'
-    priority: 2
-  - type: pattern
-    pattern: 'how to (create|build|develop) (a )?claude code plugin'
-    priority: 3
-  - type: pattern
-    pattern: '(fix|troubleshoot|debug) (my )?claude code plugin'
+    pattern: plugin maintenance
     priority: 2
   - type: pattern
-    pattern: '(install|configure|setup) (a )?claude code plugin'
+    pattern: how to (create|build|develop) (a )?claude code plugin
+    priority: 3
+  - type: pattern
+    pattern: (fix|troubleshoot|debug) (my )?claude code plugin
+    priority: 2
+  - type: pattern
+    pattern: (install|configure|setup) (a )?claude code plugin
     priority: 2
   - type: context
-    pattern: 'plugin-development'
+    pattern: plugin-development
     priority: 2
   - type: context
-    pattern: 'claude-code-ecosystem'
+    pattern: claude-code-ecosystem
     priority: 1
+maturity: seed
+evolution_count: 0
 ---
 
 # Claude Code Plugin Expert
 
 This skill provides comprehensive expertise for Claude Code plugin development, including creation, installation, configuration, maintenance, and troubleshooting. It serves as the definitive resource for developers working with Claude Code plugins and skills.
 
+<!-- ZONE:STABLE -->
 ## When to Use This Skill
 
 Use this skill when you need to:
@@ -451,3 +455,9 @@ class PerformanceMonitor {
 ---
 
 _This skill serves as the comprehensive resource for Claude Code plugin development, providing guidance from initial concept through deployment and maintenance. For specific implementation details, refer to the reference materials in the references/ directory._
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
