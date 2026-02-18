@@ -1,12 +1,22 @@
 ---
 name: sql-expert
-description: "Expert SQL query writing, optimization, and database schema design with support for PostgreSQL, MySQL, SQLite, and SQL Server. Use when working with databases for: (1) Writing complex SQL queries with joins, subqueries, and window functions, (2) Optimizing slow queries and analyzing execution plans, (3) Designing database schemas with proper normalization, (4) Creating indexes and improving query performance, (5) Writing migrations and handling schema changes, (6) Debugging SQL errors and query issues"
+description: >-
+  Expert SQL query writing, optimization, and database schema design with
+  support for PostgreSQL, MySQL, SQLite, and SQL Server. Use when working with
+  databases for: (1) Writing complex SQL queries with joins, subqueries, and
+  window functions, (2) Optimizing slow queries and analyzing execution plans,
+  (3) Designing database schemas with proper normalization, (4) Creating indexes
+  and improving query performance, (5) Writing migrations and handling schema
+  changes, (6) Debugging SQL errors and query issues
+maturity: seed
+evolution_count: 0
 ---
 
 # SQL Expert Skill
 
 Expert guidance for writing, optimizing, and managing SQL databases across PostgreSQL, MySQL, SQLite, and SQL Server.
 
+<!-- ZONE:STABLE -->
 ## Core Capabilities
 
 This skill enables you to:
@@ -531,3 +541,9 @@ For migrations:
 4. **Backup** - Always backup before running migrations
 5. **Execute** - Run migrations during low-traffic periods
 6. **Verify** - Check data integrity after migration
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
