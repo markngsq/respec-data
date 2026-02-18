@@ -1,10 +1,16 @@
 ---
 name: prisma
-description: Prisma ORM patterns including Prisma Client usage, queries, mutations, relations, transactions, and schema management. Use when working with Prisma database operations or schema definitions.
+description: >-
+  Prisma ORM patterns including Prisma Client usage, queries, mutations,
+  relations, transactions, and schema management. Use when working with Prisma
+  database operations or schema definitions.
+maturity: seed
+evolution_count: 0
 ---
 
 # Prisma ORM Patterns
 
+<!-- ZONE:STABLE -->
 ## Purpose
 
 Complete patterns for using Prisma ORM effectively, including query optimization, transaction handling, and the repository pattern for clean data access.
@@ -483,3 +489,9 @@ const user: UserWithProfile = await PrismaService.main.user.findUnique({
 - **backend-dev-guidelines** - Complete backend architecture guide
 - **nodejs** - Core Node.js patterns and async handling
 - **express** - Express.js routing and middleware
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
