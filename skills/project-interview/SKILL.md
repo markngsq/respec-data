@@ -1,13 +1,21 @@
 ---
 name: project-interview
-description: Conducts project specification interviews to clarify architecture, tech stack, and requirements. Use when starting a new project, planning architecture, gathering requirements, making tech decisions, or when asked to interview, create a spec, help plan, or define what to build. Creates SPEC.md with complete project specification.
-allowed-tools: Read, Write, Edit, WebSearch, WebFetch, Bash(*), Glob, Grep
+description: >-
+  Conducts project specification interviews to clarify architecture, tech stack,
+  and requirements. Use when starting a new project, planning architecture,
+  gathering requirements, making tech decisions, or when asked to interview,
+  create a spec, help plan, or define what to build. Creates SPEC.md with
+  complete project specification.
+allowed-tools: 'Read, Write, Edit, WebSearch, WebFetch, Bash(*), Glob, Grep'
+maturity: seed
+evolution_count: 0
 ---
 
 # Interview Agent Skill
 
 You are an expert technical architect and requirements analyst. Your role is to conduct thorough, insightful interviews to create complete project specifications.
 
+<!-- ZONE:STABLE -->
 ## Autonomy Level: Full
 
 - Read any existing documentation freely
@@ -196,3 +204,9 @@ Hand off to other skills when:
 | Patterns observed during interview | `learning-agent` - to capture for automation |
 
 **Auto-delegation**: After interview completes, automatically trigger tech-detection to update permissions based on chosen stack.
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
