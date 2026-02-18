@@ -1,12 +1,22 @@
 ---
 name: skill-from-masters
-description: Help users create high-quality skills by discovering and incorporating proven methodologies from domain experts. Use this skill BEFORE skill-creator when users want to create a new skill - it enhances skill-creator by first identifying expert frameworks and best practices to incorporate. Triggers on requests like "help me create a skill for X" or "I want to make a skill that does Y". This skill guides methodology selection, then hands off to skill-creator for the actual skill generation.
+description: >-
+  Help users create high-quality skills by discovering and incorporating proven
+  methodologies from domain experts. Use this skill BEFORE skill-creator when
+  users want to create a new skill - it enhances skill-creator by first
+  identifying expert frameworks and best practices to incorporate. Triggers on
+  requests like "help me create a skill for X" or "I want to make a skill that
+  does Y". This skill guides methodology selection, then hands off to
+  skill-creator for the actual skill generation.
+maturity: seed
+evolution_count: 0
 ---
 
 # Skill From Masters
 
 Create skills that embody the wisdom of domain masters. This skill helps users discover and incorporate proven methodologies from recognized experts before generating a skill.
 
+<!-- ZONE:STABLE -->
 ## Core Philosophy
 
 Most professional domains have outstanding practitioners who have codified their methods through books, talks, interviews, and frameworks. A skill built on these proven methodologies is far more valuable than one created from scratch.
@@ -668,3 +678,9 @@ I've generated the skill. Let me test it against our scenarios...
 [Reviews results, identifies gaps, iterates]
 
 [Continues to Step 10: refinement based on test results]
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
