@@ -1,10 +1,17 @@
 ---
 name: nightly
-description: "End-of-day cleanup and maintenance routine. Calculates Sleep Score (0-100) based on uncommitted work, branch cleanup, issue updates, CI status, and service shutdown. Automatically captures session state to STATUS.json. Use at end of work day before closing Claude Code."
+description: >-
+  End-of-day cleanup and maintenance routine. Calculates Sleep Score (0-100)
+  based on uncommitted work, branch cleanup, issue updates, CI status, and
+  service shutdown. Automatically captures session state to STATUS.json. Use at
+  end of work day before closing Claude Code.
+maturity: seed
+evolution_count: 0
 ---
 
 # Nightly Routine
 
+<!-- ZONE:STABLE -->
 ## Overview
 
 Automated end-of-day maintenance that ensures clean project state before leaving for the day.
@@ -377,3 +384,9 @@ With `--optimized` flag:
 **Category**: Workflow Automation
 **Tier**: Core (Always Available)
 **Version**: 1.0.0
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
