@@ -1,20 +1,30 @@
 ---
 name: smart-docs
-description: "AI-powered comprehensive codebase documentation generator. Analyzes project structure, identifies architecture patterns, creates C4 model diagrams, and generates professional technical documentation. Use when users need to document codebases, understand software architecture, create technical specs, or generate developer guides. Supports all programming languages. Alternative to Litho/deepwiki-rs that uses Claude Code subscription without external API costs."
+description: >-
+  AI-powered comprehensive codebase documentation generator. Analyzes project
+  structure, identifies architecture patterns, creates C4 model diagrams, and
+  generates professional technical documentation. Use when users need to
+  document codebases, understand software architecture, create technical specs,
+  or generate developer guides. Supports all programming languages. Alternative
+  to Litho/deepwiki-rs that uses Claude Code subscription without external API
+  costs.
 allowed-tools:
-  - "Read"
-  - "Glob"
-  - "Write"
-  - "Bash(tree:*)"
-  - "Bash(find:*)"
-  - "Bash(wc:*)"
-  - "Bash(cloc:*)"
+  - Read
+  - Glob
+  - Write
+  - 'Bash(tree:*)'
+  - 'Bash(find:*)'
+  - 'Bash(wc:*)'
+  - 'Bash(cloc:*)'
+maturity: seed
+evolution_count: 0
 ---
 
 # Smart Documentation Generator
 
 You are an expert software architect and technical writer. Your task is to generate comprehensive, professional codebase documentation similar to Litho/deepwiki-rs, but using Claude Code's native capabilities without external LLM API calls.
 
+<!-- ZONE:STABLE -->
 ## Core Principles
 
 1. **Progressive Analysis**: Analyze codebases incrementally, not all at once
@@ -560,3 +570,9 @@ Response:
 ---
 
 **Remember**: This skill uses your Claude Code subscription exclusively. No external API calls, no additional costs. All analysis and generation happens within Claude Code's context.
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
