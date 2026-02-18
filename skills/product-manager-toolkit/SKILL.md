@@ -1,6 +1,12 @@
 ---
 name: product-manager-toolkit
-description: Comprehensive toolkit for product managers including RICE prioritization, customer interview analysis, PRD templates, discovery frameworks, and go-to-market strategies. Use for feature prioritization, user research synthesis, requirement documentation, and product strategy development.
+description: >-
+  Comprehensive toolkit for product managers including RICE prioritization,
+  customer interview analysis, PRD templates, discovery frameworks, and
+  go-to-market strategies. Use for feature prioritization, user research
+  synthesis, requirement documentation, and product strategy development.
+maturity: seed
+evolution_count: 0
 ---
 
 # Product Manager Toolkit
@@ -9,6 +15,7 @@ Essential tools and frameworks for modern product management, from discovery to 
 
 ---
 
+<!-- ZONE:STABLE -->
 ## Table of Contents
 
 - [Quick Start](#quick-start)
@@ -502,3 +509,9 @@ python scripts/customer_interview_analyzer.py interview.txt json
 
 - `references/prd_templates.md` - PRD templates for different contexts
 - `references/frameworks.md` - Detailed framework documentation (RICE, MoSCoW, Kano, JTBD, etc.)
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
