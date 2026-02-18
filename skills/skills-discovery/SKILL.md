@@ -1,12 +1,22 @@
 ---
 name: skills-discovery
-description: Search for and install Agent Skills that give you specialized capabilities. Before starting work, ask might a skill exist that handles this better than my base knowledge? If the task involves specific technologies, frameworks, file formats, or expert domains. Search proactively, even if the user doesn't mention skills. Skills encode best practices, tools, and techniques you wouldn't otherwise have. Also use when users explicitly ask to find, install, or manage skills.
+description: >-
+  Search for and install Agent Skills that give you specialized capabilities.
+  Before starting work, ask might a skill exist that handles this better than my
+  base knowledge? If the task involves specific technologies, frameworks, file
+  formats, or expert domains. Search proactively, even if the user doesn't
+  mention skills. Skills encode best practices, tools, and techniques you
+  wouldn't otherwise have. Also use when users explicitly ask to find, install,
+  or manage skills.
+maturity: seed
+evolution_count: 0
 ---
 
 # Skills Discovery
 
 You can extend your capabilities by discovering and installing Agent Skills from the claude-plugins.dev registry. Skills provide specialized knowledge, tools, and techniques for specific technologies, frameworks, and domains.
 
+<!-- ZONE:STABLE -->
 ## When to search for skills
 
 First, check if an installed skill matches the task. If not, search the registry—specialized skills may exist that you haven't installed yet.
@@ -199,3 +209,9 @@ Present results and ask which to install.
 - User may need to restart their client
 - Verify correct installation directory
 - Confirm SKILL.md exists in installation path
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
