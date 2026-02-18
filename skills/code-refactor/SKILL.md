@@ -1,12 +1,19 @@
 ---
 name: code-refactor
-description: Perform bulk code refactoring operations like renaming variables/functions across files, replacing patterns, and updating API calls. Use when users request renaming identifiers, replacing deprecated code patterns, updating method calls, or making consistent changes across multiple locations.
+description: >-
+  Perform bulk code refactoring operations like renaming variables/functions
+  across files, replacing patterns, and updating API calls. Use when users
+  request renaming identifiers, replacing deprecated code patterns, updating
+  method calls, or making consistent changes across multiple locations.
+maturity: seed
+evolution_count: 0
 ---
 
 # Code Refactor
 
 Systematic code refactoring across files. **Auto-switches to execution mode** for 10+ files (90% token savings).
 
+<!-- ZONE:STABLE -->
 ## Mode Selection
 
 - **1-9 files**: Use native tools (Grep + Edit with replace_all)
@@ -110,3 +117,9 @@ Grep(pattern="getUserData", output_mode="files_with_matches")  # Should return n
 - **test-fixing**: Fix broken tests after refactoring
 - **code-transfer**: Move refactored code
 - **feature-planning**: Plan large refactorings
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
