@@ -63,6 +63,14 @@
       "role": "user",
       "branch": "users/e2e-1771388461402",
       "createdAt": "2026-02-18T04:21:11.363Z"
+    },
+    {
+      "id": "e2e-1771388479255",
+      "email": "e2e-1771388479255@respec.dev",
+      "passwordHash": "$2b$10$I3JGPPlxwmV5hdt0B9Z/YepvH.JpNKcG5qUag4FreRI15.oV966KG",
+      "role": "user",
+      "branch": "users/e2e-1771388479255",
+      "createdAt": "2026-02-18T04:21:28.300Z"
     }
   ]
 }
