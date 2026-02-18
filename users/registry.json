@@ -127,6 +127,14 @@
       "role": "user",
       "branch": "users/e2e-pages-1771415616935",
       "createdAt": "2026-02-18T11:54:17.975Z"
+    },
+    {
+      "id": "e2e-clawby-test",
+      "email": "e2e-clawby@respec.dev",
+      "passwordHash": "$2b$10$S21JBwMa8yugJMi6VBPAYOAg87m7bA/cWQ9J6YNHvk45shY8ZlExK",
+      "role": "user",
+      "branch": "users/e2e-clawby-test",
+      "createdAt": "2026-02-18T11:56:19.629Z"
     }
   ]
 }
