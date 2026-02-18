@@ -47,6 +47,14 @@
       "role": "user",
       "branch": "users/quinnyvu",
       "createdAt": "2026-02-16T08:44:11.118Z"
+    },
+    {
+      "id": "e2e-1771388435787",
+      "email": "e2e-1771388435787@respec.dev",
+      "passwordHash": "$2b$10$dGsGhtO2oeAv0a/aarGShutoa3UFlVnt0Qi1DMx47dqbvixm3t2em",
+      "role": "user",
+      "branch": "users/e2e-1771388435787",
+      "createdAt": "2026-02-18T04:20:46.596Z"
     }
   ]
 }
