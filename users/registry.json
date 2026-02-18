@@ -159,6 +159,14 @@
       "role": "user",
       "branch": "users/e2e-pages-1771419732704",
       "createdAt": "2026-02-18T13:03:32.909Z"
+    },
+    {
+      "id": "e2e-admin-1771419732704",
+      "email": "e2e-admin-1771419732704@respec.dev",
+      "passwordHash": "$2b$10$TNe.cHG1YEFWv5zBCplJ8eR0EnSHwN7mw8LIvotLNbUJ6snlrDNoy",
+      "role": "user",
+      "branch": "users/e2e-admin-1771419732704",
+      "createdAt": "2026-02-18T13:04:27.486Z"
     }
   ]
 }
