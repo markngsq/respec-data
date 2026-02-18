@@ -1,12 +1,20 @@
 ---
 name: javascript-testing-patterns
-description: Implement comprehensive testing strategies using Jest, Vitest, and Testing Library for unit tests, integration tests, and end-to-end testing with mocking, fixtures, and test-driven development. Use when writing JavaScript/TypeScript tests, setting up test infrastructure, or implementing TDD/BDD workflows.
+description: >-
+  Implement comprehensive testing strategies using Jest, Vitest, and Testing
+  Library for unit tests, integration tests, and end-to-end testing with
+  mocking, fixtures, and test-driven development. Use when writing
+  JavaScript/TypeScript tests, setting up test infrastructure, or implementing
+  TDD/BDD workflows.
+maturity: seed
+evolution_count: 0
 ---
 
 # JavaScript Testing Patterns
 
 Comprehensive guide for implementing robust testing strategies in JavaScript/TypeScript applications using modern testing frameworks and best practices.
 
+<!-- ZONE:STABLE -->
 ## When to Use This Skill
 
 - Setting up test infrastructure for new projects
@@ -1019,3 +1027,9 @@ it("should call function after delay", () => {
 - **Vitest Documentation**: https://vitest.dev/
 - **Testing Library**: https://testing-library.com/
 - **Kent C. Dodds Testing Blog**: https://kentcdodds.com/blog/
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
