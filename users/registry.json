@@ -135,6 +135,14 @@
       "role": "user",
       "branch": "users/e2e-clawby-test",
       "createdAt": "2026-02-18T11:56:19.629Z"
+    },
+    {
+      "id": "e2e-auth1-1771419732704",
+      "email": "e2e-auth1-1771419732704@respec.dev",
+      "passwordHash": "$2b$10$XHTZVgX6i/ZLJVuMHgDtz.WCFIhUQfOh272ONWfReUSZKsY2jmjb.",
+      "role": "user",
+      "branch": "users/e2e-auth1-1771419732704",
+      "createdAt": "2026-02-18T13:02:29.936Z"
     }
   ]
 }
