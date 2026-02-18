@@ -1,6 +1,13 @@
 ---
 name: rustie-docs
-description: Documentation management skill for audit, creation, and maintenance. Enforces documentation standards, checks for staleness and broken references, auto-fixes issues, and ensures docs are created in correct locations. Use when user says "check docs", "audit docs", "fix docs", "create doc", "archive docs", or when scattered .md files are detected.
+description: >-
+  Documentation management skill for audit, creation, and maintenance. Enforces
+  documentation standards, checks for staleness and broken references,
+  auto-fixes issues, and ensures docs are created in correct locations. Use when
+  user says "check docs", "audit docs", "fix docs", "create doc", "archive
+  docs", or when scattered .md files are detected.
+maturity: seed
+evolution_count: 0
 ---
 
 # Rustie Docs Skill
@@ -11,6 +18,7 @@ Documentation management for Rustie Method projects. Ensures docs are:
 - Not stale or broken
 - Clearly marked as permanent or ephemeral
 
+<!-- ZONE:STABLE -->
 ## Quick Reference - All Modes
 
 | Mode | Trigger | Purpose |
@@ -530,3 +538,9 @@ The hook ensures enforcement at commit time, while this skill helps fix issues i
 "archive old docs"          # archive mode
 "sync readme"               # sync mode
 ```
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
