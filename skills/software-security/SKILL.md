@@ -1,14 +1,21 @@
 ---
 name: software-security
-description: A software security skill that integrates with Project CodeGuard to help AI coding agents write secure code and prevent common vulnerabilities. Use this skill when writing, reviewing, or modifying code to ensure secure-by-default practices are followed.
-codeguard-version: "1.2.0"
-framework: "Project CodeGuard"
-purpose: "Embed secure-by-default practices into AI coding workflows"
+description: >-
+  A software security skill that integrates with Project CodeGuard to help AI
+  coding agents write secure code and prevent common vulnerabilities. Use this
+  skill when writing, reviewing, or modifying code to ensure secure-by-default
+  practices are followed.
+codeguard-version: 1.2.0
+framework: Project CodeGuard
+purpose: Embed secure-by-default practices into AI coding workflows
+maturity: seed
+evolution_count: 0
 ---
 
 # Software Security Skill (Project CodeGuard)
 This skill provides comprehensive security guidance to help AI coding agents generate secure code and prevent common vulnerabilities. It is based on **Project CodeGuard**, an open-source, model-agnostic security framework that embeds secure-by-default practices into AI coding workflows.
 
+<!-- ZONE:STABLE -->
 ## When to Use This Skill
 This skill should be activated when:
 - Writing new code in any language
@@ -86,3 +93,9 @@ After writing code:
 - Validate that all the rules have been successfully followed when applicable.
 - Explain which security rules were applied
 - Highlight security features implemented
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
