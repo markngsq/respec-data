@@ -1,11 +1,24 @@
 ---
 name: docs-management
-description: Single source of truth and librarian for ALL Claude official documentation. Manages local documentation storage, scraping, discovery, and resolution. Use when finding, locating, searching, or resolving Claude documentation; discovering docs by keywords, category, tags, or natural language queries; scraping from sitemaps or docs maps; managing index metadata (keywords, tags, aliases); or rebuilding index from filesystem. Run scripts to scrape, find, and resolve documentation. Handles doc_id resolution, keyword search, natural language queries, category/tag filtering, alias resolution, sitemap.xml parsing, docs map processing, markdown subsection extraction for internal use, hash-based drift detection, and comprehensive index maintenance.
-allowed-tools: Read, Glob, Grep, Bash, Skill
+description: >-
+  Single source of truth and librarian for ALL Claude official documentation.
+  Manages local documentation storage, scraping, discovery, and resolution. Use
+  when finding, locating, searching, or resolving Claude documentation;
+  discovering docs by keywords, category, tags, or natural language queries;
+  scraping from sitemaps or docs maps; managing index metadata (keywords, tags,
+  aliases); or rebuilding index from filesystem. Run scripts to scrape, find,
+  and resolve documentation. Handles doc_id resolution, keyword search, natural
+  language queries, category/tag filtering, alias resolution, sitemap.xml
+  parsing, docs map processing, markdown subsection extraction for internal use,
+  hash-based drift detection, and comprehensive index maintenance.
+allowed-tools: 'Read, Glob, Grep, Bash, Skill'
+maturity: seed
+evolution_count: 0
 ---
 
 # Claude Docs Management
 
+<!-- ZONE:STABLE -->
 ## 🚨🚨🚨 MANDATORY: Hybrid Parallel Pattern 🚨🚨🚨
 
 > **STOP - Before using this skill for ANY Claude Code documentation query:**
@@ -818,3 +831,9 @@ Full history: See original SKILL.md
 **Audit Type:** Type B (Meta-Skill - Delegation Pattern Compliance)
 
 **Status:** Production-ready. Serves as the canonical reference implementation for Type B meta-skills.
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
