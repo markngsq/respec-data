@@ -143,6 +143,14 @@
       "role": "user",
       "branch": "users/e2e-auth1-1771419732704",
       "createdAt": "2026-02-18T13:02:29.936Z"
+    },
+    {
+      "id": "e2e-auth2-1771419732704",
+      "email": "e2e-auth2-1771419732704@respec.dev",
+      "passwordHash": "$2b$10$DFTWaZQsPidBbmT7AetFRONcKOSor.MPsG7MxEoI6aWC5s0RlMHR6",
+      "role": "user",
+      "branch": "users/e2e-auth2-1771419732704",
+      "createdAt": "2026-02-18T13:03:02.821Z"
     }
   ]
 }
