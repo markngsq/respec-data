@@ -119,6 +119,14 @@
       "role": "user",
       "branch": "users/e2e-auth2-1771415616935",
       "createdAt": "2026-02-18T11:53:47.517Z"
+    },
+    {
+      "id": "e2e-pages-1771415616935",
+      "email": "e2e-pages-1771415616935@respec.dev",
+      "passwordHash": "$2b$10$Vd1gEl.lyUnTx1z/jpyv2eHCEYidSiTA/wJqxzwyGOfmZECtVTGxe",
+      "role": "user",
+      "branch": "users/e2e-pages-1771415616935",
+      "createdAt": "2026-02-18T11:54:17.975Z"
     }
   ]
 }
