@@ -1,12 +1,21 @@
 ---
 name: skill-orchestrator
-description: This skill orchestrates programming tasks by analyzing available Claude Code skills and creating execution plans. It should be used when working on any coding task that could benefit from multiple specialized skills. The skill supports two execution modes selected by user - manual (Claude executes with explicit skill references) or delegated (tasks sent to sub-agents with skills).
+description: >-
+  This skill orchestrates programming tasks by analyzing available Claude Code
+  skills and creating execution plans. It should be used when working on any
+  coding task that could benefit from multiple specialized skills. The skill
+  supports two execution modes selected by user - manual (Claude executes with
+  explicit skill references) or delegated (tasks sent to sub-agents with
+  skills).
+maturity: seed
+evolution_count: 0
 ---
 
 # Skill Orchestrator
 
 This skill provides intelligent orchestration of programming tasks by analyzing available Claude Code skills and creating structured execution plans with skill assignments for each step.
 
+<!-- ZONE:STABLE -->
 ## Purpose
 
 Transform programming requests into actionable plans that leverage the full power of available Claude Code skills. Instead of working in isolation, this skill ensures optimal skill selection and either guides manual execution or delegates to specialized sub-agents.
@@ -417,3 +426,9 @@ For tasks with complex dependencies:
 2. Identify critical path
 3. Suggest phased approach if needed
 4. Consider breaking into multiple orchestration sessions
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
