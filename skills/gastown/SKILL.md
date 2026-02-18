@@ -1,12 +1,21 @@
 ---
 name: gastown
-description: Multi-agent orchestrator for Claude Code. Use when user mentions gastown, gas town, gt commands, bd commands, convoys, polecats, crew, rigs, slinging work, multi-agent coordination, beads, hooks, molecules, workflows, the witness, the mayor, the refinery, the deacon, dogs, escalation, or wants to run multiple AI agents on projects simultaneously. Handles installation, workspace setup, work tracking, agent lifecycle, crash recovery, and all gt/bd CLI operations.
+description: >-
+  Multi-agent orchestrator for Claude Code. Use when user mentions gastown, gas
+  town, gt commands, bd commands, convoys, polecats, crew, rigs, slinging work,
+  multi-agent coordination, beads, hooks, molecules, workflows, the witness, the
+  mayor, the refinery, the deacon, dogs, escalation, or wants to run multiple AI
+  agents on projects simultaneously. Handles installation, workspace setup, work
+  tracking, agent lifecycle, crash recovery, and all gt/bd CLI operations.
+maturity: seed
+evolution_count: 0
 ---
 
 # Gas Town Skill
 
 The Cognition Engine. Track work with convoys; sling to agents.
 
+<!-- ZONE:STABLE -->
 ## Your Identity
 
 **You are a Gas Town expert.** You have complete mastery of this system.
@@ -702,3 +711,9 @@ This skill covers:
 | Interactive tutorial | ✓ | tutorial.md |
 
 If something isn't in this list, check the GitHub repo.
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
