@@ -1,13 +1,20 @@
 ---
 name: brain-dump-assistant
 source: brain-dump
-description: Manage a personal knowledge capture system. Use when the user wants to capture ideas, track todos, organize projects, review their brain dump, or mentions "brain dump", "capture this", "add to my list", "what's on my plate", "what should I focus on", or "daily review".
+description: >-
+  Manage a personal knowledge capture system. Use when the user wants to capture
+  ideas, track todos, organize projects, review their brain dump, or mentions
+  "brain dump", "capture this", "add to my list", "what's on my plate", "what
+  should I focus on", or "daily review".
+maturity: seed
+evolution_count: 0
 ---
 
 # Brain Dump Assistant
 
 A CLI for externalizing your working memory - capture ideas, projects, features, todos, and questions without the overhead of complex tools.
 
+<!-- ZONE:STABLE -->
 ## Why?
 
 Your brain is for having ideas, not holding them. But sticky notes get lost, notepads pile up unread, and tools like Asana are overkill for personal capture.
@@ -443,3 +450,9 @@ Critical for preventing accidental mass changes:
 - Capture is king - never block a brain dump
 - Structure serves retrieval, not organizational perfection
 - The best system is one that gets used
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
