@@ -1,6 +1,13 @@
 ---
 name: slash-command-factory
-description: Generate custom Claude Code slash commands through intelligent 5-7 question flow. Creates powerful commands for business research, content analysis, healthcare compliance, API integration, documentation automation, and workflow optimization. Outputs organized commands to generated-commands/ with validation and installation guidance.
+description: >-
+  Generate custom Claude Code slash commands through intelligent 5-7 question
+  flow. Creates powerful commands for business research, content analysis,
+  healthcare compliance, API integration, documentation automation, and workflow
+  optimization. Outputs organized commands to generated-commands/ with
+  validation and installation guidance.
+maturity: seed
+evolution_count: 0
 ---
 
 # Slash Command Factory
@@ -9,6 +16,7 @@ A comprehensive system for generating production-ready Claude Code slash command
 
 ---
 
+<!-- ZONE:STABLE -->
 ## What This Skill Does
 
 This skill helps you create custom slash commands for Claude Code by:
@@ -1004,3 +1012,9 @@ Generated commands should:
 **Compatible**: Claude Code (all versions with slash command support)
 
 **Build powerful custom slash commands in minutes!** ⚡
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
