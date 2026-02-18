@@ -1,12 +1,19 @@
 ---
 name: architecture-patterns
-description: Implement proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design. Use when architecting complex backend systems or refactoring existing applications for better maintainability.
+description: >-
+  Implement proven backend architecture patterns including Clean Architecture,
+  Hexagonal Architecture, and Domain-Driven Design. Use when architecting
+  complex backend systems or refactoring existing applications for better
+  maintainability.
+maturity: seed
+evolution_count: 0
 ---
 
 # Architecture Patterns
 
 Master proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design to build maintainable, testable, and scalable systems.
 
+<!-- ZONE:STABLE -->
 ## When to Use This Skill
 
 - Designing new backend systems from scratch
@@ -492,3 +499,9 @@ class OrderRepository:
 - **Repository Leakage**: Exposing ORM objects
 - **Missing Abstractions**: Concrete dependencies in core
 - **Over-Engineering**: Clean architecture for simple CRUD
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
