@@ -1,10 +1,19 @@
 ---
 name: thought-based-reasoning
-description: Use when tackling complex reasoning tasks requiring step-by-step logic, multi-step arithmetic, commonsense reasoning, symbolic manipulation, or problems where simple prompting fails - provides comprehensive guide to Chain-of-Thought and related prompting techniques (Zero-shot CoT, Self-Consistency, Tree of Thoughts, Least-to-Most, ReAct, PAL, Reflexion) with templates, decision matrices, and research-backed patterns
+description: >-
+  Use when tackling complex reasoning tasks requiring step-by-step logic,
+  multi-step arithmetic, commonsense reasoning, symbolic manipulation, or
+  problems where simple prompting fails - provides comprehensive guide to
+  Chain-of-Thought and related prompting techniques (Zero-shot CoT,
+  Self-Consistency, Tree of Thoughts, Least-to-Most, ReAct, PAL, Reflexion) with
+  templates, decision matrices, and research-backed patterns
+maturity: seed
+evolution_count: 0
 ---
 
 # Thought-Based Reasoning Techniques for LLMs
 
+<!-- ZONE:STABLE -->
 ## Overview
 
 Chain-of-Thought (CoT) prompting and its variants encourage LLMs to generate intermediate reasoning steps before arriving at a final answer, significantly improving performance on complex reasoning tasks. These techniques transform how models approach problems by making implicit reasoning explicit.
@@ -656,3 +665,9 @@ Techniques are often complementary:
 8. Zhang, Z. et al. (2022). "Automatic Chain of Thought Prompting in Large Language Models." [arXiv:2210.03493](https://arxiv.org/abs/2210.03493)
 
 9. Shinn, N. et al. (2023). "Reflexion: Language Agents with Verbal Reinforcement Learning." [arXiv:2303.11366](https://arxiv.org/abs/2303.11366)
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
