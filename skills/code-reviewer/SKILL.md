@@ -1,6 +1,12 @@
 ---
 name: code-reviewer
-description: Code review automation for TypeScript, JavaScript, Python, Go, Swift, Kotlin. Analyzes PRs for complexity and risk, checks code quality for SOLID violations and code smells, generates review reports. Use when reviewing pull requests, analyzing code quality, identifying issues, generating review checklists.
+description: >-
+  Code review automation for TypeScript, JavaScript, Python, Go, Swift, Kotlin.
+  Analyzes PRs for complexity and risk, checks code quality for SOLID violations
+  and code smells, generates review reports. Use when reviewing pull requests,
+  analyzing code quality, identifying issues, generating review checklists.
+maturity: seed
+evolution_count: 0
 ---
 
 # Code Reviewer
@@ -9,6 +15,7 @@ Automated code review tools for analyzing pull requests, detecting code quality 
 
 ---
 
+<!-- ZONE:STABLE -->
 ## Table of Contents
 
 - [Tools](#tools)
@@ -175,3 +182,9 @@ Antipattern catalog with examples and fixes:
 | Go | `.go` |
 | Swift | `.swift` |
 | Kotlin | `.kt`, `.kts` |
+
+<!-- ZONE:APPEND -->
+## Lessons Learned
+
+<!-- ZONE:APPEND -->
+## Changelog
