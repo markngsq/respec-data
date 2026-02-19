@@ -3,7 +3,7 @@
     {
       "id": "markng",
       "email": "markngshiqiang@gmail.com",
-      "passwordHash": "$2b$10$qiR0nEijHnX0dKTIyDUKPu9tFfdFY/Uq.BCWQCvu37wtT9YZCjjr.",
+      "passwordHash": "$2b$10$hNWdNlvf9/7jiJ5GaufOseML5fMndP.vXCTzKq5FQSitVxyI802iS",
       "role": "admin",
       "branch": "users/markng",
       "createdAt": "2026-02-03T08:01:50.495Z"
@@ -47,134 +47,6 @@
       "role": "user",
       "branch": "users/quinnyvu",
       "createdAt": "2026-02-16T08:44:11.118Z"
-    },
-    {
-      "id": "e2e-1771388435787",
-      "email": "e2e-1771388435787@respec.dev",
-      "passwordHash": "$2b$10$dGsGhtO2oeAv0a/aarGShutoa3UFlVnt0Qi1DMx47dqbvixm3t2em",
-      "role": "user",
-      "branch": "users/e2e-1771388435787",
-      "createdAt": "2026-02-18T04:20:46.596Z"
-    },
-    {
-      "id": "e2e-1771388461402",
-      "email": "e2e-1771388461402@respec.dev",
-      "passwordHash": "$2b$10$DKRH6bzU6dgsqokMjCoZU.xdlpgt56mmQLMdquzdmdzgJgeqjbN3q",
-      "role": "user",
-      "branch": "users/e2e-1771388461402",
-      "createdAt": "2026-02-18T04:21:11.363Z"
-    },
-    {
-      "id": "e2e-1771388479255",
-      "email": "e2e-1771388479255@respec.dev",
-      "passwordHash": "$2b$10$I3JGPPlxwmV5hdt0B9Z/YepvH.JpNKcG5qUag4FreRI15.oV966KG",
-      "role": "user",
-      "branch": "users/e2e-1771388479255",
-      "createdAt": "2026-02-18T04:21:28.300Z"
-    },
-    {
-      "id": "e2e-1771388496585",
-      "email": "e2e-1771388496585@respec.dev",
-      "passwordHash": "$2b$10$1EpAvGP5h1s9F8nQLCaUpuY3jkaECVod9mfpDKXXgHOEwt7vSzVB6",
-      "role": "user",
-      "branch": "users/e2e-1771388496585",
-      "createdAt": "2026-02-18T04:21:46.417Z"
-    },
-    {
-      "id": "e2e-1771388513834",
-      "email": "e2e-1771388513834@respec.dev",
-      "passwordHash": "$2b$10$MRLv3j0PEF9gdsBgmWk2cOyLH3wStc7h/EO/v2z2AiJOe6iOJ/3Fe",
-      "role": "user",
-      "branch": "users/e2e-1771388513834",
-      "createdAt": "2026-02-18T04:22:04.508Z"
-    },
-    {
-      "id": "e2e-1771388531779",
-      "email": "e2e-1771388531779@respec.dev",
-      "passwordHash": "$2b$10$Hnr87He/y1c1vWyNCfL3r.A9BBy1DcOIxrdWs5TUdSEIrqR6ckF/S",
-      "role": "user",
-      "branch": "users/e2e-1771388531779",
-      "createdAt": "2026-02-18T04:22:21.273Z"
-    },
-    {
-      "id": "e2e-1771388550003",
-      "email": "e2e-1771388550003@respec.dev",
-      "passwordHash": "$2b$10$Ov4.yfj2O.z1Pcvs8vpq2e6MPe5elO4.7EK.RXlpAG0jBFJ7RqYv6",
-      "role": "user",
-      "branch": "users/e2e-1771388550003",
-      "createdAt": "2026-02-18T04:22:40.308Z"
-    },
-    {
-      "id": "e2e-1771388593915",
-      "email": "e2e-1771388593915@respec.dev",
-      "passwordHash": "$2b$10$UwEIp/G828RPAMUrfJZuFuQ8/Jl.sZVt5ujNbZ/gblSx84W.SgOQa",
-      "role": "user",
-      "branch": "users/e2e-1771388593915",
-      "createdAt": "2026-02-18T04:23:24.151Z"
-    },
-    {
-      "id": "e2e-auth2-1771415616935",
-      "email": "e2e-auth2-1771415616935@respec.dev",
-      "passwordHash": "$2b$10$bXlft2NvFvhlrmq2ZUoVK.G9boPmiksWFud1EOCWKTe7dXdyvpEt.",
-      "role": "user",
-      "branch": "users/e2e-auth2-1771415616935",
-      "createdAt": "2026-02-18T11:53:47.517Z"
-    },
-    {
-      "id": "e2e-pages-1771415616935",
-      "email": "e2e-pages-1771415616935@respec.dev",
-      "passwordHash": "$2b$10$Vd1gEl.lyUnTx1z/jpyv2eHCEYidSiTA/wJqxzwyGOfmZECtVTGxe",
-      "role": "user",
-      "branch": "users/e2e-pages-1771415616935",
-      "createdAt": "2026-02-18T11:54:17.975Z"
-    },
-    {
-      "id": "e2e-clawby-test",
-      "email": "e2e-clawby@respec.dev",
-      "passwordHash": "$2b$10$S21JBwMa8yugJMi6VBPAYOAg87m7bA/cWQ9J6YNHvk45shY8ZlExK",
-      "role": "user",
-      "branch": "users/e2e-clawby-test",
-      "createdAt": "2026-02-18T11:56:19.629Z"
-    },
-    {
-      "id": "e2e-auth1-1771419732704",
-      "email": "e2e-auth1-1771419732704@respec.dev",
-      "passwordHash": "$2b$10$XHTZVgX6i/ZLJVuMHgDtz.WCFIhUQfOh272ONWfReUSZKsY2jmjb.",
-      "role": "user",
-      "branch": "users/e2e-auth1-1771419732704",
-      "createdAt": "2026-02-18T13:02:29.936Z"
-    },
-    {
-      "id": "e2e-auth2-1771419732704",
-      "email": "e2e-auth2-1771419732704@respec.dev",
-      "passwordHash": "$2b$10$DFTWaZQsPidBbmT7AetFRONcKOSor.MPsG7MxEoI6aWC5s0RlMHR6",
-      "role": "user",
-      "branch": "users/e2e-auth2-1771419732704",
-      "createdAt": "2026-02-18T13:03:02.821Z"
-    },
-    {
-      "id": "e2e-pages-1771419732704",
-      "email": "e2e-pages-1771419732704@respec.dev",
-      "passwordHash": "$2b$10$ypOIehvSdUvt0s1tBc2TSej5Etb3GHyXZC42Kjg9YXXcrJYDGfFg2",
-      "role": "user",
-      "branch": "users/e2e-pages-1771419732704",
-      "createdAt": "2026-02-18T13:03:32.909Z"
-    },
-    {
-      "id": "e2e-admin-1771419732704",
-      "email": "e2e-admin-1771419732704@respec.dev",
-      "passwordHash": "$2b$10$TNe.cHG1YEFWv5zBCplJ8eR0EnSHwN7mw8LIvotLNbUJ6snlrDNoy",
-      "role": "user",
-      "branch": "users/e2e-admin-1771419732704",
-      "createdAt": "2026-02-18T13:04:27.486Z"
-    },
-    {
-      "id": "e2e-nav-1771419732704",
-      "email": "e2e-nav-1771419732704@respec.dev",
-      "passwordHash": "$2b$10$.aa6WvIntIjd5PnwTMMbK.MMDjQvtYmhUQ0v/OWyoT3IN3O.6EPHC",
-      "role": "user",
-      "branch": "users/e2e-nav-1771419732704",
-      "createdAt": "2026-02-18T13:05:08.923Z"
     }
   ]
 }
