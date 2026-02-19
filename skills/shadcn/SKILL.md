@@ -524,8 +524,27 @@ For detailed information, see:
 - [Form Patterns](resources/form-patterns.md)
 - [Theming Guide](resources/theming.md)
 
+
+<!-- ZONE:GROWING -->
+## Troubleshooting
+
+### Dialog closes when clicking inside form
+The Dialog `onPointerDownOutside` event fires when a Select/Combobox dropdown opens inside a Dialog. Fix:
+```tsx
+<DialogContent onPointerDownOutside={(e) => e.preventDefault()}>
+```
+
+### Toast not showing in App Router
+`<Toaster />` must be in the root layout, not in a page component. It won't render if placed inside a `(group)` layout that doesn't wrap all routes.
+
+### DataTable column sorting breaks with server components
+`@tanstack/react-table` requires client-side state. Don't try to make a server component DataTable — wrap the entire table in a client component and pass data as props.
+
 <!-- ZONE:APPEND -->
 ## Lessons Learned
 
 <!-- ZONE:APPEND -->
 ## Changelog
+
+- **2026-02-18**: Always set `sideOffset={4}` on Popover/DropdownMenu to prevent content from overlapping the trigger. Default 0 looks broken on mobile.
+- **2026-02-16**: `cn()` utility (clsx + twMerge) is required for proper className merging. Without twMerge, conflicting Tailwind classes don't resolve correctly — e.g. `p-4` and `p-2` both apply instead of `p-2` winning.

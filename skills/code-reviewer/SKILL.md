@@ -159,6 +159,15 @@ Language-specific standards for:
 - Swift (optionals, protocols, errors)
 - Kotlin (null safety, data classes, coroutines)
 
+### Security-First Review Checklist
+
+Before approving any PR, verify:
+1. No secrets/credentials in diff (check .env patterns)
+2. User input is validated and sanitized at the boundary
+3. SQL queries use parameterized statements
+4. Authentication checks exist on all protected routes
+5. Error messages don't leak internal details
+
 ### Common Antipatterns
 `references/common_antipatterns.md`
 
@@ -188,3 +197,5 @@ Antipattern catalog with examples and fixes:
 
 <!-- ZONE:APPEND -->
 ## Changelog
+
+- **2026-02-18**: When reviewing PRs with database migrations, always check for backwards compatibility. A column rename without a migration rollback plan can brick production. Prefer add-new-column → backfill → swap → drop-old pattern.
