@@ -47,6 +47,14 @@
       "role": "user",
       "branch": "users/quinnyvu",
       "createdAt": "2026-02-16T08:44:11.118Z"
+    },
+    {
+      "id": "calvinator",
+      "email": "c@c.com",
+      "passwordHash": "$2b$10$7R6hNJKBT/63h2xCaQaLzOL59U9SJnL9UV1dsizH5m7e0kYBqq.T.",
+      "role": "user",
+      "branch": "users/calvinator",
+      "createdAt": "2026-02-25T03:30:29.448Z"
     }
   ]
 }
