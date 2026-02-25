@@ -63,6 +63,14 @@
       "role": "user",
       "branch": "users/rezailmi",
       "createdAt": "2026-02-25T04:29:44.632Z"
+    },
+    {
+      "id": "markmark",
+      "email": "asd@asd.asd",
+      "passwordHash": "$2b$10$3UOea/F0Kokz2nJRgPj5sucs/e5Ad.0NeRSEOqNpJw3rby15aLs9S",
+      "role": "user",
+      "branch": "users/markmark",
+      "createdAt": "2026-02-25T07:33:41.498Z"
     }
   ]
 }
