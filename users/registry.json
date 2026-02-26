@@ -103,6 +103,14 @@
       "role": "user",
       "branch": "users/vm",
       "createdAt": "2026-02-26T01:49:14.835Z"
+    },
+    {
+      "id": "darren",
+      "email": "darren.ng@gt.tech.gov.sg",
+      "passwordHash": "$2b$10$CYeD1uttfC8EEJd6Lay3BusLIcHYU7SQKGcVLYTFokBdUcPAC37KS",
+      "role": "user",
+      "branch": "users/darren",
+      "createdAt": "2026-02-26T01:50:54.978Z"
     }
   ]
 }
