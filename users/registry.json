@@ -87,6 +87,14 @@
       "role": "user",
       "branch": "users/hl",
       "createdAt": "2026-02-26T01:47:54.197Z"
+    },
+    {
+      "id": "sdaf",
+      "email": "a@a.com",
+      "passwordHash": "$2b$10$NOfCEvGavzzgALz0b7.18eFnEvg4F6NrwL9PM743qfweNm8AYQBXi",
+      "role": "user",
+      "branch": "users/sdaf",
+      "createdAt": "2026-02-26T01:48:41.188Z"
     }
   ]
 }
