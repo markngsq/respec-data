@@ -79,6 +79,14 @@
       "role": "user",
       "branch": "users/ashutosh",
       "createdAt": "2026-02-26T01:45:53.946Z"
+    },
+    {
+      "id": "hl",
+      "email": "hl@test.com",
+      "passwordHash": "$2b$10$/wR96P4QK6IdFmZZ.bJc6uaORyUOgM4d1gvbuE/Wq3s3vQPIhwS5e",
+      "role": "user",
+      "branch": "users/hl",
+      "createdAt": "2026-02-26T01:47:54.197Z"
     }
   ]
 }
