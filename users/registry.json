@@ -95,6 +95,14 @@
       "role": "user",
       "branch": "users/sdaf",
       "createdAt": "2026-02-26T01:48:41.188Z"
+    },
+    {
+      "id": "vm",
+      "email": "vm@hotmail.com",
+      "passwordHash": "$2b$10$ak9zMgQ9odiaj9dPL8o5bu4P6DjtHInD7IOUZr9Aq18i7Opesusfy",
+      "role": "user",
+      "branch": "users/vm",
+      "createdAt": "2026-02-26T01:49:14.835Z"
     }
   ]
 }
