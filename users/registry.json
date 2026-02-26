@@ -71,6 +71,14 @@
       "role": "user",
       "branch": "users/markmark",
       "createdAt": "2026-02-25T07:33:41.498Z"
+    },
+    {
+      "id": "ashutosh",
+      "email": "ashutosh.shukla@gt.tech.gov.sg",
+      "passwordHash": "$2b$10$J///Ex0ar55/b3fHI9vtTeTHSRAhROOjnzdamweOclZMcyb2Uq1kC",
+      "role": "user",
+      "branch": "users/ashutosh",
+      "createdAt": "2026-02-26T01:45:53.946Z"
     }
   ]
 }
