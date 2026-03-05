@@ -276,5 +276,45 @@ Ready-to-use templates:
 <!-- ZONE:APPEND -->
 ## Lessons Learned
 
+### 2026-03-05 — Respec deploy (airbase + Next.js standalone)
+
+**1. Always `chown -R` before `USER` switch in Dockerfiles (especially with pnpm)**
+
+pnpm's content-addressable store creates directories as `drwx------` (root-only) during build. Next.js standalone output symlinks into `.pnpm` for node_modules. If you switch to a non-root user (`USER respec`) without re-owning first, those symlinks silently break at runtime — permission denied when the app tries to resolve modules.
+
+Fix: always `RUN chown -R <user>:<group> /app` *after* all `COPY` steps and *before* `USER` switch.
+
+```dockerfile
+COPY packages/web/.next/standalone ./
+COPY config ./config
+RUN chown -R respec:respec /app   # ← must come AFTER copies
+USER respec
+```
+
+**2. Pre-built Dockerfile pattern for Next.js standalone (preferred)**
+
+Build on the host via `pnpm build`, copy artifacts into the image. No `npm install` or network calls inside Docker build.
+
+Why this is better regardless of network issues:
+- Hermetic images — no external dependency at build time
+- Faster builds (no npm download step)
+- Easier to debug (build failures surface on host, not inside container)
+
+```dockerfile
+# Build on host first:
+# pnpm run build --filter @respec/web
+# Then:
+COPY packages/web/.next/standalone ./
+COPY packages/web/.next/static ./packages/web/.next/static
+```
+
+**3. Docker Desktop proxy settings need a full GUI restart**
+
+Backend.sock API (`/app/settings`) reads back correctly after write, but proxy/network changes don't take effect until Docker Desktop fully restarts via the UI. Attempting to work around via daemon.json or pihole DNS filtering is a rabbit hole — go to the GUI first.
+
+Specific culprit: "Manual proxy" checkbox in Docker Desktop → Resources → Proxies. When checked with no proxy configured, VPNKit routes all traffic through a transparent proxy that tries IPv6 first. On machines with no IPv6 route, every `docker pull` hangs ~60s per host before falling back to IPv4.
+
+Diagnosis: `curl -6 https://registry-1.docker.io` (hangs) vs `curl -4 https://registry-1.docker.io` (instant). If the `-4` works and `-6` doesn't, it's IPv6 + proxy, not DNS.
+
 <!-- ZONE:APPEND -->
 ## Changelog
