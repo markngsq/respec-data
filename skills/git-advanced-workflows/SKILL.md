@@ -7,6 +7,16 @@ description: >-
   branches, or troubleshooting repository issues.
 maturity: seed
 evolution_count: 0
+tags:
+  - git
+  - version-control
+triggers:
+  - rebasing, squashing, or cleaning up commit history
+  - cherry-picking commits across branches
+  - using git bisect to find a regression
+  - recovering lost commits with git reflog
+  - resolving a complex merge conflict
+  - setting up git worktrees for parallel work
 ---
 
 # Git Advanced Workflows

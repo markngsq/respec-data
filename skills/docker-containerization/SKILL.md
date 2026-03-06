@@ -9,6 +9,17 @@ description: >-
   orchestration, or deployment to Kubernetes, ECS, Cloud Run, etc.
 maturity: seed
 evolution_count: 0
+tags:
+  - docker
+  - containers
+  - devops
+triggers:
+  - writing or editing a Dockerfile
+  - setting up docker-compose for local dev or production
+  - building a multi-stage Docker image
+  - deploying a container to Kubernetes, ECS, or Cloud Run
+  - debugging a container that won't start or build
+  - setting up a CI/CD pipeline with Docker
 ---
 
 # Docker Containerization Skill

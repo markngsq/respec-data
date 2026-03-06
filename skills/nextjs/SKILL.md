@@ -10,6 +10,17 @@ description: >-
 version: 1.0.0
 maturity: seed
 evolution_count: 0
+tags:
+  - nextjs
+  - react
+  - typescript
+triggers:
+  - creating a Next.js page, layout, or route
+  - adding a Server Component or Client Component
+  - implementing a server action or API route handler
+  - working with App Router navigation, metadata, or loading states
+  - setting up data fetching with fetch, cache, or revalidate
+  - adding error boundaries or suspense boundaries
 ---
 
 # Next.js Development Guidelines

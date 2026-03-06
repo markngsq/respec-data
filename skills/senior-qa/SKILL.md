@@ -7,6 +7,19 @@ description: >-
   for React/Next.js testing with Jest, React Testing Library, and Playwright.
 maturity: seed
 evolution_count: 0
+tags:
+  - playwright
+  - jest
+  - testing-library
+  - react
+  - quality
+triggers:
+  - scaffolding E2E tests with Playwright
+  - writing React component tests with Testing Library
+  - generating a test suite for a feature or page
+  - analyzing test coverage gaps
+  - setting up Jest or Playwright config for a project
+  - debugging a failing or flaky test
 ---
 
 # Senior QA Engineer

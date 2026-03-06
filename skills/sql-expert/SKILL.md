@@ -10,6 +10,19 @@ description: >-
   changes, (6) Debugging SQL errors and query issues
 maturity: seed
 evolution_count: 0
+tags:
+  - postgres
+  - mysql
+  - sqlite
+  - database
+  - sql
+triggers:
+  - writing a SQL query with joins, subqueries, or window functions
+  - optimizing a slow query or reading an EXPLAIN plan
+  - designing a database schema or normalization
+  - writing a migration or altering a table
+  - debugging a SQL error or unexpected query result
+  - adding indexes for query performance
 ---
 
 # SQL Expert Skill

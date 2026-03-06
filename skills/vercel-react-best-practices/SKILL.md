@@ -12,6 +12,17 @@ metadata:
   version: 1.0.0
 maturity: seed
 evolution_count: 0
+tags:
+  - react
+  - nextjs
+  - performance
+  - typescript
+triggers:
+  - optimizing React component rendering or reducing re-renders
+  - improving bundle size or code splitting in a Next.js app
+  - reviewing data fetching patterns for performance
+  - auditing a component for unnecessary client-side rendering
+  - improving Core Web Vitals or page load performance
 ---
 
 # Vercel React Best Practices

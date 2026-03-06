@@ -6,6 +6,17 @@ description: >-
   database operations or schema definitions.
 maturity: seed
 evolution_count: 0
+tags:
+  - prisma
+  - postgres
+  - mysql
+  - database
+triggers:
+  - writing a Prisma query, mutation, or relation
+  - updating schema.prisma or running a migration
+  - working with Prisma transactions or nested writes
+  - debugging a Prisma query or N+1 problem
+  - seeding the database or using Prisma Client
 ---
 
 # Prisma ORM Patterns

@@ -9,6 +9,17 @@ description: >-
   generating architecture diagrams in Mermaid, PlantUML, or ASCII format.
 maturity: seed
 evolution_count: 0
+tags:
+  - architecture
+  - system-design
+  - backend
+triggers:
+  - designing system architecture or choosing between architectural patterns
+  - evaluating microservices vs monolith vs modular monolith
+  - creating an architecture diagram or ADR
+  - choosing a database or evaluating tech stack options
+  - planning for scale, reliability, or observability
+  - reviewing system design for a new feature or service
 ---
 
 # Senior Architect

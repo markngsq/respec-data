@@ -9,6 +9,17 @@ description: >-
 version: 1.0.0
 maturity: seed
 evolution_count: 0
+tags:
+  - shadcn
+  - tailwind
+  - react
+  - ui
+triggers:
+  - building a UI component with shadcn/ui
+  - installing or configuring a shadcn component
+  - creating a table, form, dialog, sheet, or card
+  - styling with Tailwind CSS + Radix UI primitives
+  - adding a dropdown, combobox, date picker, or data table
 ---
 
 # shadcn/ui Development Guidelines

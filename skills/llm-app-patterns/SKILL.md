@@ -7,6 +7,18 @@ description: >-
   observability.
 maturity: seed
 evolution_count: 0
+tags:
+  - llm
+  - ai
+  - rag
+  - agents
+triggers:
+  - building a RAG pipeline or retrieval system
+  - designing an agent architecture or tool-calling flow
+  - adding LLM observability, evals, or monitoring
+  - choosing between RAG vs fine-tuning vs prompting
+  - structuring prompts or managing context windows in production
+  - building a prompt IDE or playground
 ---
 
 # 🤖 LLM Application Patterns

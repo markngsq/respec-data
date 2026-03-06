@@ -7,6 +7,16 @@ description: >-
   security".
 maturity: seed
 evolution_count: 0
+tags:
+  - security
+  - llm
+  - ai
+triggers:
+  - reviewing security of an LLM application or AI feature
+  - protecting against prompt injection or jailbreaking
+  - securing a RAG pipeline or agent with tool access
+  - auditing LLM output handling or data leakage risks
+  - implementing input/output guardrails for an AI system
 ---
 
 # LLM Security Guidelines (OWASP Top 10 for LLM 2025)

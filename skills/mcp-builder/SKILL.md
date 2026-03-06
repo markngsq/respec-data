@@ -8,6 +8,17 @@ description: >-
 license: Complete terms in LICENSE.txt
 maturity: seed
 evolution_count: 0
+tags:
+  - mcp
+  - ai
+  - typescript
+  - python
+triggers:
+  - building an MCP server to expose tools to an LLM
+  - integrating an external API or service via MCP
+  - using FastMCP (Python) or the MCP SDK (TypeScript)
+  - designing tools, resources, or prompts for an MCP server
+  - debugging an MCP connection or tool response
 ---
 
 # MCP Server Development Guide

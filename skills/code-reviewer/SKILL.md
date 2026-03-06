@@ -7,6 +7,17 @@ description: >-
   analyzing code quality, identifying issues, generating review checklists.
 maturity: seed
 evolution_count: 0
+tags:
+  - review
+  - typescript
+  - javascript
+  - quality
+triggers:
+  - reviewing a pull request or diff
+  - checking code quality or spotting code smells
+  - auditing for SOLID violations or anti-patterns
+  - generating a review checklist before merging
+  - analyzing complexity or risk in a changeset
 ---
 
 # Code Reviewer

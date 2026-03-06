@@ -8,6 +8,19 @@ description: >-
   TDD/BDD workflows.
 maturity: seed
 evolution_count: 0
+tags:
+  - jest
+  - vitest
+  - testing-library
+  - typescript
+  - javascript
+triggers:
+  - writing unit tests or integration tests in Jest or Vitest
+  - setting up a test infrastructure or test runner config
+  - mocking modules, APIs, or dependencies in tests
+  - implementing TDD — writing tests before implementation
+  - testing React components with Testing Library
+  - improving test coverage or fixing flaky tests
 ---
 
 # JavaScript Testing Patterns
