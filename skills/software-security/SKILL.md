@@ -10,6 +10,15 @@ framework: Project CodeGuard
 purpose: Embed secure-by-default practices into AI coding workflows
 maturity: seed
 evolution_count: 0
+tags:
+  - security
+  - backend
+triggers:
+  - writing authentication, authorisation, or session handling code
+  - handling user input, file uploads, or SQL queries (injection risk)
+  - reviewing code for common vulnerabilities (XSS, CSRF, SQLi)
+  - storing secrets, credentials, or sensitive data
+  - setting up security headers, CORS, or rate limiting
 ---
 
 # Software Security Skill (Project CodeGuard)

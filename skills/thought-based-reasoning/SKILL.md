@@ -9,6 +9,16 @@ description: >-
   templates, decision matrices, and research-backed patterns
 maturity: seed
 evolution_count: 0
+tags:
+  - reasoning
+  - prompting
+  - ai
+triggers:
+  - working through a complex multi-step reasoning problem
+  - a simple prompt keeps giving wrong or shallow answers
+  - needing chain-of-thought, tree-of-thoughts, or ReAct patterns
+  - solving a logic puzzle, arithmetic chain, or symbolic problem
+  - designing a reasoning scaffold for an agent or prompt system
 ---
 
 # Thought-Based Reasoning Techniques for LLMs

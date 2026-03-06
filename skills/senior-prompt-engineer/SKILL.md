@@ -8,6 +8,17 @@ description: >-
   agent architectures, and structured output design.
 maturity: seed
 evolution_count: 0
+tags:
+  - llm
+  - ai
+  - prompting
+triggers:
+  - optimising or rewriting a system prompt or user prompt
+  - designing few-shot examples or chain-of-thought templates
+  - evaluating LLM output quality or building an eval framework
+  - reducing token usage or improving prompt efficiency
+  - structuring output schemas or tool-calling prompts
+  - building a multi-step agentic workflow with prompts
 ---
 
 # Senior Prompt Engineer

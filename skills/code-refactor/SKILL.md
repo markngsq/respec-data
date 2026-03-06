@@ -7,6 +7,16 @@ description: >-
   method calls, or making consistent changes across multiple locations.
 maturity: seed
 evolution_count: 0
+tags:
+  - refactoring
+  - typescript
+  - javascript
+triggers:
+  - renaming a function, variable, or type across multiple files
+  - replacing a deprecated API or library with a new one
+  - updating all call sites for a changed function signature
+  - making a consistent pattern change across the codebase
+  - extracting repeated logic into a shared utility
 ---
 
 # Code Refactor

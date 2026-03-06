@@ -9,6 +9,15 @@ description: >-
 allowed-tools: 'Read, Write, Edit, WebSearch, WebFetch, Bash(*), Glob, Grep'
 maturity: seed
 evolution_count: 0
+tags:
+  - planning
+  - architecture
+triggers:
+  - starting a new project and needing a spec before writing code
+  - clarifying requirements, tech stack, or scope with the team
+  - being asked to "interview me" or "help me plan what to build"
+  - producing a SPEC.md for a feature or system
+  - resolving ambiguity before a large piece of work
 ---
 
 # Interview Agent Skill

@@ -7,6 +7,16 @@ description: >-
   maintainability.
 maturity: seed
 evolution_count: 0
+tags:
+  - architecture
+  - backend
+  - ddd
+triggers:
+  - implementing Clean Architecture, Hexagonal Architecture, or DDD in a backend
+  - separating domain logic from infrastructure concerns
+  - refactoring a monolith or tangled codebase into layers
+  - designing repository patterns, use cases, or domain entities
+  - deciding on folder structure for a new backend service
 ---
 
 # Architecture Patterns

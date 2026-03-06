@@ -8,6 +8,15 @@ description: >-
   JavaScript applications.
 maturity: seed
 evolution_count: 0
+tags:
+  - javascript
+  - typescript
+triggers:
+  - refactoring legacy JavaScript to modern ES6+ patterns
+  - replacing callbacks or promise chains with async/await
+  - using destructuring, spread, or optional chaining idiomatically
+  - implementing functional patterns like map/filter/reduce pipelines
+  - explaining or teaching a modern JS feature
 ---
 
 # Modern JavaScript Patterns

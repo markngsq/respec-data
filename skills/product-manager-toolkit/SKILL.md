@@ -7,6 +7,15 @@ description: >-
   synthesis, requirement documentation, and product strategy development.
 maturity: seed
 evolution_count: 0
+tags:
+  - product
+  - planning
+triggers:
+  - prioritising features using RICE or a scoring framework
+  - writing a PRD or product requirements document
+  - synthesising customer interview findings
+  - running product discovery or defining a problem space
+  - planning a go-to-market strategy or launch
 ---
 
 # Product Manager Toolkit

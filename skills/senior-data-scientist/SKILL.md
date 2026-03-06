@@ -10,6 +10,17 @@ description: >-
   decisions.
 maturity: seed
 evolution_count: 0
+tags:
+  - data-science
+  - python
+  - statistics
+triggers:
+  - designing or analysing an A/B test or experiment
+  - building a predictive model or running statistical analysis
+  - working with Pandas, NumPy, or Scikit-learn pipelines
+  - performing causal inference or attribution analysis
+  - engineering features or evaluating model performance
+  - producing a data-driven report or BI dashboard
 ---
 
 # Senior Data Scientist
