@@ -31,14 +31,6 @@
       "role": "user",
       "branch": "users/localtest",
       "createdAt": "2026-02-03T14:33:26.077Z"
-    },
-    {
-      "id": "nav",
-      "email": "navpawera@gmail.com",
-      "passwordHash": "$2b$10$tqBm6uSauB3Tth4a5qQod.Nrk8D7LbOYcXesQvzjR.vIsxWKUnUaq",
-      "role": "user",
-      "branch": "users/nav",
-      "createdAt": "2026-02-04T01:32:37.043Z"
     }
   ]
 }
