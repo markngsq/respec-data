@@ -1,0 +1,89 @@
+name: Auto-PR Skill Contributions
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  create-pr:
+    # Only run for issues with "Contribute:" in title
+    if: startsWith(github.event.issue.title, 'Contribute:')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Parse skill from issue
+        id: parse
+        run: |
+          # Extract skill name from title (format: "Contribute: skill-name")
+          SKILL_NAME=$(echo "${{ github.event.issue.title }}" | sed 's/Contribute: //' | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+          echo "skill_name=$SKILL_NAME" >> $GITHUB_OUTPUT
+          
+          # Extract content after the --- separator
+          ISSUE_BODY="${{ github.event.issue.body }}"
+          SKILL_CONTENT=$(echo "$ISSUE_BODY" | awk '/^---$/,0' | tail -n +2)
+          
+          # Create skill directory
+          mkdir -p "skills/$SKILL_NAME"
+          
+          # Write SKILL.md
+          echo "$SKILL_CONTENT" > "skills/$SKILL_NAME/SKILL.md"
+          
+          # Create .respec.json with submitted maturity data
+          MATURITY_LEVEL=$(echo "$ISSUE_BODY" | grep "^\*\*Maturity:\*\*" | sed 's/.*: \([a-z]*\).*/\1/')
+          MATURITY_SCORE=$(echo "$ISSUE_BODY" | grep "^\*\*Maturity:\*\*" | sed 's/.*score: \([0-9.]*\).*/\1/')
+          
+          cat > "skills/$SKILL_NAME/.respec.json" <<EOF
+          {
+            "maturity": {
+              "level": "${MATURITY_LEVEL:-seed}",
+              "score": ${MATURITY_SCORE:-0},
+              "use_count": 0
+            }
+          }
+          EOF
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "feat: add contributed skill ${{ steps.parse.outputs.skill_name }}"
+          branch: "contrib/${{ steps.parse.outputs.skill_name }}-${{ github.event.issue.number }}"
+          title: "Add skill: ${{ steps.parse.outputs.skill_name }}"
+          body: |
+            ## Contributed Skill
+            
+            This skill was contributed via issue #${{ github.event.issue.number }}.
+            
+            **Skill:** `${{ steps.parse.outputs.skill_name }}`
+            
+            ### Review Checklist
+            - [ ] SKILL.md frontmatter is valid YAML
+            - [ ] Description is clear and helpful
+            - [ ] No sensitive information or credentials
+            - [ ] Skill name follows naming convention (lowercase-with-hyphens)
+            - [ ] Content is appropriate for public distribution
+            
+            ---
+            
+            Closes #${{ github.event.issue.number }}
+          labels: |
+            contribution
+            skill
+
+      - name: Comment on issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ Thank you for contributing! A pull request has been created automatically and will be reviewed shortly.\n\nYour skill will be available to everyone once the PR is merged.'
+            })
