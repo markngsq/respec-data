@@ -22,12 +22,18 @@ jobs:
         id: parse
         run: |
           # Extract skill name from title (format: "Contribute: skill-name")
-          SKILL_NAME=$(echo "${{ github.event.issue.title }}" | sed 's/Contribute: //' | tr '[:upper:]' '[:lower:]' | tr ' ' '-')
+          # Replace em dash, en dash, and other special chars with hyphen, then sanitize
+          SKILL_NAME=$(echo "${{ github.event.issue.title }}" | sed 's/Contribute: //' | tr '[:upper:]' '[:lower:]' | sed 's/[—–]/-/g' | tr -cs '[:alnum:]-' '-' | sed 's/-\+/-/g' | sed 's/^-\|--*$//g')
           echo "skill_name=$SKILL_NAME" >> $GITHUB_OUTPUT
           
-          # Extract content after the --- separator
-          ISSUE_BODY="${{ github.event.issue.body }}"
-          SKILL_CONTENT=$(echo "$ISSUE_BODY" | awk '/^---$/,0' | tail -n +2)
+          # Extract content after the first standalone --- separator
+          # Save issue body to temp file to preserve formatting
+          cat > /tmp/issue-body.txt << 'ISSUE_BODY_EOF'
+          ${{ github.event.issue.body }}
+          ISSUE_BODY_EOF
+          
+          # Extract everything after first standalone "---" line
+          SKILL_CONTENT=$(awk '/^---$/{flag=1; next} flag' /tmp/issue-body.txt)
           
           # Create skill directory
           mkdir -p "skills/$SKILL_NAME"
@@ -35,9 +41,9 @@ jobs:
           # Write SKILL.md
           echo "$SKILL_CONTENT" > "skills/$SKILL_NAME/SKILL.md"
           
-          # Create .respec.json with submitted maturity data
-          MATURITY_LEVEL=$(echo "$ISSUE_BODY" | grep "^\*\*Maturity:\*\*" | sed 's/.*: \([a-z]*\).*/\1/')
-          MATURITY_SCORE=$(echo "$ISSUE_BODY" | grep "^\*\*Maturity:\*\*" | sed 's/.*score: \([0-9.]*\).*/\1/')
+          # Create .respec.json with submitted maturity data from temp file
+          MATURITY_LEVEL=$(grep "^\*\*Maturity:\*\*" /tmp/issue-body.txt | head -1 | sed 's/.*: \([a-z]*\).*/\1/')
+          MATURITY_SCORE=$(grep "^\*\*Maturity:\*\*" /tmp/issue-body.txt | head -1 | sed 's/.*score: \([0-9.]*\).*/\1/')
           
           cat > "skills/$SKILL_NAME/.respec.json" <<EOF
           {
