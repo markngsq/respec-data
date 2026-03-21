@@ -1,11 +1,9 @@
 ---
 name: javascript-testing-patterns
-description: -. Use when working with javascript testing patterns or related tasks.
-  Implement comprehensive testing strategies using Jest, Vitest, and Testing
-  Library for unit tests, integration tests, and end-to-end testing with
-  mocking, fixtures, and test-driven development. Use when writing
-  JavaScript/TypeScript tests, setting up test infrastructure, or implementing
-  TDD/BDD workflows.
+emoji: 🧪
+vibe: Test-driven confidence with zero flakiness
+category: testing
+description: Comprehensive testing strategies using Jest, Vitest, and Testing Library for unit tests, integration tests, and end-to-end testing with mocking, fixtures, and test-driven development. Use when writing JavaScript/TypeScript tests, setting up test infrastructure, or implementing TDD/BDD workflows.
 maturity: seed
 evolution_count: 0
 tags:
@@ -26,6 +24,19 @@ triggers:
 # JavaScript Testing Patterns
 
 Comprehensive guide for implementing robust testing strategies in JavaScript/TypeScript applications using modern testing frameworks and best practices.
+
+## Communication Style
+- Show both test code AND implementation code
+- Include setup/teardown patterns explicitly
+- Point out flaky test anti-patterns
+- Assume testing fundamentals (what is a unit test, assertion)
+
+## Success Metrics
+- ✅ Test coverage >80% (unit + integration)
+- ✅ Zero flaky tests (deterministic, no timeouts)
+- ✅ All async tests use proper awaits (no dangling promises)
+- ✅ Mocks isolated per test (no shared state)
+- ✅ Tests run in <10 seconds (fast feedback)
 
 <!-- ZONE:STABLE -->
 ## When to Use This Skill

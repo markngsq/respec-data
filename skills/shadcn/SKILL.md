@@ -1,11 +1,10 @@
 ---
 name: shadcn
 displayName: shadcn/ui
-description: -. Use when working with shadcn or related tasks.
-  shadcn/ui component library patterns with Radix UI primitives and Tailwind
-  CSS. Use when creating tables, forms, dialogs, cards, buttons, or any UI
-  component using shadcn/ui, installing shadcn components, or styling with
-  shadcn patterns.
+emoji: 🎨
+vibe: Copy-paste components that you own
+category: frontend
+description: shadcn/ui component library patterns with Radix UI primitives and Tailwind CSS. Use when creating tables, forms, dialogs, cards, buttons, or any UI component using shadcn/ui, installing shadcn components, or styling with shadcn patterns.
 version: 1.0.0
 maturity: seed
 evolution_count: 0
@@ -25,6 +24,19 @@ triggers:
 # shadcn/ui Development Guidelines
 
 Best practices for using shadcn/ui components with Tailwind CSS and Radix UI primitives.
+
+## Communication Style
+- Show complete component examples (not fragments)
+- Assume Tailwind + React familiarity
+- Point out customization opportunities ("you can modify X in the component file")
+- Include both installation command AND usage code
+
+## Success Metrics
+- ✅ All components properly typed (TypeScript)
+- ✅ ARIA attributes present (accessibility)
+- ✅ Responsive design (mobile-first)
+- ✅ Dark mode support (via Tailwind classes)
+- ✅ Customizations done in component files (not via props)
 
 <!-- ZONE:STABLE -->
 ## Core Principles
@@ -537,6 +549,76 @@ For detailed information, see:
 
 
 <!-- ZONE:GROWING -->
+## Anti-Patterns (Don't Do This)
+
+### ❌ Installing shadcn as a Package
+
+```bash
+# BAD: There is no npm package
+npm install shadcn-ui  # This doesn't exist!
+```
+
+**Why it's bad:** shadcn/ui is NOT a package. It's a collection of components you copy into your project.
+
+**✅ Do this instead:**
+```bash
+# GOOD: Use the CLI to add components
+npx shadcn@latest add button
+```
+
+---
+
+###  ❌ Modifying Component Props Instead of Source
+
+```tsx
+// BAD: Trying to customize via props
+<Button customColor="purple">  {/* This prop doesn't exist */}
+  Click me
+</Button>
+```
+
+**Why it's bad:** shadcn components are yours to modify — change the source file, don't add props.
+
+**✅ Do this instead:**
+```tsx
+// GOOD: Edit components/ui/button.tsx directly
+// Add your variant to the component file:
+buttonVariants({
+  variants: {
+    variant: {
+      default: "...",
+      purple: "bg-purple-500 hover:bg-purple-600",  // Add this
+    }
+  }
+})
+
+// Then use it:
+<Button variant="purple">Click me</Button>
+```
+
+---
+
+### ❌ Using Inline Styles or className Overrides
+
+```tsx
+// BAD: Fighting the component system
+<Button style={{ backgroundColor: 'purple' }}>Bad</Button>
+<Button className="!bg-purple-500">Also bad</Button>
+```
+
+**Why it's bad:** Breaks the variant system, loses type safety, not reusable.
+
+**✅ Do this instead:**
+```tsx
+// GOOD: Add a variant (see above)
+// OR extract a new component:
+export function PurpleButton(props: ButtonProps) {
+  return <Button variant="purple" {...props} />
+}
+```
+
+---
+
 ## Troubleshooting
 
 ### Dialog closes when clicking inside form

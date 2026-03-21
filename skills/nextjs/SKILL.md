@@ -1,12 +1,10 @@
 ---
 name: nextjs
 displayName: Next.js
-description: -. Use when working with nextjs or related tasks.
-  Next.js 15+ App Router development patterns including Server Components,
-  Client Components, data fetching, layouts, and server actions. Use when
-  creating pages, routes, layouts, components, API route handlers, server
-  actions, loading states, error boundaries, or working with Next.js navigation
-  and metadata.
+emoji: ⚡
+vibe: Server-first React with type-safe data flows
+category: frontend
+description: Next.js 15+ App Router development patterns including Server Components, Client Components, data fetching, layouts, and server actions. Use when creating pages, routes, layouts, components, API route handlers, server actions, loading states, error boundaries, or working with Next.js navigation and metadata.
 version: 1.0.0
 maturity: seed
 evolution_count: 0
@@ -26,6 +24,20 @@ triggers:
 # Next.js Development Guidelines
 
 Development patterns for Next.js 15+ using the App Router, Server Components, and modern data fetching.
+
+## Communication Style
+- Code examples for every pattern (not theory-heavy)
+- Assume React fundamentals + TypeScript familiarity
+- Highlight gotchas explicitly with ⚠️ warnings
+- Server Components by default (Client Components when needed)
+- Show both file structure AND code
+
+## Success Metrics
+- ✅ Zero client-side data fetching (use Server Components)
+- ✅ Lighthouse Performance >90
+- ✅ Type-safe data flows (TypeScript strict mode)
+- ✅ All async routes have loading.tsx + error.tsx
+- ✅ Bundle size <200KB (initial client load)
 
 <!-- ZONE:STABLE -->
 ## Core Principles
@@ -509,6 +521,120 @@ export default async function PostPage({
   return <Post data={post} />;
 }
 ```
+
+## Anti-Patterns (Don't Do This)
+
+### ❌ Client-Side Data Fetching in useEffect
+
+```tsx
+// BAD: Unnecessary client work + waterfall requests
+'use client'
+function Page() {
+  const [data, setData] = useState()
+  useEffect(() => {
+    fetch('/api/data').then(r => r.json()).then(setData)
+  }, [])
+  return data ? <Display data={data} /> : 'Loading...'
+}
+```
+
+**Why it's bad:**
+- Adds client JS bundle
+- Waterfall: HTML → hydrate → fetch → render
+- No SEO (content arrives late)
+
+**✅ Do this instead:**
+```tsx
+// GOOD: Fetch on server, send HTML
+async function Page() {
+  const data = await fetch('/api/data').then(r => r.json())
+  return <Display data={data} />
+}
+```
+
+---
+
+### ❌ Missing Error Boundaries
+
+```tsx
+// BAD: No error.tsx, crashes bubble to root
+app/
+├── users/
+│   └── page.tsx  // async, can throw
+```
+
+**What happens:** Unhandled errors crash entire app.
+
+**✅ Do this instead:**
+```tsx
+// GOOD: error.tsx handles crashes gracefully
+app/
+├── users/
+│   ├── page.tsx   // async
+│   ├── error.tsx  // handles errors
+│   └── loading.tsx // handles suspense
+```
+
+---
+
+### ❌ Everything in /app (Flat Structure)
+
+```tsx
+// BAD: Hard to navigate, no colocation
+app/
+├── page.tsx
+├── UserCard.tsx
+├── UserList.tsx
+├── users/
+│   └── page.tsx
+```
+
+**Why it's bad:** Components scattered, hard to find what belongs to which route.
+
+**✅ Do this instead:**
+```tsx
+// GOOD: Colocate components with routes
+app/
+├── page.tsx
+├── users/
+│   ├── page.tsx
+│   └── _components/
+│       ├── UserCard.tsx
+│       └── UserList.tsx
+components/  # Only truly shared components
+```
+
+---
+
+### ❌ Using 'use client' Everywhere
+
+```tsx
+// BAD: Marking everything as client
+'use client'
+import { useState } from 'react'
+
+export default function Layout({ children }) {
+  return <div>{children}</div>
+}
+```
+
+**Why it's bad:** Forces entire tree client-side, loses Server Component benefits.
+
+**✅ Do this instead:**
+```tsx
+// GOOD: Server Component by default
+export default function Layout({ children }) {
+  return (
+    <div>
+      <Header />
+      {children}
+      <ClientSidebar /> {/* Only this is 'use client' */}
+    </div>
+  )
+}
+```
+
+⚠️ **Mark Client Components at the boundary only** — Start with Server Components, add `'use client'` only where needed.
 
 ## Additional Resources
 

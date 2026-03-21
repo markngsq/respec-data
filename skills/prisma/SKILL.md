@@ -1,9 +1,9 @@
 ---
 name: prisma
-description: -. Use when working with prisma or related tasks.
-  Prisma ORM patterns including Prisma Client usage, queries, mutations,
-  relations, transactions, and schema management. Use when working with Prisma
-  database operations or schema definitions.
+emoji: 🗄️
+vibe: Type-safe database queries with zero boilerplate
+category: backend
+description: Prisma ORM patterns including Prisma Client usage, queries, mutations, relations, transactions, and schema management. Use when working with Prisma database operations or schema definitions.
 maturity: seed
 evolution_count: 0
 tags:
@@ -20,6 +20,19 @@ triggers:
 ---
 
 # Prisma ORM Patterns
+
+## Communication Style
+- Show both schema definition AND TypeScript usage
+- Point out performance implications (N+1, missing indexes)
+- Include migration commands alongside schema changes
+- Assume SQL fundamentals (JOIN, transaction isolation)
+
+## Success Metrics
+- ✅ Zero N+1 queries (use `include` or batch operations)
+- ✅ All relations have proper indexes
+- ✅ Transactions used for multi-step writes
+- ✅ Type-safe queries (no `as any` casts)
+- ✅ Migrations run before deployment
 
 <!-- ZONE:STABLE -->
 ## Purpose
@@ -481,6 +494,118 @@ const user: UserWithProfile = await PrismaService.main.user.findUnique({
     where: { id },
     include: { profile: true },
 });
+```
+
+---
+
+## Anti-Patterns (Don't Do This)
+
+### ❌ N+1 Queries (Fetching in Loops)
+
+```ts
+// BAD: N+1 queries (1 query for users + N queries for posts)
+const users = await prisma.user.findMany()
+for (const user of users) {
+  const posts = await prisma.post.findMany({
+    where: { authorId: user.id }
+  })
+  console.log(`${user.name} has ${posts.length} posts`)
+}
+```
+
+**Why it's bad:** If you have 100 users, this executes 101 queries!
+
+**✅ Do this instead:**
+```ts
+// GOOD: Single query with include
+const users = await prisma.user.findMany({
+  include: { posts: true }
+})
+users.forEach(user => {
+  console.log(`${user.name} has ${user.posts.length} posts`)
+})
+
+// OR: Batch query with grouping
+const [users, posts] = await Promise.all([
+  prisma.user.findMany(),
+  prisma.post.findMany()
+])
+const postsByUser = posts.reduce((acc, post) => {
+  acc[post.authorId] = acc[post.authorId] || []
+  acc[post.authorId].push(post)
+  return acc
+}, {})
+```
+
+---
+
+### ❌ Missing Indexes on Foreign Keys
+
+```prisma
+// BAD: No index on foreign key
+model Post {
+  id       String @id
+  authorId String  // ⚠️ No @@index!
+  author   User   @relation(fields: [authorId], references: [id])
+}
+```
+
+**Why it's bad:** Queries like `prisma.post.findMany({ where: { authorId: 'x' } })` will be slow (full table scan).
+
+**✅ Do this instead:**
+```prisma
+// GOOD: Index on foreign key
+model Post {
+  id       String @id
+  authorId String
+  author   User   @relation(fields: [authorId], references: [id])
+  
+  @@index([authorId])  // ✅ Index for fast lookups
+}
+```
+
+---
+
+### ❌ Multi-Step Writes Without Transactions
+
+```ts
+// BAD: Not atomic — can fail halfway through
+const user = await prisma.user.create({ data: { name: 'Alice' } })
+await prisma.profile.create({ data: { userId: user.id, bio: 'Hello' } })
+// ⚠️ If this fails, user exists but has no profile!
+```
+
+**Why it's bad:** If the second operation fails, you're left with inconsistent data.
+
+**✅ Do this instead:**
+```ts
+// GOOD: Atomic transaction
+await prisma.$transaction(async (tx) => {
+  const user = await tx.user.create({ data: { name: 'Alice' } })
+  await tx.profile.create({ data: { userId: user.id, bio: 'Hello' } })
+})
+// Both succeed or both fail
+```
+
+---
+
+### ❌ Selecting All Fields When You Need Few
+
+```ts
+// BAD: Fetching entire user object when you only need name
+const users = await prisma.user.findMany()  // Returns id, email, password, etc.
+return users.map(u => u.name)
+```
+
+**Why it's bad:** Wastes bandwidth, exposes sensitive fields (password hashes), slower queries.
+
+**✅ Do this instead:**
+```ts
+// GOOD: Select only needed fields
+const users = await prisma.user.findMany({
+  select: { name: true }
+})
+return users.map(u => u.name)
 ```
 
 ---
