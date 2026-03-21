@@ -1,6 +1,6 @@
 ---
 name: slash-command-factory
-description: >-
+description: -. Use when working with slash command factory or related tasks.
   Generate custom Claude Code slash commands through intelligent 5-7 question
   flow. Creates powerful commands for business research, content analysis,
   healthcare compliance, API integration, documentation automation, and workflow

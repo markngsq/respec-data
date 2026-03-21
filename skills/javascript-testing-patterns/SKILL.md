@@ -1,6 +1,6 @@
 ---
 name: javascript-testing-patterns
-description: >-
+description: -. Use when working with javascript testing patterns or related tasks.
   Implement comprehensive testing strategies using Jest, Vitest, and Testing
   Library for unit tests, integration tests, and end-to-end testing with
   mocking, fixtures, and test-driven development. Use when writing

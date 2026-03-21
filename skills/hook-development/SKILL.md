@@ -1,6 +1,6 @@
 ---
 name: Hook Development
-description: >-
+description: -. Use when working with hook development or related tasks.
   This skill should be used when the user asks to "create a hook", "add a
   PreToolUse/PostToolUse/Stop hook", "validate tool use", "implement
   prompt-based hooks", "use ${CLAUDE_PLUGIN_ROOT}", "set up event-driven

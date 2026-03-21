@@ -1,7 +1,7 @@
 ---
 name: nextjs
 displayName: Next.js
-description: >-
+description: -. Use when working with nextjs or related tasks.
   Next.js 15+ App Router development patterns including Server Components,
   Client Components, data fetching, layouts, and server actions. Use when
   creating pages, routes, layouts, components, API route handlers, server

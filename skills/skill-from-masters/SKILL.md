@@ -1,6 +1,6 @@
 ---
 name: skill-from-masters
-description: >-
+description: -. Use when working with skill from masters or related tasks.
   Help users create high-quality skills by discovering and incorporating proven
   methodologies from domain experts. Use this skill BEFORE skill-creator when
   users want to create a new skill - it enhances skill-creator by first

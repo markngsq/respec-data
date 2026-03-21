@@ -1,6 +1,6 @@
 ---
 name: system-learn
-description: >-
+description: -. Use when working with system learn or related tasks.
   Ingest new procedural memory (skills, patterns, docs) into the vector
   database.
 maturity: seed

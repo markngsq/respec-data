@@ -1,6 +1,6 @@
 ---
 name: gastown
-description: >-
+description: -. Use when working with gastown or related tasks.
   Multi-agent orchestrator for Claude Code. Use when user mentions gastown, gas
   town, gt commands, bd commands, convoys, polecats, crew, rigs, slinging work,
   multi-agent coordination, beads, hooks, molecules, workflows, the witness, the

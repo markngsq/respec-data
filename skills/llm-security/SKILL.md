@@ -1,6 +1,6 @@
 ---
 name: llm-security
-description: >-
+description: -. Use when working with llm security or related tasks.
   Security guidelines for LLM applications based on OWASP Top 10 for LLM 2025.
   Use when building LLM apps, reviewing AI security, implementing RAG systems,
   or asking about LLM vulnerabilities like "prompt injection" or "check LLM

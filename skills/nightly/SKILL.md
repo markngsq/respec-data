@@ -1,6 +1,6 @@
 ---
 name: nightly
-description: >-
+description: -. Use when working with nightly or related tasks.
   End-of-day cleanup and maintenance routine. Calculates Sleep Score (0-100)
   based on uncommitted work, branch cleanup, issue updates, CI status, and
   service shutdown. Automatically captures session state to STATUS.json. Use at

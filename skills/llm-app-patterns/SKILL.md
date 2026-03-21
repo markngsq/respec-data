@@ -1,6 +1,6 @@
 ---
 name: llm-app-patterns
-description: >-
+description: -. Use when working with llm app patterns or related tasks.
   Production-ready patterns for building LLM applications. Covers RAG pipelines,
   agent architectures, prompt IDEs, and LLMOps monitoring. Use when designing AI
   applications, implementing RAG, building agents, or setting up LLM

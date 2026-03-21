@@ -1,6 +1,6 @@
 ---
 name: smart-docs
-description: >-
+description: -. Use when working with smart docs or related tasks.
   AI-powered comprehensive codebase documentation generator. Analyzes project
   structure, identifies architecture patterns, creates C4 model diagrams, and
   generates professional technical documentation. Use when users need to

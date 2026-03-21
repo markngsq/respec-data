@@ -1,6 +1,6 @@
 ---
 name: animate
-description: Review a feature and enhance it with purposeful animations, micro-interactions, and motion effects that improve usability and delight.
+description: Review a feature and enhance it with purposeful animations, micro-interactions, and motion effects that improve usability and delight. Use when reviewing code, analyzing quality, or identifying issues.
 args:
   - name: target
     description: The feature or component to animate (optional)

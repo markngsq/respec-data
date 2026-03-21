@@ -1,6 +1,6 @@
 ---
 name: extract
-description: Extract and consolidate reusable components, design tokens, and patterns into your design system. Identifies opportunities for systematic reuse and enriches your component library.
+description: Extract and consolidate reusable components, design tokens, and patterns into your design system. Identifies opportunities for systematic reuse and enriches your component library. Use when building web components, pages, or applications.
 args:
   - name: target
     description: The feature, component, or area to extract from (optional)

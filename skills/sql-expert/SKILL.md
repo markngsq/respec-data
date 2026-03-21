@@ -1,6 +1,6 @@
 ---
 name: sql-expert
-description: >-
+description: -. Use when working with sql expert or related tasks.
   Expert SQL query writing, optimization, and database schema design with
   support for PostgreSQL, MySQL, SQLite, and SQL Server. Use when working with
   databases for: (1) Writing complex SQL queries with joins, subqueries, and

@@ -1,6 +1,6 @@
 ---
 name: senior-architect
-description: >-
+description: -. Use when working with senior architect or related tasks.
   This skill should be used when the user asks to "design system architecture",
   "evaluate microservices vs monolith", "create architecture diagrams", "analyze
   dependencies", "choose a database", "plan for scalability", "make technical

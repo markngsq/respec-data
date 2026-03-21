@@ -1,6 +1,6 @@
 ---
 name: code-refactor
-description: >-
+description: -. Use when working with code refactor or related tasks.
   Perform bulk code refactoring operations like renaming variables/functions
   across files, replacing patterns, and updating API calls. Use when users
   request renaming identifiers, replacing deprecated code patterns, updating

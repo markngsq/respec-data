@@ -1,6 +1,6 @@
 ---
 name: skills-discovery
-description: >-
+description: -. Use when working with skills discovery or related tasks.
   Search for and install Agent Skills that give you specialized capabilities.
   Before starting work, ask might a skill exist that handles this better than my
   base knowledge? If the task involves specific technologies, frameworks, file

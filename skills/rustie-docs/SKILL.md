@@ -1,6 +1,6 @@
 ---
 name: rustie-docs
-description: >-
+description: -. Use when working with rustie docs or related tasks.
   Documentation management skill for audit, creation, and maintenance. Enforces
   documentation standards, checks for staleness and broken references,
   auto-fixes issues, and ensures docs are created in correct locations. Use when

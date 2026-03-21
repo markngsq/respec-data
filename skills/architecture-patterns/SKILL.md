@@ -1,6 +1,6 @@
 ---
 name: architecture-patterns
-description: >-
+description: -. Use when working with architecture patterns or related tasks.
   Implement proven backend architecture patterns including Clean Architecture,
   Hexagonal Architecture, and Domain-Driven Design. Use when architecting
   complex backend systems or refactoring existing applications for better

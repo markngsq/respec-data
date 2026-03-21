@@ -1,7 +1,7 @@
 ---
 name: shadcn
 displayName: shadcn/ui
-description: >-
+description: -. Use when working with shadcn or related tasks.
   shadcn/ui component library patterns with Radix UI primitives and Tailwind
   CSS. Use when creating tables, forms, dialogs, cards, buttons, or any UI
   component using shadcn/ui, installing shadcn components, or styling with

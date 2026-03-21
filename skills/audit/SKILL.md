@@ -1,6 +1,6 @@
 ---
 name: audit
-description: Perform comprehensive audit of interface quality across accessibility, performance, theming, and responsive design. Generates detailed report of issues with severity ratings and recommendations.
+description: Perform comprehensive audit of interface quality across accessibility, performance, theming, and responsive design. Generates detailed report of issues with severity ratings and recommendations. Use when building web components, pages, or applications.
 args:
   - name: area
     description: The feature or area to audit (optional)

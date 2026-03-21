@@ -1,6 +1,6 @@
 ---
 name: senior-qa
-description: >-
+description: -. Use when working with senior qa or related tasks.
   This skill should be used when the user asks to "generate tests", "write unit
   tests", "analyze test coverage", "scaffold E2E tests", "set up Playwright",
   "configure Jest", "implement testing patterns", or "improve test quality". Use

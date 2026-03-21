@@ -1,6 +1,6 @@
 ---
 name: docker-containerization
-description: >-
+description: -. Use when working with docker containerization or related tasks.
   This skill should be used when containerizing applications with Docker,
   creating Dockerfiles, docker-compose configurations, or deploying containers
   to various platforms. Ideal for Next.js, React, Node.js applications requiring

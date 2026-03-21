@@ -1,6 +1,6 @@
 ---
 name: polish
-description: Final quality pass before shipping. Fixes alignment, spacing, consistency, and detail issues that separate good from great.
+description: Final quality pass before shipping. Fixes alignment, spacing, consistency, and detail issues that separate good from great. Use when working with polish or related tasks.
 args:
   - name: target
     description: The feature or area to polish (optional)

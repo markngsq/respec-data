@@ -1,6 +1,6 @@
 ---
 name: project-interview
-description: >-
+description: -. Use when working with project interview or related tasks.
   Conducts project specification interviews to clarify architecture, tech stack,
   and requirements. Use when starting a new project, planning architecture,
   gathering requirements, making tech decisions, or when asked to interview,

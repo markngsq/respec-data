@@ -1,6 +1,6 @@
 ---
 name: senior-data-scientist
-description: >-
+description: -. Use when working with senior data scientist or related tasks.
   World-class data science skill for statistical modeling, experimentation,
   causal inference, and advanced analytics. Expertise in Python (NumPy, Pandas,
   Scikit-learn), R, SQL, statistical methods, A/B testing, time series, and

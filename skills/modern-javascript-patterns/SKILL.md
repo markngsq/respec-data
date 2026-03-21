@@ -1,6 +1,6 @@
 ---
 name: modern-javascript-patterns
-description: >-
+description: -. Use when working with modern javascript patterns or related tasks.
   Master ES6+ features including async/await, destructuring, spread operators,
   arrow functions, promises, modules, iterators, generators, and functional
   programming patterns for writing clean, efficient JavaScript code. Use when

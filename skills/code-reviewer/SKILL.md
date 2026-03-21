@@ -1,6 +1,6 @@
 ---
 name: code-reviewer
-description: >-
+description: -. Use when working with code reviewer or related tasks.
   Code review automation for TypeScript, JavaScript, Python, Go, Swift, Kotlin.
   Analyzes PRs for complexity and risk, checks code quality for SOLID violations
   and code smells, generates review reports. Use when reviewing pull requests,

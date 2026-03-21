@@ -1,6 +1,6 @@
 ---
 name: skill-orchestrator
-description: >-
+description: -. Use when working with skill orchestrator or related tasks.
   This skill orchestrates programming tasks by analyzing available Claude Code
   skills and creating execution plans. It should be used when working on any
   coding task that could benefit from multiple specialized skills. The skill

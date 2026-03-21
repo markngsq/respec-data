@@ -1,6 +1,6 @@
 ---
 name: normalize
-description: Normalize design to match your design system and ensure consistency
+description: Normalize design to match your design system and ensure consistency. Use when building web components, pages, or applications.
 args:
   - name: feature
     description: The page, route, or feature to normalize (optional)

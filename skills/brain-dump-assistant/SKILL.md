@@ -1,7 +1,7 @@
 ---
 name: brain-dump-assistant
 source: brain-dump
-description: >-
+description: -. Use when working with brain dump assistant or related tasks.
   Manage a personal knowledge capture system. Use when the user wants to capture
   ideas, track todos, organize projects, review their brain dump, or mentions
   "brain dump", "capture this", "add to my list", "what's on my plate", "what

@@ -1,6 +1,6 @@
 ---
 name: software-security
-description: >-
+description: -. Use when working with software security or related tasks.
   A software security skill that integrates with Project CodeGuard to help AI
   coding agents write secure code and prevent common vulnerabilities. Use this
   skill when writing, reviewing, or modifying code to ensure secure-by-default

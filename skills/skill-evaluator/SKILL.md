@@ -1,7 +1,7 @@
 ---
 name: skill-evaluator
 license: MIT
-description: >-
+description: -. Use when working with skill evaluator or related tasks.
   Comprehensive evaluation toolkit for analyzing Claude skills across security,
   quality, utility, and compliance dimensions. This skill should be used when
   users need to evaluate a skill before installation, review before publishing,

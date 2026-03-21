@@ -1,6 +1,6 @@
 ---
 name: distill
-description: Strip designs to their essence by removing unnecessary complexity. Great design is simple, powerful, and clean.
+description: Strip designs to their essence by removing unnecessary complexity. Great design is simple, powerful, and clean. Use when building web components, pages, or applications.
 args:
   - name: target
     description: The feature or component to distill (optional)

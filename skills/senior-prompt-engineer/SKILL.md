@@ -1,6 +1,6 @@
 ---
 name: senior-prompt-engineer
-description: >-
+description: -. Use when working with senior prompt engineer or related tasks.
   This skill should be used when the user asks to "optimize prompts", "design
   prompt templates", "evaluate LLM outputs", "build agentic systems", "implement
   RAG", "create few-shot examples", "analyze token usage", or "design AI

@@ -1,6 +1,6 @@
 ---
 name: prisma
-description: >-
+description: -. Use when working with prisma or related tasks.
   Prisma ORM patterns including Prisma Client usage, queries, mutations,
   relations, transactions, and schema management. Use when working with Prisma
   database operations or schema definitions.

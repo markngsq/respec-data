@@ -1,6 +1,6 @@
 ---
 name: docs-management
-description: >-
+description: -. Use when working with docs management or related tasks.
   Single source of truth and librarian for ALL Claude official documentation.
   Manages local documentation storage, scraping, discovery, and resolution. Use
   when finding, locating, searching, or resolving Claude documentation;

@@ -1,6 +1,6 @@
 ---
 name: cc-plugin-expert
-description: >-
+description: -. Use when working with cc plugin expert or related tasks.
   Comprehensive Claude Code plugin development expert providing guidance for
   creation, maintenance, installation, configuration, and troubleshooting of
   plugins and skills

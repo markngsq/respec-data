@@ -1,6 +1,6 @@
 ---
 name: thought-based-reasoning
-description: >-
+description: -. Use when working with thought based reasoning or related tasks.
   Use when tackling complex reasoning tasks requiring step-by-step logic,
   multi-step arithmetic, commonsense reasoning, symbolic manipulation, or
   problems where simple prompting fails - provides comprehensive guide to

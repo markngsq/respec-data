@@ -1,6 +1,6 @@
 ---
 name: bolder
-description: Amplify safe or boring designs to make them more visually interesting and stimulating. Increases impact while maintaining usability.
+description: Amplify safe or boring designs to make them more visually interesting and stimulating. Increases impact while maintaining usability. Use when building web components, pages, or applications.
 args:
   - name: target
     description: The feature or component to make bolder (optional)
