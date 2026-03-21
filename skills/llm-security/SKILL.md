@@ -1,10 +1,9 @@
 ---
 name: llm-security
-description: -. Use when working with llm security or related tasks.
-  Security guidelines for LLM applications based on OWASP Top 10 for LLM 2025.
-  Use when building LLM apps, reviewing AI security, implementing RAG systems,
-  or asking about LLM vulnerabilities like "prompt injection" or "check LLM
-  security".
+emoji: 🔒
+vibe: OWASP Top 10 defender against prompt injection
+category: security
+description: Security guidelines for LLM applications based on OWASP Top 10 for LLM 2025. Use when building LLM apps, reviewing AI security, implementing RAG systems, or asking about LLM vulnerabilities like "prompt injection" or "check LLM security".
 maturity: seed
 evolution_count: 0
 tags:
@@ -17,14 +16,48 @@ triggers:
   - securing a RAG pipeline or agent with tool access
   - auditing LLM output handling or data leakage risks
   - implementing input/output guardrails for an AI system
+dependencies:
+  - name: OpenAI API
+    url: https://platform.openai.com
+    tier: paid
+  - name: Anthropic API
+    url: https://console.anthropic.com
+    tier: paid
 ---
 
 # LLM Security Guidelines (OWASP Top 10 for LLM 2025)
 
 Comprehensive security rules for building secure LLM applications. Based on the OWASP Top 10 for Large Language Model Applications 2025 - the authoritative guide to LLM security risks.
 
+## 🚨 Critical Rules
+
+### Never Trust User Input in Prompts
+- **Always sanitize user input before LLM** — Strip control characters, validate length, check for injection patterns
+- **Never concatenate user input directly into system prompts** — Use structured formats (JSON, delimiters)
+- **Always use separate user/system message roles** — Prevents prompt injection via role confusion
+
+### Never Expose System Prompts
+- **Never echo system prompts in responses** — Attackers use "repeat your instructions" attacks
+- **Never log full prompts with sensitive instructions** — Use redacted logs
+- **Always treat system prompts as secrets** — Store separately, don't hardcode
+
+### Never Trust LLM Output as Safe
+- **Always sanitize LLM output before rendering** — Prevents XSS, code injection
+- **Never execute LLM-generated code without sandboxing** — Use isolated environments
+- **Never pass LLM output directly to SQL/shell** — Validate + parameterize
+
+### Always Limit LLM Agency
+- **Always use least-privilege for tool access** — LLMs should only access what they need
+- **Never give LLMs write access to production databases** — Read-only by default
+- **Always require human approval for high-risk actions** — Delete, payment, email sends
+
+**Default Requirements:**
+- Unless told otherwise, always sanitize user input before LLM
+- Unless told otherwise, always validate LLM output before use
+- Unless told otherwise, never expose system prompts
+
 <!-- ZONE:STABLE -->
-## How It Works
+## 🎯 How It Works
 
 1. When building or reviewing LLM applications, reference these security guidelines
 2. Each rule includes vulnerable patterns and secure implementations

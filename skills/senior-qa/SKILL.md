@@ -1,10 +1,9 @@
 ---
 name: senior-qa
-description: -. Use when working with senior qa or related tasks.
-  This skill should be used when the user asks to "generate tests", "write unit
-  tests", "analyze test coverage", "scaffold E2E tests", "set up Playwright",
-  "configure Jest", "implement testing patterns", or "improve test quality". Use
-  for React/Next.js testing with Jest, React Testing Library, and Playwright.
+emoji: 🧪
+vibe: Zero flaky tests, 100% deterministic
+category: testing
+description: This skill should be used when the user asks to "generate tests", "write unit tests", "analyze test coverage", "scaffold E2E tests", "set up Playwright", "configure Jest", "implement testing patterns", or "improve test quality". Use for React/Next.js testing with Jest, React Testing Library, and Playwright.
 maturity: seed
 evolution_count: 0
 tags:
@@ -26,8 +25,35 @@ triggers:
 
 Test automation, coverage analysis, and quality assurance patterns for React and Next.js applications.
 
+## 🚨 Critical Rules
+
+### Zero Flaky Tests
+- **Always use deterministic selectors** — Prefer data-testid over CSS classes (classes change, test IDs don't)
+- **Never use arbitrary timeouts** — Use waitFor with proper conditions, not `sleep(1000)`
+- **Always clean up after tests** — Reset mocks, clear timers, restore spies (prevents test pollution)
+
+### Proper Async Handling
+- **Always await async operations** — No dangling promises (causes random failures)
+- **Never use act() warnings in production code** — Fix the root cause (missing await, improper state updates)
+- **Always wrap async updates in act()** — When testing state changes
+
+### Test Isolation
+- **Always isolate test data** — Generate unique IDs per test (no shared state)
+- **Never rely on test execution order** — Each test should pass alone
+- **Always mock external dependencies** — Network calls, timers, Date.now()
+
+### Coverage Quality
+- **Never chase 100% coverage blindly** — Focus on critical paths (80% meaningful > 100% meaningless)
+- **Always test edge cases** — Empty states, error states, loading states
+- **Never skip accessibility tests** — Use @testing-library/jest-dom for a11y assertions
+
+**Default Requirements:**
+- Unless told otherwise, always use data-testid selectors
+- Unless told otherwise, always clean up mocks after tests
+- Unless told otherwise, always test error states
+
 <!-- ZONE:STABLE -->
-## Table of Contents
+## 📋 Table of Contents
 
 - [Quick Start](#quick-start)
 - [Tools Overview](#tools-overview)

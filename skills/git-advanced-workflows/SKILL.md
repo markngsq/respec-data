@@ -1,10 +1,9 @@
 ---
 name: git-advanced-workflows
-description: -. Use when working with git advanced workflows or related tasks.
-  Master advanced Git workflows including rebasing, cherry-picking, bisect,
-  worktrees, and reflog to maintain clean history and recover from any
-  situation. Use when managing complex Git histories, collaborating on feature
-  branches, or troubleshooting repository issues.
+emoji: 🌿
+vibe: Clean history through fearless rebasing
+category: devops
+description: Master advanced Git workflows including rebasing, cherry-picking, bisect, worktrees, and reflog to maintain clean history and recover from any situation. Use when managing complex Git histories, collaborating on feature branches, or troubleshooting repository issues.
 maturity: seed
 evolution_count: 0
 tags:
@@ -23,8 +22,30 @@ triggers:
 
 Master advanced Git techniques to maintain clean history, collaborate effectively, and recover from any situation with confidence.
 
+## 🚨 Critical Rules
+
+### Never Break Shared History
+- **Never force-push to main/master** — Breaks other developers' clones
+- **Never rebase commits that others have pulled** — Rewrites shared history
+- **Never amend pushed commits on shared branches** — Use revert instead
+
+### Always Have an Escape Hatch
+- **Always create a backup branch before risky operations** — `git branch backup-before-rebase`
+- **Always know reflog exists** — You can recover "lost" commits for 30-90 days
+- **Never panic and delete .git** — Almost everything is recoverable
+
+### Maintain Clean History
+- **Always squash fixup commits before merging** — Don't merge "fix typo", "oops", "wip" commits
+- **Always write meaningful commit messages** — Future you will thank present you
+- **Never use `git commit -m "wip"`** — If it's work in progress, use stash or a temp branch
+
+**Default Requirements:**
+- Unless told otherwise, always backup branch before rebasing
+- Unless told otherwise, always squash before merging to main
+- Unless told otherwise, never force-push to protected branches
+
 <!-- ZONE:STABLE -->
-## When to Use This Skill
+## 🎯 When to Use This Skill
 
 - Cleaning up commit history before merging
 - Applying specific commits across branches

@@ -1,11 +1,9 @@
 ---
 name: vercel-react-best-practices
-description: -. Use when working with vercel react best practices or related tasks.
-  React and Next.js performance optimization guidelines from Vercel Engineering.
-  This skill should be used when writing, reviewing, or refactoring
-  React/Next.js code to ensure optimal performance patterns. Triggers on tasks
-  involving React components, Next.js pages, data fetching, bundle optimization,
-  or performance improvements.
+emoji: ⚡
+vibe: Vercel Engineering's performance playbook
+category: frontend
+description: React and Next.js performance optimization guidelines from Vercel Engineering. This skill should be used when writing, reviewing, or refactoring React/Next.js code to ensure optimal performance patterns. Triggers on tasks involving React components, Next.js pages, data fetching, bundle optimization, or performance improvements.
 license: MIT
 metadata:
   author: vercel
@@ -29,8 +27,30 @@ triggers:
 
 Comprehensive performance optimization guide for React and Next.js applications, maintained by Vercel. Contains 57 rules across 8 categories, prioritized by impact to guide automated refactoring and code generation.
 
+## 🚨 Critical Rules
+
+### Server Components by Default
+- **Always default to Server Components** — Only use 'use client' when necessary (interactivity, hooks, browser APIs)
+- **Never fetch data in useEffect** — Use Server Components or server actions instead
+- **Never over-use 'use client'** — Don't mark entire layouts or pages as client when only a child needs it
+
+### Performance Non-Negotiables
+- **Always code-split heavy dependencies** — Use dynamic imports for components >50KB
+- **Never block rendering with heavy computations** — Use useMemo/useCallback or move to server
+- **Always optimize images** — Use Next.js Image component (never raw `<img>`)
+
+### Bundle Size
+- **Never import entire libraries** — Use tree-shakeable imports (`import { Button } from 'lib/button'` not `import lib from 'lib'`)
+- **Always check bundle analyzer** — Before shipping new features
+- **Never ship unused code** — Remove commented code, unused imports
+
+**Default Requirements:**
+- Unless told otherwise, always use Server Components
+- Unless told otherwise, always use Next.js Image component
+- Unless told otherwise, always code-split heavy dependencies
+
 <!-- ZONE:STABLE -->
-## When to Apply
+## 🎯 When to Apply
 
 Reference these guidelines when:
 - Writing new React components or Next.js pages

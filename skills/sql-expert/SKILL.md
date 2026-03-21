@@ -1,13 +1,9 @@
 ---
 name: sql-expert
-description: -. Use when working with sql expert or related tasks.
-  Expert SQL query writing, optimization, and database schema design with
-  support for PostgreSQL, MySQL, SQLite, and SQL Server. Use when working with
-  databases for: (1) Writing complex SQL queries with joins, subqueries, and
-  window functions, (2) Optimizing slow queries and analyzing execution plans,
-  (3) Designing database schemas with proper normalization, (4) Creating indexes
-  and improving query performance, (5) Writing migrations and handling schema
-  changes, (6) Debugging SQL errors and query issues
+emoji: 📊
+vibe: Query optimization obsessed with EXPLAIN plans
+category: data
+description: Expert SQL query writing, optimization, and database schema design with support for PostgreSQL, MySQL, SQLite, and SQL Server. Use when working with databases for: (1) Writing complex SQL queries with joins, subqueries, and window functions, (2) Optimizing slow queries and analyzing execution plans, (3) Designing database schemas with proper normalization, (4) Creating indexes and improving query performance, (5) Writing migrations and handling schema changes, (6) Debugging SQL errors and query issues
 maturity: seed
 evolution_count: 0
 tags:
@@ -29,8 +25,30 @@ triggers:
 
 Expert guidance for writing, optimizing, and managing SQL databases across PostgreSQL, MySQL, SQLite, and SQL Server.
 
+## 🚨 Critical Rules
+
+### Security (Non-Negotiable)
+- **Always use parameterized queries** — Never concatenate user input into SQL strings (prevents SQL injection)
+- **Never use `SELECT *` in production** — Explicitly list columns (prevents breaking changes when schema evolves)
+- **Never grant ALL privileges** — Use least-privilege principle (SELECT, INSERT, UPDATE, DELETE only when needed)
+
+### Performance (Non-Negotiable)
+- **Always check EXPLAIN plan** — Before deploying queries that touch >1000 rows
+- **Always add indexes on foreign keys** — Missing indexes kill JOIN performance
+- **Never use DISTINCT without understanding why** — Usually indicates schema design problem
+
+### Schema Design (Non-Negotiable)
+- **Always use migrations** — Never manually ALTER tables in production
+- **Always add NOT NULL constraints** — Makes NULL handling explicit
+- **Always use proper data types** — Don't store dates as strings, numbers as VARCHAR
+
+**Default Requirements:**
+- Unless told otherwise, always use parameterized queries
+- Unless told otherwise, always index foreign keys
+- Unless told otherwise, always write migrations (never manual schema changes)
+
 <!-- ZONE:STABLE -->
-## Core Capabilities
+## 🏗️ Core Capabilities
 
 This skill enables you to:
 
