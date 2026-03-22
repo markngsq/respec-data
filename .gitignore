@@ -4,3 +4,4 @@ integrations/*/
 package-lock.json
 capabilities.json
 .skill-versions.json
+.usage-log.json
