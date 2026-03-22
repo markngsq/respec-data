@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "description": "Respec skill converters for multi-tool export",
   "scripts": {
+    "lint": "node scripts/lint-skills.js",
+    "lint:fix": "node scripts/lint-skills.js --fix",
+    "build:index": "node scripts/build-index.js",
+    "search": "node scripts/search.js",
+    "postinstall": "npm run build:index",
     "convert:cursor": "node converters/cursor.js --all",
     "convert:aider": "node converters/aider.js",
     "convert:windsurf": "node converters/windsurf.js",
