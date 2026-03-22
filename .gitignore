@@ -1,0 +1,4 @@
+node_modules/
+integrations/*/
+!integrations/README.md
+package-lock.json

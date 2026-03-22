@@ -1,0 +1,15 @@
+{
+  "name": "@respec-gtc/converters",
+  "version": "0.1.0",
+  "description": "Respec skill converters for multi-tool export",
+  "scripts": {
+    "convert:cursor": "node converters/cursor.js --all",
+    "convert:aider": "node converters/aider.js",
+    "convert:windsurf": "node converters/windsurf.js",
+    "convert:copilot": "node converters/copilot.js --all",
+    "convert:all": "npm run convert:cursor && npm run convert:aider && npm run convert:windsurf && npm run convert:copilot"
+  },
+  "dependencies": {
+    "yaml": "^2.3.4"
+  }
+}
