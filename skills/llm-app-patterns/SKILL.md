@@ -5,6 +5,7 @@ description: -. Use when working with llm app patterns or related tasks.
   agent architectures, prompt IDEs, and LLMOps monitoring. Use when designing AI
   applications, implementing RAG, building agents, or setting up LLM
   observability.
+vibe: Production RAG and agent architectures
 maturity: seed
 evolution_count: 0
 tags:
@@ -35,6 +36,14 @@ Use this skill when:
 - Building AI agents with tools
 - Setting up LLMOps monitoring
 - Choosing between agent architectures
+
+dependencies:
+  - name: OpenAI API
+    url: https://platform.openai.com
+    tier: paid
+  - name: Anthropic API
+    url: https://console.anthropic.com
+    tier: paid
 
 ---
 

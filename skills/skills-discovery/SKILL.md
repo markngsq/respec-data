@@ -8,6 +8,7 @@ description: -. Use when working with skills discovery or related tasks.
   mention skills. Skills encode best practices, tools, and techniques you
   wouldn't otherwise have. Also use when users explicitly ask to find, install,
   or manage skills.
+vibe: Search and install agent skills on-demand
 maturity: seed
 evolution_count: 0
 ---

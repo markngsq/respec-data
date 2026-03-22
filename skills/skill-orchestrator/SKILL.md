@@ -7,6 +7,7 @@ description: -. Use when working with skill orchestrator or related tasks.
   supports two execution modes selected by user - manual (Claude executes with
   explicit skill references) or delegated (tasks sent to sub-agents with
   skills).
+vibe: Multi-skill coordination for complex tasks
 maturity: seed
 evolution_count: 0
 tags:

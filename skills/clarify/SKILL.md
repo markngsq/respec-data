@@ -1,6 +1,7 @@
 ---
 name: clarify
 description: Improve unclear UX copy, error messages, microcopy, labels, and instructions. Makes interfaces easier to understand and use. Use when working with clarify or related tasks.
+vibe: Clear UX copy and error messages
 args:
   - name: target
     description: The feature or component with unclear copy (optional)

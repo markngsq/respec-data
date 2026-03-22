@@ -7,8 +7,14 @@ description: -. Use when working with gastown or related tasks.
   mayor, the refinery, the deacon, dogs, escalation, or wants to run multiple AI
   agents on projects simultaneously. Handles installation, workspace setup, work
   tracking, agent lifecycle, crash recovery, and all gt/bd CLI operations.
+vibe: Multi-agent convoy for parallel workflows
 maturity: seed
 evolution_count: 0
+dependencies:
+  - name: OpenClaw Gateway
+    url: https://openclaw.ai
+    tier: free
+
 ---
 
 # Gas Town Skill

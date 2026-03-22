@@ -5,6 +5,7 @@ description: -. Use when working with mcp builder or related tasks.
   enable LLMs to interact with external services through well-designed tools.
   Use when building MCP servers to integrate external APIs or services, whether
   in Python (FastMCP) or Node/TypeScript (MCP SDK).
+vibe: Type-safe MCP servers for external services
 license: Complete terms in LICENSE.txt
 maturity: seed
 evolution_count: 0
@@ -27,6 +28,11 @@ triggers:
 ## Overview
 
 Create MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. The quality of an MCP server is measured by how well it enables LLMs to accomplish real-world tasks.
+
+dependencies:
+  - name: MCP SDK
+    url: https://github.com/modelcontextprotocol/sdk
+    tier: free
 
 ---
 

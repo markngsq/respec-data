@@ -218,6 +218,11 @@ coverage
 .vscode
 ```
 
+dependencies:
+  - name: Docker CLI
+    url: https://docs.docker.com/engine/install/
+    tier: free
+
 ---
 
 ### ❌ Running as Root User

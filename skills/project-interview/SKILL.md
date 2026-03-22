@@ -6,6 +6,7 @@ description: -. Use when working with project interview or related tasks.
   gathering requirements, making tech decisions, or when asked to interview,
   create a spec, help plan, or define what to build. Creates SPEC.md with
   complete project specification.
+vibe: Gather requirements through structured interview
 allowed-tools: 'Read, Write, Edit, WebSearch, WebFetch, Bash(*), Glob, Grep'
 maturity: seed
 evolution_count: 0

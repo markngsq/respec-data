@@ -6,6 +6,7 @@ description: -. Use when working with brain dump assistant or related tasks.
   ideas, track todos, organize projects, review their brain dump, or mentions
   "brain dump", "capture this", "add to my list", "what's on my plate", "what
   should I focus on", or "daily review".
+vibe: Capture ideas, track todos, organize projects
 maturity: seed
 evolution_count: 0
 ---

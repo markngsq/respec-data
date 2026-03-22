@@ -5,6 +5,7 @@ description: -. Use when working with nightly or related tasks.
   based on uncommitted work, branch cleanup, issue updates, CI status, and
   service shutdown. Automatically captures session state to STATUS.json. Use at
   end of work day before closing Claude Code.
+vibe: End-of-day cleanup with Sleep Score
 maturity: seed
 evolution_count: 0
 ---

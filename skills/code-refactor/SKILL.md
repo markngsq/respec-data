@@ -5,6 +5,7 @@ description: -. Use when working with code refactor or related tasks.
   across files, replacing patterns, and updating API calls. Use when users
   request renaming identifiers, replacing deprecated code patterns, updating
   method calls, or making consistent changes across multiple locations.
+vibe: Bulk refactoring across codebases
 maturity: seed
 evolution_count: 0
 tags:

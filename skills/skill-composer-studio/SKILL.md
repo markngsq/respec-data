@@ -4,6 +4,7 @@ description: -. Use when working with skill composer studio or related tasks.
   CHAIN multiple existing skills into custom multi-step workflows. Programmable
   skill combinations with automatic handoffs. Create composite skills from
   building blocks with conditional logic.
+vibe: Chain skills into custom workflows
 maturity: seed
 evolution_count: 0
 ---

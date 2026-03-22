@@ -5,6 +5,7 @@ description: -. Use when working with code reviewer or related tasks.
   Analyzes PRs for complexity and risk, checks code quality for SOLID violations
   and code smells, generates review reports. Use when reviewing pull requests,
   analyzing code quality, identifying issues, generating review checklists.
+vibe: Automated code review for quality and security
 maturity: seed
 evolution_count: 0
 tags:

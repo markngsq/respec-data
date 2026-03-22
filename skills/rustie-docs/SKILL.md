@@ -6,6 +6,7 @@ description: -. Use when working with rustie docs or related tasks.
   auto-fixes issues, and ensures docs are created in correct locations. Use when
   user says "check docs", "audit docs", "fix docs", "create doc", "archive
   docs", or when scattered .md files are detected.
+vibe: Documentation audit and maintenance
 maturity: seed
 evolution_count: 0
 ---

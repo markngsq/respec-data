@@ -8,6 +8,7 @@ description: -. Use when working with smart docs or related tasks.
   or generate developer guides. Supports all programming languages. Alternative
   to Litho/deepwiki-rs that uses Claude Code subscription without external API
   costs.
+vibe: AI-powered codebase documentation
 allowed-tools:
   - Read
   - Glob

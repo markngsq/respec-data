@@ -5,6 +5,7 @@ description: -. Use when working with architecture patterns or related tasks.
   Hexagonal Architecture, and Domain-Driven Design. Use when architecting
   complex backend systems or refactoring existing applications for better
   maintainability.
+vibe: Clean Architecture for maintainable backends
 maturity: seed
 evolution_count: 0
 tags:

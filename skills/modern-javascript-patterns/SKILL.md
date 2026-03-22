@@ -6,6 +6,7 @@ description: -. Use when working with modern javascript patterns or related task
   programming patterns for writing clean, efficient JavaScript code. Use when
   refactoring legacy code, implementing modern patterns, or optimizing
   JavaScript applications.
+vibe: ES6+ patterns for clean JavaScript
 maturity: seed
 evolution_count: 0
 tags:

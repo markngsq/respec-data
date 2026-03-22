@@ -1,6 +1,7 @@
 ---
 name: colorize
 description: Add strategic color to features that are too monochromatic or lack visual interest. Makes interfaces more engaging and expressive. Use when working with colorize or related tasks.
+vibe: Strategic color for visual interest
 args:
   - name: target
     description: The feature or component to colorize (optional)

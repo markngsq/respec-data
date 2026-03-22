@@ -8,6 +8,7 @@ description: -. Use when working with skill from masters or related tasks.
   requests like "help me create a skill for X" or "I want to make a skill that
   does Y". This skill guides methodology selection, then hands off to
   skill-creator for the actual skill generation.
+vibe: Discover expert methodologies for skills
 maturity: seed
 evolution_count: 0
 ---

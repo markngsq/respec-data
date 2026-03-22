@@ -5,6 +5,7 @@ description: -. Use when working with product manager toolkit or related tasks.
   customer interview analysis, PRD templates, discovery frameworks, and
   go-to-market strategies. Use for feature prioritization, user research
   synthesis, requirement documentation, and product strategy development.
+vibe: RICE prioritization and PRD templates
 maturity: seed
 evolution_count: 0
 tags:

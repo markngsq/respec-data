@@ -7,6 +7,7 @@ description: -. Use when working with thought based reasoning or related tasks.
   Chain-of-Thought and related prompting techniques (Zero-shot CoT,
   Self-Consistency, Tree of Thoughts, Least-to-Most, ReAct, PAL, Reflexion) with
   templates, decision matrices, and research-backed patterns
+vibe: Chain-of-Thought for complex reasoning
 maturity: seed
 evolution_count: 0
 tags:

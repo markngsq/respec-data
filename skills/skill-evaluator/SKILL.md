@@ -8,6 +8,7 @@ description: -. Use when working with skill evaluator or related tasks.
   or assess overall quality and safety. Performs 5-layer security analysis,
   validates structure and documentation, checks compliance with skill-creator
   guidelines, and generates markdown reports with scoring and recommendations.
+vibe: 5-layer security analysis for skill quality
 maturity: seed
 evolution_count: 0
 ---

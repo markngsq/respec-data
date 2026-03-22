@@ -12,6 +12,7 @@ description: -. Use when working with docs management or related tasks.
   parsing, docs map processing, markdown subsection extraction for internal use,
   hash-based drift detection, and comprehensive index maintenance.
 allowed-tools: 'Read, Glob, Grep, Bash, Skill'
+vibe: Single source of truth for Claude docs
 maturity: seed
 evolution_count: 0
 ---

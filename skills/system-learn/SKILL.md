@@ -3,6 +3,7 @@ name: system-learn
 description: -. Use when working with system learn or related tasks.
   Ingest new procedural memory (skills, patterns, docs) into the vector
   database.
+vibe: Ingest procedural memory into vector DB
 maturity: seed
 evolution_count: 0
 ---

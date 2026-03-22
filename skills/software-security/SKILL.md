@@ -5,6 +5,7 @@ description: -. Use when working with software security or related tasks.
   coding agents write secure code and prevent common vulnerabilities. Use this
   skill when writing, reviewing, or modifying code to ensure secure-by-default
   practices are followed.
+vibe: Secure-by-default code patterns
 codeguard-version: 1.2.0
 framework: Project CodeGuard
 purpose: Embed secure-by-default practices into AI coding workflows

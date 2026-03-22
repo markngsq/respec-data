@@ -6,6 +6,7 @@ description: -. Use when working with senior prompt engineer or related tasks.
   RAG", "create few-shot examples", "analyze token usage", or "design AI
   workflows". Use for prompt engineering patterns, LLM evaluation frameworks,
   agent architectures, and structured output design.
+vibe: Systematic prompt optimization
 maturity: seed
 evolution_count: 0
 tags:
@@ -39,6 +40,14 @@ Prompt engineering patterns, LLM evaluation frameworks, and agentic system desig
   - [Structured Output Design](#structured-output-design-workflow)
 - [Reference Documentation](#reference-documentation)
 - [Common Patterns Quick Reference](#common-patterns-quick-reference)
+
+dependencies:
+  - name: OpenAI API
+    url: https://platform.openai.com
+    tier: paid
+  - name: Anthropic API
+    url: https://console.anthropic.com
+    tier: paid
 
 ---
 

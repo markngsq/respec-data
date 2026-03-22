@@ -7,6 +7,7 @@ description: -. Use when working with senior architect or related tasks.
   decisions", or "review system design". Use for architecture decision records
   (ADRs), tech stack evaluation, system design reviews, dependency analysis, and
   generating architecture diagrams in Mermaid, PlantUML, or ASCII format.
+vibe: Technical decisions backed by trade-offs
 maturity: seed
 evolution_count: 0
 tags:

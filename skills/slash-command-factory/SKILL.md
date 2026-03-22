@@ -6,6 +6,7 @@ description: -. Use when working with slash command factory or related tasks.
   healthcare compliance, API integration, documentation automation, and workflow
   optimization. Outputs organized commands to generated-commands/ with
   validation and installation guidance.
+vibe: Generate custom Claude Code commands
 maturity: seed
 evolution_count: 0
 ---

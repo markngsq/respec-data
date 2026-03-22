@@ -8,6 +8,7 @@ description: -. Use when working with senior data scientist or related tasks.
   evaluation, and stakeholder communication. Use when designing experiments,
   building predictive models, performing causal analysis, or driving data-driven
   decisions.
+vibe: Statistical rigor meets business impact
 maturity: seed
 evolution_count: 0
 tags:

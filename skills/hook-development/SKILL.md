@@ -9,6 +9,7 @@ description: -. Use when working with hook development or related tasks.
   PreCompact, Notification). Provides comprehensive guidance for creating and
   implementing Claude Code plugin hooks with focus on advanced prompt-based
   hooks API.
+vibe: Event-driven Claude Code automation
 version: 0.1.0
 maturity: seed
 evolution_count: 0
