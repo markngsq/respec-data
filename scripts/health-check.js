@@ -261,10 +261,41 @@ function generateReport(results) {
   console.log('');
 }
 
-// Main
-const results = analyzeSkills();
-generateReport(results);
+// Generate JSON summary
+function generateJsonReport(results) {
+  const total = results.length;
+  const excellent = results.filter(r => r.score >= 80).length;
+  const good = results.filter(r => r.score >= 50 && r.score < 80).length;
+  const poor = results.filter(r => r.score < 50).length;
+  const stale = results.filter(r => r.stale).length;
+  const deprecated = results.filter(r => r.deprecated).length;
+  const errors = results.filter(r => r.status === 'error').length;
 
-// Exit with error if any critical issues
-const criticalIssues = results.filter(r => r.status === 'error').length;
-process.exit(criticalIssues > 0 ? 1 : 0);
+  return {
+    summary: { total, excellent, good, poor, stale, deprecated, errors },
+    skills: results.map(r => ({
+      name: r.name,
+      status: r.status,
+      score: r.score,
+      stale: r.stale,
+      deprecated: r.deprecated,
+      lastModified: r.lastModified ? r.lastModified.toISOString() : null,
+      issues: r.issues || [],
+    })),
+  };
+}
+
+// Main
+const args = process.argv.slice(2);
+const jsonMode = args.includes('--json');
+
+const results = analyzeSkills();
+
+if (jsonMode) {
+  console.log(JSON.stringify(generateJsonReport(results), null, 2));
+  process.exit(0);
+} else {
+  generateReport(results);
+  const criticalIssues = results.filter(r => r.status === 'error').length;
+  process.exit(criticalIssues > 0 ? 1 : 0);
+}

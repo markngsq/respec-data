@@ -354,9 +354,45 @@ function generateSummaryReport() {
 // Main
 function main() {
   const args = process.argv.slice(2);
-  
-  if (args[0] && !args[0].startsWith('--')) {
-    generateSkillReport(args[0]);
+  const jsonMode = args.includes('--json');
+  const skillArg = args.find(a => !a.startsWith('--'));
+
+  if (jsonMode) {
+    if (skillArg) {
+      // Single skill JSON
+      const skillPath = path.join(SKILLS_DIR, skillArg);
+      const result = scoreSkill(skillPath, skillArg);
+      console.log(JSON.stringify(result, null, 2));
+    } else {
+      // Summary JSON for all skills
+      const entries = fs.readdirSync(SKILLS_DIR, { withFileTypes: true });
+      const results = [];
+      for (const entry of entries) {
+        if (!entry.isDirectory() || entry.name.startsWith('_')) continue;
+        const skillPath = path.join(SKILLS_DIR, entry.name);
+        results.push(scoreSkill(skillPath, entry.name));
+      }
+      results.sort((a, b) => b.totalScore - a.totalScore);
+
+      const byGrade = {
+        A: results.filter(r => r.grade === 'A').length,
+        B: results.filter(r => r.grade === 'B').length,
+        C: results.filter(r => r.grade === 'C').length,
+        D: results.filter(r => r.grade === 'D').length,
+        F: results.filter(r => r.grade === 'F').length,
+      };
+      const avg = Math.round(results.reduce((sum, r) => sum + r.totalScore, 0) / results.length);
+
+      console.log(JSON.stringify({
+        summary: { ...byGrade, average: avg, total: results.length },
+        skills: results,
+      }, null, 2));
+    }
+    return;
+  }
+
+  if (skillArg) {
+    generateSkillReport(skillArg);
   } else {
     generateSummaryReport();
   }
