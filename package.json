@@ -8,6 +8,7 @@
     "build:index": "node scripts/build-index.js",
     "search": "node scripts/search.js",
     "health": "node scripts/health-check.js",
+    "updates": "node scripts/check-updates.js",
     "postinstall": "npm run build:index",
     "convert:cursor": "node converters/cursor.js --all",
     "convert:aider": "node converters/aider.js",

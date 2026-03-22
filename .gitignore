@@ -3,3 +3,4 @@ integrations/*/
 !integrations/README.md
 package-lock.json
 capabilities.json
+.skill-versions.json
