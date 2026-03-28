@@ -653,3 +653,5 @@ For detailed information, see:
 - **2026-02-18**: `generateStaticParams` must return plain objects, not class instances. Prisma results need `.map(p => ({ id: p.id }))` transformation or you get cryptic serialization errors at build time.
 - **2026-02-17**: When using `revalidatePath` in a server action, the revalidation only applies to the specific layout segment — not child pages. Use `revalidatePath('/posts', 'layout')` to bust the whole subtree.
 - **2026-02-15**: `unstable_cache` with `fetch` inside a server component creates a double-cache situation. Pick one: either use `fetch` with `next.revalidate` OR use `unstable_cache` wrapping a direct DB call. Never both.
+
+<!-- Test edit for GWS sync - 2026-03-23 16:24 -->

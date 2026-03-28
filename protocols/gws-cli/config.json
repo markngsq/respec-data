@@ -1,0 +1,17 @@
+{
+  "project_id": "respec-491106",
+  "workspace_folder_id": "1i0w4_rYo8mSIOO_qN1dVPvhLV6OMTeqU",
+  "contributions_folder_id": "1_LLYq817Tj7qjAqdCq9fr2kISRwo0mAT",
+  "folders": {
+    "templates": "1QVRE2qWyup36HHHAEbkPu269jvvkHb78",
+    "staging": "1M4-yQNKZm8COcVsBRoHHYJ79etO4nluZ",
+    "users": "1sUpvtlucZq8I0xJsqNrPRgG6NgH5ZvuM"
+  },
+  "description": {
+    "workspace_folder_id": "General Respec workspace for testing and development",
+    "contributions_folder_id": "Root folder for all Respec skill contributions",
+    "templates": "Skill templates, guidelines, and documentation",
+    "staging": "Pending review contributions",
+    "users": "Individual user folders for skill development"
+  }
+}

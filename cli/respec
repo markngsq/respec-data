@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+/**
+ * Respec CLI - Main Entry Point
+ */
+
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+const args = process.argv.slice(2);
+const command = args[0];
+
+if (!command) {
+  console.log(`
+Respec CLI
+
+Commands:
+  sync <skill-name>         Sync a skill to Google Drive
+  sync --all                Sync all skills
+  sync --status             Show sync status
+  contribute submit <name>  Submit a skill for review
+  contribute list           List pending contributions
+  
+Run 'respec <command> --help' for more info.
+  `);
+  process.exit(0);
+}
+
+// Route to sub-commands
+if (command === 'sync') {
+  // Re-run with sync script
+  import(resolve(__dirname, 'respec-sync.js'));
+} else if (command === 'contribute') {
+  // Re-run with contribute script
+  import(resolve(__dirname, 'respec-contribute.js'));
+} else {
+  console.error(`Unknown command: ${command}`);
+  console.log(`Run 'respec --help' for usage.`);
+  process.exit(1);
+}
