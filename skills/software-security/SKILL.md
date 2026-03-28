@@ -107,5 +107,45 @@ After writing code:
 <!-- ZONE:APPEND -->
 ## Lessons Learned
 
+### 2026-03-23 — GWS OAuth: full scope URLs required, enable APIs before credentials
+
+**1. Scope format — use full URLs**
+```js
+// WRONG
+scopes: ['drive.file', 'email']
+
+// CORRECT
+scopes: [
+  'https://www.googleapis.com/auth/drive',
+  'https://www.googleapis.com/auth/userinfo.email',
+  'openid'
+]
+```
+
+**2. Enable the API in GCP before creating OAuth credentials** — credentials created before the API is enabled will auth fine but API calls return 403.
+
+**3. Test users must be explicitly listed** — for apps in "Testing" mode, any account not listed hits "Access blocked: App not verified". [project:respec]
+
+---
+
+### 2026-03-25 — JWT role auto-assignment pattern for mixed OAuth + password auth
+
+When supporting both OAuth and password login, keep JWT payload consistent and assign roles in the callback:
+
+```ts
+const role = email.endsWith('@tech.gov.sg') ? 'govtech' : 'user'
+const user = await findOrCreateUser({ email, name, avatar, provider: 'google', role })
+```
+
+`createUser()` must handle optional `passwordHash` (OAuth users have none). Use a `provider` field to distinguish auth type without separate tables. [project:respec]
+
+---
+
+### 2026-03-23 — GWS OAuth: regular Drive folders work; Shared Drives need admin
+
+Creating Shared Drives requires GSuite admin permissions (403 `insufficientPermissions`). Regular folders in My Drive work identically for app storage without admin.
+
+Also: `drive.file` scope only covers files the app created. For managing a folder hierarchy across users (`users/*/skills/`), you need the full `https://www.googleapis.com/auth/drive` scope. [project:respec]
+
 <!-- ZONE:APPEND -->
 ## Changelog

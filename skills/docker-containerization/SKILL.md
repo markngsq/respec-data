@@ -429,5 +429,28 @@ Specific culprit: "Manual proxy" checkbox in Docker Desktop → Resources → Pr
 
 Diagnosis: `curl -6 https://registry-1.docker.io` (hangs) vs `curl -4 https://registry-1.docker.io` (instant). If the `-4` works and `-6` doesn't, it's IPv6 + proxy, not DNS.
 
+---
+
+### 2026-03-27 — macOS `networkserviceproxy` can intercept Docker TLS at kernel level
+
+Spent 4.5 hours on a Docker TLS error (`x509: certificate is valid for *.valtixinc.com, not registry-1.docker.io`) that persisted through full Docker reinstall, SIP disable, NVRAM reset, and firewall changes.
+
+**Root cause:** macOS `networkserviceproxy` (iCloud Private Relay infrastructure) had a corporate Valtix TLS proxy config embedded at OS level from initial setup. The plist `com.apple.networkserviceproxy.plist` recreated itself after deletion.
+
+**Diagnose with:**
+```bash
+curl -v https://registry-1.docker.io 2>&1 | grep "subject:"
+# Shows: subject: CN=*.qa.valtixinc.com  ← corporate proxy intercepting
+```
+
+SSH in from another machine on the same network — if it works from there but not locally, it's OS-level interception, not the network.
+
+**Resolution options:**
+1. Use a different machine (fastest)
+2. Full macOS reinstall (nuclear)
+3. Wait — it resolved itself ~19 hours later after NVRAM reset propagated
+
+**Don't burn 4+ hours on this. Move to a clean machine.** [global]
+
 <!-- ZONE:APPEND -->
 ## Changelog

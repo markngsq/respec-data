@@ -443,5 +443,39 @@ python scripts/coverage_analyzer.py coverage/coverage-final.json
 <!-- ZONE:APPEND -->
 ## Lessons Learned
 
+### 2026-03-18 — Tauri clipboard plugin required to avoid NotAllowedError in async context
+
+The browser's `navigator.clipboard.writeText()` fails with `NotAllowedError` inside async handlers in Tauri because the clipboard API requires a synchronous user gesture chain.
+
+```ts
+// BAD: async break → NotAllowedError
+button.addEventListener('click', async () => {
+  const content = await fetchContent()
+  await navigator.clipboard.writeText(content)  // fails
+})
+
+// GOOD: use Tauri's clipboard plugin
+import { writeText } from '@tauri-apps/plugin-clipboard-manager'
+button.addEventListener('click', async () => {
+  const content = await fetchContent()
+  await writeText(content)  // works
+})
+```
+
+Add to Tauri capabilities:
+```json
+{ "permissions": ["clipboard-manager:allow-write-text"] }
+```
+
+Also: use `openUrl` from `@tauri-apps/plugin-opener` (not Node's `open` package) for browser URL opening in Tauri. [project:respec]
+
+---
+
+### 2026-03-21 — XML tags in skill frontmatter are a security vulnerability
+
+XML angle brackets in YAML frontmatter descriptions are a prompt injection risk — frontmatter is injected directly into the system prompt. In a batch audit of 57 Respec skills, 38 had `<tag>` style markup in descriptions. All sanitised to plain text.
+
+Rules: no `<tag>` style XML in frontmatter, no "claude"/"anthropic" in skill names (model confusion), kebab-case filenames only, `SKILL.md` is case-sensitive. [global]
+
 <!-- ZONE:APPEND -->
 ## Changelog

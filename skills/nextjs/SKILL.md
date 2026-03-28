@@ -647,6 +647,60 @@ For detailed information, see:
 <!-- ZONE:APPEND -->
 ## Lessons Learned
 
+### 2026-03-06 — `output: "export"` for static Next.js builds
+
+When building a Next.js app as a fully static site (no server), set `output: "export"` in `next.config.ts`. This generates a static export in `out/` instead of the `.next/standalone` server bundle.
+
+```ts
+// next.config.ts
+const nextConfig: NextConfig = {
+  output: "export",
+}
+```
+
+Without this, `next build` produces a server bundle that won't work when deployed as static files. The error is usually "cannot find module" or a runtime crash at the hosting layer. [global]
+
+---
+
+### 2026-03-06 — Next.js standalone needs env vars at BOTH build time and runtime
+
+For standalone deployments, `NEXT_PUBLIC_*` vars must be present at build time — they get inlined into the client bundle. If missing at build time, they bake as `undefined` even if you set them correctly at runtime.
+
+Pattern for Docker: pass env vars via `--build-arg` AND set them in the container runtime config. [project:respec]
+
+---
+
+### 2026-03-27 — Monorepo package name mismatch causes cryptic import errors
+
+In the Respec monorepo, `@respec/core` was imported everywhere but the actual `package.json` defined it as `@respec-gtc/core`. This caused 31 "cannot find module" errors at build.
+
+The error looks like a missing npm dependency, not a naming mismatch. Check `package.json#name` first.
+
+```jsonc
+// package.json
+{ "name": "@respec-gtc/core" }  // actual name
+
+// broken import — wrong name, fails silently in dev
+import { something } from "@respec/core"
+```
+
+In a pnpm workspace, symlinks are keyed by the exact `name` field. [project:respec]
+
+---
+
+### 2026-03-25 — Google OAuth `createUser()` — use object params not positional args
+
+When adding OAuth (no password), a `createUser(email, passwordHash, role)` function with positional args breaks. Refactor to object param so optional fields (`name?`, `avatar?`, `provider?`) can be added without touching every callsite.
+
+```ts
+// BAD: breaks when fields become optional
+createUser(email, passwordHash, role)
+
+// GOOD: extensible
+createUser({ email, passwordHash, name, avatar, provider })
+```
+[project:respec]
+
 <!-- ZONE:APPEND -->
 ## Changelog
 

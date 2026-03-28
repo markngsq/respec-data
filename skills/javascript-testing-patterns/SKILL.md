@@ -1055,5 +1055,17 @@ it("should call function after delay", () => {
 <!-- ZONE:APPEND -->
 ## Lessons Learned
 
+### 2026-02-08 — Playwright E2E coverage is almost always an afterthought — budget for it explicitly
+
+In the Respec codebase review (110 Vitest unit tests, 2 Playwright E2E tests), E2E coverage was essentially zero. Pattern observed: unit tests grow organically, E2E gets added "later" and never catches up.
+
+Minimum viable E2E for a Next.js app:
+1. Auth flow (login → dashboard → protected route)
+2. Core CRUD (create → see it rendered)
+3. Error state (invalid input → error message)
+4. Deploy smoke test (production URL returns 200)
+
+If E2E takes >5min, it stops being run. Keep the suite small and fast — 10 focused tests beat 50 slow ones. [global]
+
 <!-- ZONE:APPEND -->
 ## Changelog

@@ -177,5 +177,32 @@ For the complete guide with all rules expanded: `AGENTS.md`
 <!-- ZONE:APPEND -->
 ## Lessons Learned
 
+### 2026-03-24 — Cloudflare Pages auto-deploy removes need for wrangler CLI
+
+Wire the GitHub repo to Cloudflare Pages via the dashboard once. From then on, `git push origin main` triggers the full build + deploy pipeline — no `wrangler` token, no CI config needed.
+
+Builds run on Cloudflare infra, static output deploys in ~2-3 minutes. Confirmed working for `modalos` → `m-os.sh`. [global]
+
+---
+
+### 2026-03-06 — `body:has(.route-class)` for route-scoped body-level CSS overrides
+
+When shared `globals.css` sets properties (`overflow: hidden`, `-webkit-font-smoothing: none`) that break specific pages, use `body:has()` to scope overrides without touching shared CSS:
+
+```css
+body:has(.page-standalone) {
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+}
+```
+
+```tsx
+export default function StandalonePage() {
+  return <main className="page-standalone">...</main>
+}
+```
+
+Non-destructive, no `!important` fights. [global]
+
 <!-- ZONE:APPEND -->
 ## Changelog

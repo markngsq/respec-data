@@ -445,5 +445,33 @@ git branch recovered-branch abc123
 <!-- ZONE:APPEND -->
 ## Lessons Learned
 
+### 2026-03-12 — gh-pages deploy requires `--dotfiles` flag and HTTP/1.1 workaround
+
+Two non-obvious requirements for deploying via the `gh-pages` npm package:
+
+**1. `--dotfiles` to include `.nojekyll`**
+```bash
+gh-pages -d dist --dotfiles
+```
+Without it, `.nojekyll` is excluded → GitHub Pages runs Jekyll and may mangle routing.
+
+**2. `HTTP/1.1` for git push 400 errors**
+```bash
+git config http.version HTTP/1.1
+```
+On some setups, `git push` fails with HTTP 400 when HTTP/2 is used. Looks like a remote rejection but is actually a protocol negotiation failure. [global]
+
+---
+
+### 2026-03-05 — Always `git pull --rebase` when a cron job pushes to the same repo
+
+When a nightly cron commits to a repo you also work in interactively, you'll accumulate diverged histories. Make rebase the default:
+
+```bash
+git config pull.rebase true
+```
+
+Without this, `git pull` creates merge commits and after a few cron runs you're untangling a messy history. [global]
+
 <!-- ZONE:APPEND -->
 ## Changelog
