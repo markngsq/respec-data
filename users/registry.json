@@ -127,6 +127,16 @@
       "role": "user",
       "branch": "users/alicia",
       "createdAt": "2026-03-18T08:49:23.371Z"
+    },
+    {
+      "id": "mark.ng",
+      "email": "mark.ng@gt.tech.gov.sg",
+      "role": "user",
+      "branch": "users/mark.ng",
+      "createdAt": "2026-03-28T07:22:27.450Z",
+      "name": "Mark Ng",
+      "avatar": "https://lh3.googleusercontent.com/a/ACg8ocLLHsFUMDKonfdHkvK40Uu8-Rd7GmvX2_EFSVlWfykBGQoubw=s96-c",
+      "provider": "google"
     }
   ]
 }
