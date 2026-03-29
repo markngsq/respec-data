@@ -1,10 +1,7 @@
 ---
 name: code-reviewer
-description: -. Use when working with code reviewer or related tasks.
-  Code review automation for TypeScript, JavaScript, Python, Go, Swift, Kotlin.
-  Analyzes PRs for complexity and risk, checks code quality for SOLID violations
-  and code smells, generates review reports. Use when reviewing pull requests,
-  analyzing code quality, identifying issues, generating review checklists.
+description: >-
+  Automated code review for TypeScript, JavaScript, Python, Go, Swift, and Kotlin — analyzes PRs for complexity and risk, checks for SOLID violations and code smells, and generates structured review reports. Use when reviewing pull requests, auditing code quality, generating review checklists, or assessing changeset risk before merging.
 vibe: Automated code review for quality and security
 maturity: seed
 evolution_count: 0

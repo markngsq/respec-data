@@ -1,12 +1,7 @@
 ---
 name: thought-based-reasoning
-description: -. Use when working with thought based reasoning or related tasks.
-  Use when tackling complex reasoning tasks requiring step-by-step logic,
-  multi-step arithmetic, commonsense reasoning, symbolic manipulation, or
-  problems where simple prompting fails - provides comprehensive guide to
-  Chain-of-Thought and related prompting techniques (Zero-shot CoT,
-  Self-Consistency, Tree of Thoughts, Least-to-Most, ReAct, PAL, Reflexion) with
-  templates, decision matrices, and research-backed patterns
+description: >-
+  Comprehensive guide to Chain-of-Thought and advanced reasoning techniques (Zero-shot CoT, Self-Consistency, Tree of Thoughts, Least-to-Most, ReAct, PAL, Reflexion) with templates and decision matrices. Use when tackling complex multi-step reasoning, logic puzzles, arithmetic chains, or when simple prompting keeps producing shallow or wrong answers.
 vibe: Chain-of-Thought for complex reasoning
 maturity: seed
 evolution_count: 0

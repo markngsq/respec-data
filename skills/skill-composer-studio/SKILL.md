@@ -1,9 +1,7 @@
 ---
 name: skill-composer-studio
-description: -. Use when working with skill composer studio or related tasks.
-  CHAIN multiple existing skills into custom multi-step workflows. Programmable
-  skill combinations with automatic handoffs. Create composite skills from
-  building blocks with conditional logic.
+description: >-
+  Chain multiple existing skills into custom multi-step workflows with automatic handoffs, conditional logic, and data transformations between steps. Use when a task requires orchestrating several specialized skills in sequence, creating composite workflows, or automating multi-stage pipelines from the skill catalog.
 vibe: Chain skills into custom workflows
 maturity: seed
 evolution_count: 0

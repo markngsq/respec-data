@@ -1,12 +1,7 @@
 ---
 name: skill-orchestrator
-description: -. Use when working with skill orchestrator or related tasks.
-  This skill orchestrates programming tasks by analyzing available Claude Code
-  skills and creating execution plans. It should be used when working on any
-  coding task that could benefit from multiple specialized skills. The skill
-  supports two execution modes selected by user - manual (Claude executes with
-  explicit skill references) or delegated (tasks sent to sub-agents with
-  skills).
+description: >-
+  Orchestrates complex programming tasks by analyzing available skills, creating structured execution plans with skill assignments, and delegating sub-tasks to specialized agents (manual or delegated mode). Use when a task is large enough to benefit from multiple skills, needs a coordinated execution plan, or should be parallelized across agents.
 vibe: Multi-skill coordination for complex tasks
 maturity: seed
 evolution_count: 0

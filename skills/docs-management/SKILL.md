@@ -1,16 +1,7 @@
 ---
 name: docs-management
-description: -. Use when working with docs management or related tasks.
-  Single source of truth and librarian for ALL Claude official documentation.
-  Manages local documentation storage, scraping, discovery, and resolution. Use
-  when finding, locating, searching, or resolving Claude documentation;
-  discovering docs by keywords, category, tags, or natural language queries;
-  scraping from sitemaps or docs maps; managing index metadata (keywords, tags,
-  aliases); or rebuilding index from filesystem. Run scripts to scrape, find,
-  and resolve documentation. Handles doc_id resolution, keyword search, natural
-  language queries, category/tag filtering, alias resolution, sitemap.xml
-  parsing, docs map processing, markdown subsection extraction for internal use,
-  hash-based drift detection, and comprehensive index maintenance.
+description: >-
+  Single source of truth and librarian for Claude official documentation — manages local doc storage, scraping, keyword/tag search, natural language queries, and drift detection. Use when finding, locating, searching, or resolving Claude Code documentation; discovering docs by category; or rebuilding/maintaining the local docs index.
 allowed-tools: 'Read, Glob, Grep, Bash, Skill'
 vibe: Single source of truth for Claude docs
 maturity: seed

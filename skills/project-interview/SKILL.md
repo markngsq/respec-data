@@ -1,11 +1,7 @@
 ---
 name: project-interview
-description: -. Use when working with project interview or related tasks.
-  Conducts project specification interviews to clarify architecture, tech stack,
-  and requirements. Use when starting a new project, planning architecture,
-  gathering requirements, making tech decisions, or when asked to interview,
-  create a spec, help plan, or define what to build. Creates SPEC.md with
-  complete project specification.
+description: >-
+  Conducts structured technical interviews to gather requirements, clarify architecture, choose tech stack, and produce a complete SPEC.md. Use when starting a new project, resolving ambiguous requirements before a large piece of work, or when asked to 'interview me' or 'help me plan what to build'.
 vibe: Gather requirements through structured interview
 allowed-tools: 'Read, Write, Edit, WebSearch, WebFetch, Bash(*), Glob, Grep'
 maturity: seed

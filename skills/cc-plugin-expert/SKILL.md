@@ -1,9 +1,7 @@
 ---
 name: cc-plugin-expert
-description: -. Use when working with cc plugin expert or related tasks.
-  Comprehensive Claude Code plugin development expert providing guidance for
-  creation, maintenance, installation, configuration, and troubleshooting of
-  plugins and skills
+description: >-
+  Comprehensive expert guide for creating, maintaining, installing, configuring, and troubleshooting Claude Code plugins and skills. Use when building a new plugin, debugging an existing one, setting up plugin structure, writing hooks, or following skill-creator best practices.
 vibe: Master Claude Code plugin development
 category: development
 tags:

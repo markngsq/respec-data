@@ -1,12 +1,7 @@
 ---
 name: senior-architect
-description: -. Use when working with senior architect or related tasks.
-  This skill should be used when the user asks to "design system architecture",
-  "evaluate microservices vs monolith", "create architecture diagrams", "analyze
-  dependencies", "choose a database", "plan for scalability", "make technical
-  decisions", or "review system design". Use for architecture decision records
-  (ADRs), tech stack evaluation, system design reviews, dependency analysis, and
-  generating architecture diagrams in Mermaid, PlantUML, or ASCII format.
+description: >-
+  Architecture design and analysis tools for making informed technical decisions — generates Mermaid/PlantUML/ASCII diagrams, writes ADRs, evaluates tech stacks, analyzes dependencies, and recommends patterns. Use when designing system architecture, evaluating microservices vs monolith, choosing a database, or planning for scalability.
 vibe: Technical decisions backed by trade-offs
 maturity: seed
 evolution_count: 0

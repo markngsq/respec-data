@@ -1,11 +1,7 @@
 ---
 name: senior-prompt-engineer
-description: -. Use when working with senior prompt engineer or related tasks.
-  This skill should be used when the user asks to "optimize prompts", "design
-  prompt templates", "evaluate LLM outputs", "build agentic systems", "implement
-  RAG", "create few-shot examples", "analyze token usage", or "design AI
-  workflows". Use for prompt engineering patterns, LLM evaluation frameworks,
-  agent architectures, and structured output design.
+description: >-
+  Systematic prompt engineering covering optimization, few-shot design, chain-of-thought templates, structured output schemas, token reduction, and LLM evaluation frameworks for agentic workflows. Use when optimizing system prompts, designing few-shot examples, building eval pipelines, reducing token usage, or structuring tool-calling prompts.
 vibe: Systematic prompt optimization
 maturity: seed
 evolution_count: 0

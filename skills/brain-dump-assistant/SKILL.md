@@ -1,11 +1,8 @@
 ---
 name: brain-dump-assistant
 source: brain-dump
-description: -. Use when working with brain dump assistant or related tasks.
-  Manage a personal knowledge capture system. Use when the user wants to capture
-  ideas, track todos, organize projects, review their brain dump, or mentions
-  "brain dump", "capture this", "add to my list", "what's on my plate", "what
-  should I focus on", or "daily review".
+description: >-
+  Personal knowledge capture and triage system for externalizing working memory — capture ideas, todos, projects, and questions with zero friction, then surface and organize them with AI-assisted triage. Use when capturing thoughts, reviewing what's on your plate, running a daily review, or managing a brain dump CLI.
 vibe: Capture ideas, track todos, organize projects
 maturity: seed
 evolution_count: 0

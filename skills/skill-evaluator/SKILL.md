@@ -1,13 +1,8 @@
 ---
 name: skill-evaluator
 license: MIT
-description: -. Use when working with skill evaluator or related tasks.
-  Comprehensive evaluation toolkit for analyzing Claude skills across security,
-  quality, utility, and compliance dimensions. This skill should be used when
-  users need to evaluate a skill before installation, review before publishing,
-  or assess overall quality and safety. Performs 5-layer security analysis,
-  validates structure and documentation, checks compliance with skill-creator
-  guidelines, and generates markdown reports with scoring and recommendations.
+description: >-
+  Comprehensive skill evaluation toolkit performing 5-layer security analysis, structure validation, documentation quality checks, and compliance review — generates scored markdown reports with recommendations. Use when evaluating a third-party skill before installation, auditing for vulnerabilities, or validating a skill before publishing.
 vibe: 5-layer security analysis for skill quality
 maturity: seed
 evolution_count: 0

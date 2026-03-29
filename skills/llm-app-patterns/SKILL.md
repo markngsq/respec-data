@@ -1,10 +1,7 @@
 ---
 name: llm-app-patterns
-description: -. Use when working with llm app patterns or related tasks.
-  Production-ready patterns for building LLM applications. Covers RAG pipelines,
-  agent architectures, prompt IDEs, and LLMOps monitoring. Use when designing AI
-  applications, implementing RAG, building agents, or setting up LLM
-  observability.
+description: >-
+  Production-ready patterns for building LLM applications including RAG pipelines, agent architectures, tool-calling flows, prompt management, and LLMOps monitoring. Use when designing AI applications, implementing retrieval-augmented generation, building agentic systems, choosing between RAG vs fine-tuning, or setting up LLM observability.
 vibe: Production RAG and agent architectures
 maturity: seed
 evolution_count: 0

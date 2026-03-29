@@ -1,10 +1,7 @@
 ---
 name: code-refactor
-description: -. Use when working with code refactor or related tasks.
-  Perform bulk code refactoring operations like renaming variables/functions
-  across files, replacing patterns, and updating API calls. Use when users
-  request renaming identifiers, replacing deprecated code patterns, updating
-  method calls, or making consistent changes across multiple locations.
+description: >-
+  Systematic bulk code refactoring across files — rename identifiers, replace deprecated patterns, update API call sites, and extract shared utilities. Auto-switches to execution mode for 10+ files (90% token savings). Use when renaming functions/variables across a codebase, replacing deprecated APIs, or making consistent pattern changes at scale.
 vibe: Bulk refactoring across codebases
 maturity: seed
 evolution_count: 0

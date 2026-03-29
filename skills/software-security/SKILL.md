@@ -1,10 +1,7 @@
 ---
 name: software-security
-description: -. Use when working with software security or related tasks.
-  A software security skill that integrates with Project CodeGuard to help AI
-  coding agents write secure code and prevent common vulnerabilities. Use this
-  skill when writing, reviewing, or modifying code to ensure secure-by-default
-  practices are followed.
+description: >-
+  Integrates Project CodeGuard secure-by-default practices into AI coding workflows — applies language-specific security rules covering authentication, injection prevention, cryptography, session management, and infrastructure hardening. Use when writing, reviewing, or modifying code to enforce security standards and prevent common vulnerabilities.
 vibe: Secure-by-default code patterns
 codeguard-version: 1.2.0
 framework: Project CodeGuard

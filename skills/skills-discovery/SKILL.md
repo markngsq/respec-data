@@ -1,13 +1,7 @@
 ---
 name: skills-discovery
-description: -. Use when working with skills discovery or related tasks.
-  Search for and install Agent Skills that give you specialized capabilities.
-  Before starting work, ask might a skill exist that handles this better than my
-  base knowledge? If the task involves specific technologies, frameworks, file
-  formats, or expert domains. Search proactively, even if the user doesn't
-  mention skills. Skills encode best practices, tools, and techniques you
-  wouldn't otherwise have. Also use when users explicitly ask to find, install,
-  or manage skills.
+description: >-
+  Search and install agent skills from the claude-plugins.dev registry to extend Claude Code capabilities with specialized knowledge and tools. Use proactively before any non-trivial task to find skills that encode domain best practices, or when explicitly asked to find, install, or manage skills.
 vibe: Search and install agent skills on-demand
 maturity: seed
 evolution_count: 0
