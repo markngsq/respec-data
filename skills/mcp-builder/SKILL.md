@@ -1,8 +1,10 @@
 ---
 name: mcp-builder
 description: >-
-  Guide for creating high-quality MCP (Model Context Protocol) servers in Python (FastMCP) or TypeScript (MCP SDK) that expose well-designed tools, resources, and prompts to LLMs. Use when building an MCP server to integrate external APIs or services, designing tool schemas, or debugging MCP connections.
-vibe: Type-safe MCP servers for external services
+  Guide for creating high-quality MCP (Model Context Protocol) servers that
+  enable LLMs to interact with external services through well-designed tools.
+  Use when building MCP servers to integrate external APIs or services, whether
+  in Python (FastMCP) or Node/TypeScript (MCP SDK).
 license: Complete terms in LICENSE.txt
 maturity: seed
 evolution_count: 0
@@ -25,11 +27,6 @@ triggers:
 ## Overview
 
 Create MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. The quality of an MCP server is measured by how well it enables LLMs to accomplish real-world tasks.
-
-dependencies:
-  - name: MCP SDK
-    url: https://github.com/modelcontextprotocol/sdk
-    tier: free
 
 ---
 

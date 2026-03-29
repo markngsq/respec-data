@@ -1,8 +1,13 @@
 ---
 name: smart-docs
 description: >-
-  AI-powered codebase documentation generator that analyzes project structure, identifies architecture patterns, creates C4 model diagrams, and generates professional technical docs using Claude Code natively. Use when documenting a codebase, generating architecture overviews, creating developer guides, or understanding an unfamiliar software project.
-vibe: AI-powered codebase documentation
+  AI-powered comprehensive codebase documentation generator. Analyzes project
+  structure, identifies architecture patterns, creates C4 model diagrams, and
+  generates professional technical documentation. Use when users need to
+  document codebases, understand software architecture, create technical specs,
+  or generate developer guides. Supports all programming languages. Alternative
+  to Litho/deepwiki-rs that uses Claude Code subscription without external API
+  costs.
 allowed-tools:
   - Read
   - Glob

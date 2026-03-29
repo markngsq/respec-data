@@ -1,9 +1,12 @@
 ---
 name: docker-containerization
-emoji: 🐳
-vibe: Ship anywhere with zero config drift
-category: deployment
-description: Docker containerization patterns for Next.js, React, and Node.js applications. Use when containerizing applications, creating Dockerfiles, docker-compose configurations, or deploying containers to Kubernetes, ECS, Cloud Run, etc.
+description: >-
+  This skill should be used when containerizing applications with Docker,
+  creating Dockerfiles, docker-compose configurations, or deploying containers
+  to various platforms. Ideal for Next.js, React, Node.js applications requiring
+  containerization for development, production, or CI/CD pipelines. Use this
+  skill when users need Docker configurations, multi-stage builds, container
+  orchestration, or deployment to Kubernetes, ECS, Cloud Run, etc.
 maturity: seed
 evolution_count: 0
 tags:
@@ -20,19 +23,6 @@ triggers:
 ---
 
 # Docker Containerization Skill
-
-## Communication Style
-- Show complete Dockerfile examples (not fragments)
-- Include both local dev AND production configs
-- Point out security implications (.dockerignore, secrets, USER directive)
-- Assume basic Docker knowledge (build, run, image layers)
-
-## Success Metrics
-- ✅ Image size <200MB (Alpine base + multi-stage builds)
-- ✅ Build time <2 minutes (layer caching optimized)
-- ✅ Zero secrets in image layers
-- ✅ Non-root USER in production
-- ✅ .dockerignore present and comprehensive
 
 <!-- ZONE:STABLE -->
 ## Overview
@@ -194,98 +184,6 @@ Includes configuration examples, commands, auto-scaling setup, and monitoring.
 4. Register: `aws ecs register-task-definition --cli-input-json file://task-def.json`
 5. Create service: `aws ecs create-service --cluster my-cluster --service-name app --desired-count 3`
 
-## Anti-Patterns (Don't Do This)
-
-### ❌ No .dockerignore File
-
-```dockerfile
-# BAD: Copies node_modules, .git, etc. into image
-COPY . .
-```
-
-**Why it's bad:** Copies node_modules (hundreds of MBs), .git history, .env files, test files — massive image size + security risk.
-
-**✅ Do this instead:**
-```dockerignore
-# .dockerignore
-node_modules
-.git
-.env
-.env.local
-*.log
-.next/cache
-coverage
-.vscode
-```
-
-dependencies:
-  - name: Docker CLI
-    url: https://docs.docker.com/engine/install/
-    tier: free
-
----
-
-### ❌ Running as Root User
-
-```dockerfile
-# BAD: Runs as root (UID 0)
-FROM node:20-alpine
-COPY . /app
-CMD ["node", "server.js"]
-```
-
-**Why it's bad:** If container is compromised, attacker has root access.
-
-**✅ Do this instead:**
-```dockerfile
-# GOOD: Non-root user
-FROM node:20-alpine
-RUN addgroup -g 1001 -S nodejs && adduser -S nodejs -u 1001
-USER nodejs
-COPY --chown=nodejs:nodejs . /app
-CMD ["node", "server.js"]
-```
-
----
-
-### ❌ Installing Dev Dependencies in Production
-
-```dockerfile
-# BAD: Installs devDependencies (eslint, typescript, etc.)
-RUN npm install
-```
-
-**Why it's bad:** Adds 50-100MB of unnecessary packages (testing tools, build tools).
-
-**✅ Do this instead:**
-```dockerfile
-# GOOD: Production-only deps
-RUN npm ci --only=production
-# OR with package managers that support workspaces:
-RUN npm ci --workspace=api --omit=dev
-```
-
----
-
-### ❌ Using :latest Tag
-
-```dockerfile
-# BAD: Unpredictable base image
-FROM node:latest
-```
-
-**Why it's bad:** `latest` tag changes over time → builds break, hard to debug, not reproducible.
-
-**✅ Do this instead:**
-```dockerfile
-# GOOD: Specific version + digest (immutable)
-FROM node:20.11.0-alpine@sha256:abc123...
-# OR at minimum, pin major+minor:
-FROM node:20-alpine
-```
-
----
-
 ## Best Practices
 
 ### Security
@@ -428,29 +326,6 @@ Backend.sock API (`/app/settings`) reads back correctly after write, but proxy/n
 Specific culprit: "Manual proxy" checkbox in Docker Desktop → Resources → Proxies. When checked with no proxy configured, VPNKit routes all traffic through a transparent proxy that tries IPv6 first. On machines with no IPv6 route, every `docker pull` hangs ~60s per host before falling back to IPv4.
 
 Diagnosis: `curl -6 https://registry-1.docker.io` (hangs) vs `curl -4 https://registry-1.docker.io` (instant). If the `-4` works and `-6` doesn't, it's IPv6 + proxy, not DNS.
-
----
-
-### 2026-03-27 — macOS `networkserviceproxy` can intercept Docker TLS at kernel level
-
-Spent 4.5 hours on a Docker TLS error (`x509: certificate is valid for *.valtixinc.com, not registry-1.docker.io`) that persisted through full Docker reinstall, SIP disable, NVRAM reset, and firewall changes.
-
-**Root cause:** macOS `networkserviceproxy` (iCloud Private Relay infrastructure) had a corporate Valtix TLS proxy config embedded at OS level from initial setup. The plist `com.apple.networkserviceproxy.plist` recreated itself after deletion.
-
-**Diagnose with:**
-```bash
-curl -v https://registry-1.docker.io 2>&1 | grep "subject:"
-# Shows: subject: CN=*.qa.valtixinc.com  ← corporate proxy intercepting
-```
-
-SSH in from another machine on the same network — if it works from there but not locally, it's OS-level interception, not the network.
-
-**Resolution options:**
-1. Use a different machine (fastest)
-2. Full macOS reinstall (nuclear)
-3. Wait — it resolved itself ~19 hours later after NVRAM reset propagated
-
-**Don't burn 4+ hours on this. Move to a clean machine.** [global]
 
 <!-- ZONE:APPEND -->
 ## Changelog

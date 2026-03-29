@@ -1,22 +1,11 @@
 ---
 name: audit
-description: Perform comprehensive audit of interface quality across accessibility, performance, theming, and responsive design. Generates detailed report of issues with severity ratings and recommendations. Use when building web components, pages, or applications.
-vibe: Comprehensive interface quality audit
+description: Perform comprehensive audit of interface quality across accessibility, performance, theming, and responsive design. Generates detailed report of issues with severity ratings and recommendations.
+user-invokable: true
 args:
   - name: area
     description: The feature or area to audit (optional)
     required: false
-user-invokable: true
-tags:
-  - ui
-  - design
-  - accessibility
-  - quality
-triggers:
-  - auditing a UI for accessibility, performance, or design issues
-  - checking if an interface looks generic or AI-generated
-  - running a quality review before shipping a feature
-  - getting a prioritised list of issues in a component or page
 ---
 
 Run systematic quality checks and generate a comprehensive audit report with prioritized issues and actionable recommendations. Don't fix issues - document them for other commands to address.
@@ -82,7 +71,7 @@ For each issue, document:
 - **Impact**: How it affects users
 - **WCAG/Standard**: Which standard it violates (if applicable)
 - **Recommendation**: How to fix it
-- **Suggested command**: Which command to use (prefer: {{available_commands}} — or other installed skills you're sure exist)
+- **Suggested command**: Which command to use (prefer: /animate, /quieter, /optimize, /adapt, /clarify, /distill, /delight, /onboard, /normalize, /audit, /harden, /polish, /extract, /bolder, /critique, /colorize — or other installed skills you're sure exist)
 
 #### Critical Issues
 [Issues that block core functionality or violate WCAG A]
@@ -119,7 +108,7 @@ Create actionable plan:
 
 ### Suggested Commands for Fixes
 
-Map issues to available commands. Prefer these: {{available_commands}}. You may also suggest other installed skills you're sure exist, but never invent commands.
+Map issues to available commands. Prefer these: /animate, /quieter, /optimize, /adapt, /clarify, /distill, /delight, /onboard, /normalize, /audit, /harden, /polish, /extract, /bolder, /critique, /colorize. You may also suggest other installed skills you're sure exist, but never invent commands.
 
 Examples:
 - "Use `/normalize` to align with design system (addresses N theming issues)"
@@ -137,4 +126,3 @@ Examples:
 - Report false positives without verification
 
 Remember: You're a quality auditor with exceptional attention to detail. Document systematically, prioritize ruthlessly, and provide clear paths to improvement. A good audit makes fixing easy.
-

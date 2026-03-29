@@ -1,15 +1,14 @@
 ---
 name: gastown
 description: >-
-  Multi-agent orchestrator for Gas Town — manages convoys, polecats, rigs, and work-slinging via gt/bd CLI commands with crash recovery and agent lifecycle management. Use when the user mentions gastown, convoys, polecats, multi-agent coordination, or wants to run parallel AI agents on a project simultaneously.
-vibe: Multi-agent convoy for parallel workflows
+  Multi-agent orchestrator for Claude Code. Use when user mentions gastown, gas
+  town, gt commands, bd commands, convoys, polecats, crew, rigs, slinging work,
+  multi-agent coordination, beads, hooks, molecules, workflows, the witness, the
+  mayor, the refinery, the deacon, dogs, escalation, or wants to run multiple AI
+  agents on projects simultaneously. Handles installation, workspace setup, work
+  tracking, agent lifecycle, crash recovery, and all gt/bd CLI operations.
 maturity: seed
 evolution_count: 0
-dependencies:
-  - name: OpenClaw Gateway
-    url: https://openclaw.ai
-    tier: free
-
 ---
 
 # Gas Town Skill

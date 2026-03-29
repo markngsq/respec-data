@@ -1,8 +1,11 @@
 ---
 name: slash-command-factory
 description: >-
-  Generate production-ready custom Claude Code slash commands through a guided 5-7 question flow — outputs organized .md files with YAML frontmatter, validation, and installation guidance. Use when creating custom slash commands for business research, content analysis, API integration, documentation automation, or workflow optimization.
-vibe: Generate custom Claude Code commands
+  Generate custom Claude Code slash commands through intelligent 5-7 question
+  flow. Creates powerful commands for business research, content analysis,
+  healthcare compliance, API integration, documentation automation, and workflow
+  optimization. Outputs organized commands to generated-commands/ with
+  validation and installation guidance.
 maturity: seed
 evolution_count: 0
 ---

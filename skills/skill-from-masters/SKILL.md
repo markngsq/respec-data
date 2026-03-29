@@ -1,8 +1,13 @@
 ---
 name: skill-from-masters
 description: >-
-  Discovers and incorporates proven expert methodologies into new skills before generation — researches domain masters, extracts their frameworks, and hands off to skill-creator for skill generation. Use before skill-creator when creating a new skill that should embody world-class domain expertise rather than generic patterns.
-vibe: Discover expert methodologies for skills
+  Help users create high-quality skills by discovering and incorporating proven
+  methodologies from domain experts. Use this skill BEFORE skill-creator when
+  users want to create a new skill - it enhances skill-creator by first
+  identifying expert frameworks and best practices to incorporate. Triggers on
+  requests like "help me create a skill for X" or "I want to make a skill that
+  does Y". This skill guides methodology selection, then hands off to
+  skill-creator for the actual skill generation.
 maturity: seed
 evolution_count: 0
 ---

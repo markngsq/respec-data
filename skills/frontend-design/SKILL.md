@@ -1,20 +1,7 @@
 ---
 name: frontend-design
 description: Create distinctive, production-grade frontend interfaces with high design quality. Use this skill when the user asks to build web components, pages, artifacts, posters, or applications. Generates creative, polished code that avoids generic AI aesthetics.
-vibe: Distinctive, production-grade interfaces
 license: Apache 2.0. Based on Anthropic's frontend-design skill. See NOTICE.md for attribution.
-tags:
-  - ui
-  - design
-  - react
-  - css
-  - frontend
-triggers:
-  - building a new UI component, page, or web application
-  - designing something that needs to look distinctive, not generic
-  - creating a landing page, poster, or visual artifact
-  - making frontend code that avoids "AI slop" aesthetics
-  - needing opinionated guidance on typography, color, spacing, or motion
 ---
 
 This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices.
@@ -137,4 +124,4 @@ Match implementation complexity to the aesthetic vision. Maximalist designs need
 
 Interpret creatively and make unexpected choices that feel genuinely designed for the context. No design should be the same. Vary between light and dark themes, different fonts, different aesthetics. NEVER converge on common choices across generations.
 
-Remember: {{model}} is capable of extraordinary creative work. Don't hold back—show what can truly be created when thinking outside the box and committing fully to a distinctive vision.
+Remember: Claude is capable of extraordinary creative work. Don't hold back—show what can truly be created when thinking outside the box and committing fully to a distinctive vision.

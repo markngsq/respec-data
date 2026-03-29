@@ -1,19 +1,11 @@
 ---
 name: bolder
-description: Amplify safe or boring designs to make them more visually interesting and stimulating. Increases impact while maintaining usability. Use when building web components, pages, or applications.
-vibe: Amplify safe designs for visual impact
+description: Amplify safe or boring designs to make them more visually interesting and stimulating. Increases impact while maintaining usability.
+user-invokable: true
 args:
   - name: target
     description: The feature or component to make bolder (optional)
     required: false
-user-invokable: true
-tags:
-  - ui
-  - design
-triggers:
-  - making a safe or boring design more visually striking
-  - amplifying the visual impact of a component or page
-  - pushing a design further when it feels timid or generic
 ---
 
 Increase visual impact and personality in designs that are too safe, generic, or visually underwhelming, creating more engaging and memorable experiences.
@@ -26,8 +18,8 @@ You cannot do a great job without having necessary context, such as target audie
 
 Attempt to gather these from the current thread or codebase.
 
-1. If you don't find *exact* information and have to infer from existing design and functionality, you MUST STOP and {{ask_instruction}} whether you got it right.
-2. Otherwise, if you can't fully infer or your level of confidence is medium or lower, you MUST {{ask_instruction}} clarifying questions first to complete your context.
+1. If you don't find *exact* information and have to infer from existing design and functionality, you MUST STOP and STOP and call the AskUserQuestionTool to clarify. whether you got it right.
+2. Otherwise, if you can't fully infer or your level of confidence is medium or lower, you MUST STOP and call the AskUserQuestionTool to clarify. clarifying questions first to complete your context.
 
 Do NOT proceed until you have answers. Guessing leads to generic AI slop.
 
@@ -55,7 +47,7 @@ Analyze what makes the design feel too safe or boring:
    - Who's the audience? (What will resonate?)
    - What are the constraints? (Brand guidelines, accessibility, performance)
 
-If any of these are unclear from the codebase, {{ask_instruction}}
+If any of these are unclear from the codebase, STOP and call the AskUserQuestionTool to clarify.
 
 **CRITICAL**: "Bolder" doesn't mean chaotic or garish. It means distinctive, memorable, and confident. Think intentional drama, not random chaos.
 

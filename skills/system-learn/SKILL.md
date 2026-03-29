@@ -1,8 +1,8 @@
 ---
 name: system-learn
 description: >-
-  Ingest new procedural memory — skills, patterns, or documentation markdown files — into the ChromaDB vector database for future semantic retrieval. Use when adding a reusable pattern, new guide, or documentation file to the agent's procedural memory store.
-vibe: Ingest procedural memory into vector DB
+  Ingest new procedural memory (skills, patterns, docs) into the vector
+  database.
 maturity: seed
 evolution_count: 0
 ---
