@@ -1,8 +1,10 @@
 ---
 name: nightly
 description: >-
-  End-of-day cleanup and maintenance routine that calculates a Sleep Score (0-100) across uncommitted work, branch hygiene, issue updates, CI status, and service shutdown. Use at end of work day to ensure a clean, resumable project state and capture session state to STATUS.json.
-vibe: End-of-day cleanup with Sleep Score
+  End-of-day cleanup and maintenance routine. Calculates Sleep Score (0-100)
+  based on uncommitted work, branch cleanup, issue updates, CI status, and
+  service shutdown. Automatically captures session state to STATUS.json. Use at
+  end of work day before closing Claude Code.
 maturity: seed
 evolution_count: 0
 ---
