@@ -16,13 +16,20 @@ Produce thorough, cited research reports from multiple web sources using firecra
 - Any question requiring synthesis from multiple sources
 - User says "research", "deep dive", "investigate", or "what's the current state of"
 
-## MCP Requirements
+## Tool Setup (Clawby environment)
 
-At least one of:
+Firecrawl is available as a direct Python tool — no MCP needed:
+```bash
+python3 /Users/clawby/.openclaw/workspace/tools/firecrawl.py scrape <url>
+python3 /Users/clawby/.openclaw/workspace/tools/firecrawl.py search "<query>" --limit 5
+python3 /Users/clawby/.openclaw/workspace/tools/firecrawl.py extract <url> "<what to extract>"
+```
+API key: `credentials/firecrawl.json`. Free tier: 500 credits/month.
+Fallback order: firecrawl → web_fetch (for static pages) → browser tool (last resort).
+
+**MCP alternative** (if configured):
 - **firecrawl** — `firecrawl_search`, `firecrawl_scrape`, `firecrawl_crawl`
 - **exa** — `web_search_exa`, `web_search_advanced_exa`, `crawling_exa`
-
-Both together give the best coverage. Configure in `~/.claude.json` or `~/.codex/config.toml`.
 
 ## Workflow
 
