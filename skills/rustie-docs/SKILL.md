@@ -1,8 +1,11 @@
 ---
 name: rustie-docs
 description: >-
-  Documentation audit and maintenance for Rustie Method projects — enforces doc structure, checks for staleness and broken references, auto-fixes issues, and ensures docs are created in correct locations (agent-docs/ hierarchy). Use when auditing docs, fixing scattered markdown files, creating new docs, or syncing README pointers.
-vibe: Documentation audit and maintenance
+  Documentation management skill for audit, creation, and maintenance. Enforces
+  documentation standards, checks for staleness and broken references,
+  auto-fixes issues, and ensures docs are created in correct locations. Use when
+  user says "check docs", "audit docs", "fix docs", "create doc", "archive
+  docs", or when scattered .md files are detected.
 maturity: seed
 evolution_count: 0
 ---
