@@ -1,9 +1,11 @@
 ---
 name: javascript-testing-patterns
-emoji: 🧪
-vibe: Test-driven confidence with zero flakiness
-category: testing
-description: Comprehensive testing strategies using Jest, Vitest, and Testing Library for unit tests, integration tests, and end-to-end testing with mocking, fixtures, and test-driven development. Use when writing JavaScript/TypeScript tests, setting up test infrastructure, or implementing TDD/BDD workflows.
+description: >-
+  Implement comprehensive testing strategies using Jest, Vitest, and Testing
+  Library for unit tests, integration tests, and end-to-end testing with
+  mocking, fixtures, and test-driven development. Use when writing
+  JavaScript/TypeScript tests, setting up test infrastructure, or implementing
+  TDD/BDD workflows.
 maturity: seed
 evolution_count: 0
 tags:
@@ -24,19 +26,6 @@ triggers:
 # JavaScript Testing Patterns
 
 Comprehensive guide for implementing robust testing strategies in JavaScript/TypeScript applications using modern testing frameworks and best practices.
-
-## Communication Style
-- Show both test code AND implementation code
-- Include setup/teardown patterns explicitly
-- Point out flaky test anti-patterns
-- Assume testing fundamentals (what is a unit test, assertion)
-
-## Success Metrics
-- ✅ Test coverage >80% (unit + integration)
-- ✅ Zero flaky tests (deterministic, no timeouts)
-- ✅ All async tests use proper awaits (no dangling promises)
-- ✅ Mocks isolated per test (no shared state)
-- ✅ Tests run in <10 seconds (fast feedback)
 
 <!-- ZONE:STABLE -->
 ## When to Use This Skill
@@ -1054,18 +1043,6 @@ it("should call function after delay", () => {
 
 <!-- ZONE:APPEND -->
 ## Lessons Learned
-
-### 2026-02-08 — Playwright E2E coverage is almost always an afterthought — budget for it explicitly
-
-In the Respec codebase review (110 Vitest unit tests, 2 Playwright E2E tests), E2E coverage was essentially zero. Pattern observed: unit tests grow organically, E2E gets added "later" and never catches up.
-
-Minimum viable E2E for a Next.js app:
-1. Auth flow (login → dashboard → protected route)
-2. Core CRUD (create → see it rendered)
-3. Error state (invalid input → error message)
-4. Deploy smoke test (production URL returns 200)
-
-If E2E takes >5min, it stops being run. Keep the suite small and fast — 10 focused tests beat 50 slow ones. [global]
 
 <!-- ZONE:APPEND -->
 ## Changelog
