@@ -1,8 +1,10 @@
 ---
 name: product-manager-toolkit
 description: >-
-  Comprehensive PM toolkit covering RICE prioritization, customer interview analysis, PRD templates, discovery frameworks, and go-to-market strategy. Use when prioritizing features, writing product requirements documents, synthesizing user research, running product discovery, or planning a launch.
-vibe: RICE prioritization and PRD templates
+  Comprehensive toolkit for product managers including RICE prioritization,
+  customer interview analysis, PRD templates, discovery frameworks, and
+  go-to-market strategies. Use for feature prioritization, user research
+  synthesis, requirement documentation, and product strategy development.
 maturity: seed
 evolution_count: 0
 tags:
