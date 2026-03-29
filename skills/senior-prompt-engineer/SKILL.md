@@ -1,8 +1,11 @@
 ---
 name: senior-prompt-engineer
 description: >-
-  Systematic prompt engineering covering optimization, few-shot design, chain-of-thought templates, structured output schemas, token reduction, and LLM evaluation frameworks for agentic workflows. Use when optimizing system prompts, designing few-shot examples, building eval pipelines, reducing token usage, or structuring tool-calling prompts.
-vibe: Systematic prompt optimization
+  This skill should be used when the user asks to "optimize prompts", "design
+  prompt templates", "evaluate LLM outputs", "build agentic systems", "implement
+  RAG", "create few-shot examples", "analyze token usage", or "design AI
+  workflows". Use for prompt engineering patterns, LLM evaluation frameworks,
+  agent architectures, and structured output design.
 maturity: seed
 evolution_count: 0
 tags:
@@ -36,14 +39,6 @@ Prompt engineering patterns, LLM evaluation frameworks, and agentic system desig
   - [Structured Output Design](#structured-output-design-workflow)
 - [Reference Documentation](#reference-documentation)
 - [Common Patterns Quick Reference](#common-patterns-quick-reference)
-
-dependencies:
-  - name: OpenAI API
-    url: https://platform.openai.com
-    tier: paid
-  - name: Anthropic API
-    url: https://console.anthropic.com
-    tier: paid
 
 ---
 
