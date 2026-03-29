@@ -1,20 +1,11 @@
 ---
 name: normalize
-description: Normalize design to match your design system and ensure consistency. Use when building web components, pages, or applications.
-vibe: Enforce design system consistency
+description: Normalize design to match your design system and ensure consistency
+user-invokable: true
 args:
   - name: feature
     description: The page, route, or feature to normalize (optional)
     required: false
-user-invokable: true
-tags:
-  - ui
-  - design
-  - consistency
-triggers:
-  - aligning a component or page to the project design system
-  - fixing inconsistent spacing, tokens, or styles across the UI
-  - making a new feature look like it belongs with the rest
 ---
 
 Analyze and redesign the feature to perfectly match our design system standards, aesthetics, and established patterns.
