@@ -1,8 +1,11 @@
 ---
 name: modern-javascript-patterns
 description: >-
-  Master ES6+ JavaScript patterns including async/await, destructuring, spread operators, optional chaining, modules, iterators, generators, and functional programming pipelines for clean and efficient code. Use when refactoring legacy JavaScript to modern syntax, replacing callbacks with async/await, or implementing functional patterns like map/filter/reduce.
-vibe: ES6+ patterns for clean JavaScript
+  Master ES6+ features including async/await, destructuring, spread operators,
+  arrow functions, promises, modules, iterators, generators, and functional
+  programming patterns for writing clean, efficient JavaScript code. Use when
+  refactoring legacy code, implementing modern patterns, or optimizing
+  JavaScript applications.
 maturity: seed
 evolution_count: 0
 tags:
