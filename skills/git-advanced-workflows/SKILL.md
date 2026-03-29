@@ -1,9 +1,10 @@
 ---
 name: git-advanced-workflows
-emoji: 🌿
-vibe: Clean history through fearless rebasing
-category: devops
-description: Master advanced Git workflows including rebasing, cherry-picking, bisect, worktrees, and reflog to maintain clean history and recover from any situation. Use when managing complex Git histories, collaborating on feature branches, or troubleshooting repository issues.
+description: >-
+  Master advanced Git workflows including rebasing, cherry-picking, bisect,
+  worktrees, and reflog to maintain clean history and recover from any
+  situation. Use when managing complex Git histories, collaborating on feature
+  branches, or troubleshooting repository issues.
 maturity: seed
 evolution_count: 0
 tags:
@@ -22,30 +23,8 @@ triggers:
 
 Master advanced Git techniques to maintain clean history, collaborate effectively, and recover from any situation with confidence.
 
-## 🚨 Critical Rules
-
-### Never Break Shared History
-- **Never force-push to main/master** — Breaks other developers' clones
-- **Never rebase commits that others have pulled** — Rewrites shared history
-- **Never amend pushed commits on shared branches** — Use revert instead
-
-### Always Have an Escape Hatch
-- **Always create a backup branch before risky operations** — `git branch backup-before-rebase`
-- **Always know reflog exists** — You can recover "lost" commits for 30-90 days
-- **Never panic and delete .git** — Almost everything is recoverable
-
-### Maintain Clean History
-- **Always squash fixup commits before merging** — Don't merge "fix typo", "oops", "wip" commits
-- **Always write meaningful commit messages** — Future you will thank present you
-- **Never use `git commit -m "wip"`** — If it's work in progress, use stash or a temp branch
-
-**Default Requirements:**
-- Unless told otherwise, always backup branch before rebasing
-- Unless told otherwise, always squash before merging to main
-- Unless told otherwise, never force-push to protected branches
-
 <!-- ZONE:STABLE -->
-## 🎯 When to Use This Skill
+## When to Use This Skill
 
 - Cleaning up commit history before merging
 - Applying specific commits across branches
@@ -444,34 +423,6 @@ git branch recovered-branch abc123
 
 <!-- ZONE:APPEND -->
 ## Lessons Learned
-
-### 2026-03-12 — gh-pages deploy requires `--dotfiles` flag and HTTP/1.1 workaround
-
-Two non-obvious requirements for deploying via the `gh-pages` npm package:
-
-**1. `--dotfiles` to include `.nojekyll`**
-```bash
-gh-pages -d dist --dotfiles
-```
-Without it, `.nojekyll` is excluded → GitHub Pages runs Jekyll and may mangle routing.
-
-**2. `HTTP/1.1` for git push 400 errors**
-```bash
-git config http.version HTTP/1.1
-```
-On some setups, `git push` fails with HTTP 400 when HTTP/2 is used. Looks like a remote rejection but is actually a protocol negotiation failure. [global]
-
----
-
-### 2026-03-05 — Always `git pull --rebase` when a cron job pushes to the same repo
-
-When a nightly cron commits to a repo you also work in interactively, you'll accumulate diverged histories. Make rebase the default:
-
-```bash
-git config pull.rebase true
-```
-
-Without this, `git pull` creates merge commits and after a few cron runs you're untangling a messy history. [global]
 
 <!-- ZONE:APPEND -->
 ## Changelog
