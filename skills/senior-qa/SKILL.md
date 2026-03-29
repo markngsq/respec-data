@@ -1,9 +1,10 @@
 ---
 name: senior-qa
-emoji: 🧪
-vibe: Zero flaky tests, 100% deterministic
-category: testing
-description: This skill should be used when the user asks to "generate tests", "write unit tests", "analyze test coverage", "scaffold E2E tests", "set up Playwright", "configure Jest", "implement testing patterns", or "improve test quality". Use for React/Next.js testing with Jest, React Testing Library, and Playwright.
+description: >-
+  This skill should be used when the user asks to "generate tests", "write unit
+  tests", "analyze test coverage", "scaffold E2E tests", "set up Playwright",
+  "configure Jest", "implement testing patterns", or "improve test quality". Use
+  for React/Next.js testing with Jest, React Testing Library, and Playwright.
 maturity: seed
 evolution_count: 0
 tags:
@@ -25,35 +26,8 @@ triggers:
 
 Test automation, coverage analysis, and quality assurance patterns for React and Next.js applications.
 
-## 🚨 Critical Rules
-
-### Zero Flaky Tests
-- **Always use deterministic selectors** — Prefer data-testid over CSS classes (classes change, test IDs don't)
-- **Never use arbitrary timeouts** — Use waitFor with proper conditions, not `sleep(1000)`
-- **Always clean up after tests** — Reset mocks, clear timers, restore spies (prevents test pollution)
-
-### Proper Async Handling
-- **Always await async operations** — No dangling promises (causes random failures)
-- **Never use act() warnings in production code** — Fix the root cause (missing await, improper state updates)
-- **Always wrap async updates in act()** — When testing state changes
-
-### Test Isolation
-- **Always isolate test data** — Generate unique IDs per test (no shared state)
-- **Never rely on test execution order** — Each test should pass alone
-- **Always mock external dependencies** — Network calls, timers, Date.now()
-
-### Coverage Quality
-- **Never chase 100% coverage blindly** — Focus on critical paths (80% meaningful > 100% meaningless)
-- **Always test edge cases** — Empty states, error states, loading states
-- **Never skip accessibility tests** — Use @testing-library/jest-dom for a11y assertions
-
-**Default Requirements:**
-- Unless told otherwise, always use data-testid selectors
-- Unless told otherwise, always clean up mocks after tests
-- Unless told otherwise, always test error states
-
 <!-- ZONE:STABLE -->
-## 📋 Table of Contents
+## Table of Contents
 
 - [Quick Start](#quick-start)
 - [Tools Overview](#tools-overview)
@@ -442,40 +416,6 @@ python scripts/coverage_analyzer.py coverage/coverage-final.json
 
 <!-- ZONE:APPEND -->
 ## Lessons Learned
-
-### 2026-03-18 — Tauri clipboard plugin required to avoid NotAllowedError in async context
-
-The browser's `navigator.clipboard.writeText()` fails with `NotAllowedError` inside async handlers in Tauri because the clipboard API requires a synchronous user gesture chain.
-
-```ts
-// BAD: async break → NotAllowedError
-button.addEventListener('click', async () => {
-  const content = await fetchContent()
-  await navigator.clipboard.writeText(content)  // fails
-})
-
-// GOOD: use Tauri's clipboard plugin
-import { writeText } from '@tauri-apps/plugin-clipboard-manager'
-button.addEventListener('click', async () => {
-  const content = await fetchContent()
-  await writeText(content)  // works
-})
-```
-
-Add to Tauri capabilities:
-```json
-{ "permissions": ["clipboard-manager:allow-write-text"] }
-```
-
-Also: use `openUrl` from `@tauri-apps/plugin-opener` (not Node's `open` package) for browser URL opening in Tauri. [project:respec]
-
----
-
-### 2026-03-21 — XML tags in skill frontmatter are a security vulnerability
-
-XML angle brackets in YAML frontmatter descriptions are a prompt injection risk — frontmatter is injected directly into the system prompt. In a batch audit of 57 Respec skills, 38 had `<tag>` style markup in descriptions. All sanitised to plain text.
-
-Rules: no `<tag>` style XML in frontmatter, no "claude"/"anthropic" in skill names (model confusion), kebab-case filenames only, `SKILL.md` is case-sensitive. [global]
 
 <!-- ZONE:APPEND -->
 ## Changelog
