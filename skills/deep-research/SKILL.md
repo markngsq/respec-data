@@ -16,20 +16,26 @@ Produce thorough, cited research reports from multiple web sources using firecra
 - Any question requiring synthesis from multiple sources
 - User says "research", "deep dive", "investigate", or "what's the current state of"
 
-## Tool Setup (Clawby environment)
+## Tool Setup
 
-Firecrawl is available as a direct Python tool — no MCP needed:
-```bash
-python3 /Users/clawby/.openclaw/workspace/tools/firecrawl.py scrape <url>
-python3 /Users/clawby/.openclaw/workspace/tools/firecrawl.py search "<query>" --limit 5
-python3 /Users/clawby/.openclaw/workspace/tools/firecrawl.py extract <url> "<what to extract>"
-```
-API key: `credentials/firecrawl.json`. Free tier: 500 credits/month.
-Fallback order: firecrawl → web_fetch (for static pages) → browser tool (last resort).
+This skill works across three tiers — use whatever's available:
 
-**MCP alternative** (if configured):
-- **firecrawl** — `firecrawl_search`, `firecrawl_scrape`, `firecrawl_crawl`
-- **exa** — `web_search_exa`, `web_search_advanced_exa`, `crawling_exa`
+**Tier 1 — Firecrawl MCP** (best, if configured):
+- `firecrawl_search`, `firecrawl_scrape`, `firecrawl_crawl`
+- Sign up: firecrawl.dev (free tier: 500 credits/month)
+- Add MCP: `claude mcp add firecrawl -- npx -y firecrawl-mcp`
+
+**Tier 2 — web_fetch + Brave Search** (good, works out of the box):
+- Use `web_fetch` for individual URLs
+- Use `web_search` (Brave) for discovery
+- Limitation: JS-rendered pages may return empty or partial content
+
+**Tier 3 — browser tool** (last resort, slowest):
+- Use when Tier 1+2 both return insufficient content
+- `browser(action="snapshot")` after navigating to URL
+
+**Recommended:** Start with Tier 2. Upgrade to Tier 1 for JS-heavy research targets.
+Fallback gracefully — if a URL returns empty, try the next tier before giving up.
 
 ## Workflow
 
