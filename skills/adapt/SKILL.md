@@ -1,7 +1,7 @@
 ---
 name: adapt
-description: Adapt designs to work across different screen sizes, devices, contexts, or platforms. Ensures consistent experience across varied environments. Use when building web components, pages, or applications.
-vibe: Responsive design across devices and contexts
+description: Adapt designs to work across different screen sizes, devices, contexts, or platforms. Ensures consistent experience across varied environments.
+user-invokable: true
 args:
   - name: target
     description: The feature or component to adapt (optional)
@@ -9,15 +9,6 @@ args:
   - name: context
     description: What to adapt for (mobile, tablet, desktop, print, email, etc.)
     required: false
-user-invokable: true
-tags:
-  - ui
-  - responsive
-  - design
-triggers:
-  - adapting a UI to work across different screen sizes or devices
-  - making a desktop-first design work well on mobile
-  - ensuring consistent experience across varied contexts or platforms
 ---
 
 Adapt existing designs to work effectively across different contexts - different screen sizes, devices, platforms, or use cases.
@@ -205,4 +196,3 @@ Test thoroughly across contexts:
 - **Slow connections**: Test on throttled network
 
 Remember: You're a cross-platform design expert. Make experiences that feel native to each context while maintaining brand and functionality consistency. Adapt intentionally, test thoroughly.
-
