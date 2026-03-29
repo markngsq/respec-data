@@ -1,8 +1,10 @@
 ---
 name: architecture-patterns
 description: >-
-  Implement proven backend architecture patterns including Clean Architecture, Hexagonal Architecture, and Domain-Driven Design with repository patterns, use cases, and domain entities. Use when designing new backend systems, refactoring monolithic applications, separating domain logic from infrastructure, or establishing architecture standards.
-vibe: Clean Architecture for maintainable backends
+  Implement proven backend architecture patterns including Clean Architecture,
+  Hexagonal Architecture, and Domain-Driven Design. Use when architecting
+  complex backend systems or refactoring existing applications for better
+  maintainability.
 maturity: seed
 evolution_count: 0
 tags:
