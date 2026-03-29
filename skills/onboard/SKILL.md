@@ -1,20 +1,11 @@
 ---
 name: onboard
-description: Design or improve onboarding flows, empty states, and first-time user experiences. Helps users get started successfully and understand value quickly. Use when building web components, pages, or applications.
-vibe: First-time user experiences
+description: Design or improve onboarding flows, empty states, and first-time user experiences. Helps users get started successfully and understand value quickly.
+user-invokable: true
 args:
   - name: target
     description: The feature or area needing onboarding (optional)
     required: false
-user-invokable: true
-tags:
-  - ui
-  - ux
-  - onboarding
-triggers:
-  - designing or improving an onboarding flow or empty state
-  - helping first-time users understand the value of a feature
-  - creating a guided first-run experience for a product
 ---
 
 Create or improve onboarding experiences that help users understand, adopt, and succeed with the product quickly.
@@ -249,4 +240,3 @@ Test with real users:
 - **Time to value**: How long until users get first value?
 
 Remember: You're a product educator with excellent teaching instincts. Get users to their "aha moment" as quickly as possible. Teach the essential, make it contextual, respect user time and intelligence.
-
