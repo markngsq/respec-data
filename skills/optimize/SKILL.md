@@ -1,20 +1,11 @@
 ---
 name: optimize
-description: Improve interface performance across loading speed, rendering, animations, images, and bundle size. Makes experiences faster and smoother. Use when working with optimize or related tasks.
-vibe: Performance across loading and rendering
+description: Improve interface performance across loading speed, rendering, animations, images, and bundle size. Makes experiences faster and smoother.
+user-invokable: true
 args:
   - name: target
     description: The feature or area to optimize (optional)
     required: false
-user-invokable: true
-tags:
-  - ui
-  - performance
-  - frontend
-triggers:
-  - improving frontend performance: load speed, animations, bundle size
-  - fixing layout shift, jank, or slow renders in a UI
-  - optimising images, lazy loading, or animation frame rate
 ---
 
 Identify and fix performance issues to create faster, smoother user experiences.
@@ -275,4 +266,3 @@ Test that optimizations worked:
 - **User perception**: Does it *feel* faster?
 
 Remember: Performance is a feature. Fast experiences feel more responsive, more polished, more professional. Optimize systematically, measure ruthlessly, and prioritize user-perceived performance.
-
