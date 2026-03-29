@@ -1,20 +1,11 @@
 ---
 name: critique
-description: Evaluate design effectiveness from a UX perspective. Assesses visual hierarchy, information architecture, emotional resonance, and overall design quality with actionable feedback. Use when building web components, pages, or applications.
-vibe: UX evaluation with actionable feedback
+description: Evaluate design effectiveness from a UX perspective. Assesses visual hierarchy, information architecture, emotional resonance, and overall design quality with actionable feedback.
+user-invokable: true
 args:
   - name: area
     description: The feature or area to critique (optional)
     required: false
-user-invokable: true
-tags:
-  - ui
-  - design
-  - ux
-triggers:
-  - getting a UX critique or design review of a component or page
-  - evaluating visual hierarchy, clarity, or emotional resonance
-  - asking for honest feedback on a design before iterating
 ---
 
 Conduct a holistic design critique, evaluating whether the interface actually works—not just technically, but as a designed experience. Think like a design director giving feedback.
@@ -107,7 +98,7 @@ For each issue:
 - **What**: Name the problem clearly
 - **Why it matters**: How this hurts users or undermines goals
 - **Fix**: What to do about it (be concrete)
-- **Command**: Which command to use (prefer: {{available_commands}} — or other installed skills you're sure exist)
+- **Command**: Which command to use (prefer: /animate, /quieter, /optimize, /adapt, /clarify, /distill, /delight, /onboard, /normalize, /audit, /harden, /polish, /extract, /bolder, /critique, /colorize — or other installed skills you're sure exist)
 
 ### Minor Observations
 Quick notes on smaller issues worth addressing.
