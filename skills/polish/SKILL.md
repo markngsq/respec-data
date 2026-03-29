@@ -1,21 +1,11 @@
 ---
 name: polish
-description: Final quality pass before shipping. Fixes alignment, spacing, consistency, and detail issues that separate good from great. Use when working with polish or related tasks.
-vibe: Final quality pass before shipping
+description: Final quality pass before shipping. Fixes alignment, spacing, consistency, and detail issues that separate good from great.
+user-invokable: true
 args:
   - name: target
     description: The feature or area to polish (optional)
     required: false
-user-invokable: true
-tags:
-  - ui
-  - design
-  - quality
-triggers:
-  - doing a final pass before shipping a UI
-  - fixing spacing, alignment, or consistency issues
-  - making a component feel finished and intentional
-  - sweating the details on typography, states, transitions
 ---
 
 **First**: Use the frontend-design skill for design principles and anti-patterns.
@@ -209,4 +199,3 @@ Before marking as done:
 - **Check all states**: Don't just test happy path
 
 Remember: You have impeccable attention to detail and exquisite taste. Polish until it feels effortless, looks intentional, and works flawlessly. Sweat the details - they matter.
-
