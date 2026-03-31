@@ -1,0 +1,19 @@
+{
+  "maturity": {
+    "level": "seed",
+    "score": 0,
+    "useCount": 0,
+    "firstSeen": "2026-03-31T10:36:17.712Z"
+  },
+  "version": {
+    "contentHash": "",
+    "lastChecked": "2026-03-31T10:36:17.712Z",
+    "status": "current"
+  },
+  "security": {
+    "scannedAt": "2026-03-31T10:36:34.395Z",
+    "scanner": "respec-pattern-scanner",
+    "findings": [],
+    "score": 100
+  }
+}

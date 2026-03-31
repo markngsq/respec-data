@@ -10,5 +10,18 @@
     "contentHash": "",
     "lastChecked": "2026-02-01T03:17:56.727Z",
     "status": "current"
+  },
+  "security": {
+    "scannedAt": "2026-03-31T10:36:34.383Z",
+    "scanner": "respec-pattern-scanner",
+    "findings": [
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 214
+      }
+    ],
+    "score": 90
   }
 }

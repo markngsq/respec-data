@@ -1,0 +1,176 @@
+{
+  "maturity": {
+    "level": "seed",
+    "score": 0,
+    "useCount": 0,
+    "firstSeen": "2026-03-31T10:36:17.689Z"
+  },
+  "version": {
+    "contentHash": "",
+    "lastChecked": "2026-03-31T10:36:17.689Z",
+    "status": "current"
+  },
+  "security": {
+    "scannedAt": "2026-03-31T10:36:34.380Z",
+    "scanner": "respec-pattern-scanner",
+    "findings": [
+      {
+        "rule": "hardcoded-secret",
+        "severity": "high",
+        "message": "Potential hardcoded secret or credential",
+        "line": 541
+      },
+      {
+        "rule": "hardcoded-secret",
+        "severity": "high",
+        "message": "Potential hardcoded secret or credential",
+        "line": 561
+      },
+      {
+        "rule": "hardcoded-secret",
+        "severity": "high",
+        "message": "Potential hardcoded secret or credential",
+        "line": 576
+      },
+      {
+        "rule": "hardcoded-secret",
+        "severity": "high",
+        "message": "Potential hardcoded secret or credential",
+        "line": 595
+      },
+      {
+        "rule": "hardcoded-secret",
+        "severity": "high",
+        "message": "Potential hardcoded secret or credential",
+        "line": 626
+      },
+      {
+        "rule": "hardcoded-secret",
+        "severity": "high",
+        "message": "Potential hardcoded secret or credential",
+        "line": 631
+      },
+      {
+        "rule": "hardcoded-secret",
+        "severity": "high",
+        "message": "Potential hardcoded secret or credential",
+        "line": 665
+      },
+      {
+        "rule": "hardcoded-secret",
+        "severity": "high",
+        "message": "Potential hardcoded secret or credential",
+        "line": 695
+      },
+      {
+        "rule": "hardcoded-secret",
+        "severity": "high",
+        "message": "Potential hardcoded secret or credential",
+        "line": 707
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 239
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 247
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 544
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 564
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 579
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 581
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 592
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 600
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 612
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 618
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 623
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 629
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 636
+      },
+      {
+        "rule": "process-env-access",
+        "severity": "low",
+        "message": "Environment variable access",
+        "line": 330
+      },
+      {
+        "rule": "process-env-access",
+        "severity": "low",
+        "message": "Environment variable access",
+        "line": 333
+      },
+      {
+        "rule": "process-env-access",
+        "severity": "low",
+        "message": "Environment variable access",
+        "line": 334
+      },
+      {
+        "rule": "process-env-access",
+        "severity": "low",
+        "message": "Environment variable access",
+        "line": 340
+      }
+    ],
+    "score": 0
+  }
+}

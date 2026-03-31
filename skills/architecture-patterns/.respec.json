@@ -10,5 +10,11 @@
     "contentHash": "",
     "lastChecked": "2026-02-01T03:18:17.428Z",
     "status": "current"
+  },
+  "security": {
+    "scannedAt": "2026-03-31T10:36:34.370Z",
+    "scanner": "respec-pattern-scanner",
+    "findings": [],
+    "score": 100
   }
 }

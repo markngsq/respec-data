@@ -1,0 +1,44 @@
+{
+  "maturity": {
+    "level": "seed",
+    "score": 0,
+    "useCount": 0,
+    "firstSeen": "2026-03-31T10:36:17.692Z"
+  },
+  "version": {
+    "contentHash": "",
+    "lastChecked": "2026-03-31T10:36:17.692Z",
+    "status": "current"
+  },
+  "security": {
+    "scannedAt": "2026-03-31T10:36:34.383Z",
+    "scanner": "respec-pattern-scanner",
+    "findings": [
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 365
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 413
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 419
+      },
+      {
+        "rule": "network-egress",
+        "severity": "medium",
+        "message": "Network request \u2014 potential data egress",
+        "line": 823
+      }
+    ],
+    "score": 60
+  }
+}
