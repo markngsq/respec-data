@@ -15,7 +15,7 @@ triggers:
   - being asked to "interview me" or "help me plan what to build"
   - producing a SPEC.md for a feature or system
   - resolving ambiguity before a large piece of work
-category: scoping
+category: product
 tier: atom
 ---
 

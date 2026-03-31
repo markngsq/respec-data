@@ -17,7 +17,7 @@ triggers:
   - checking if an interface looks generic or AI-generated
   - running a quality review before shipping a feature
   - getting a prioritised list of issues in a component or page
-category: development
+category: ui-design
 tier: atom
 maturity: seed
 evolution_count: 0

@@ -5,7 +5,7 @@ description: >-
 vibe: Ingest procedural memory into vector DB
 maturity: seed
 evolution_count: 0
-category: knowledge
+category: respec
 tier: atom
 triggers:
   - ingesting a new pattern or guide into the agent's memory

@@ -14,7 +14,7 @@ triggers:
   - using destructuring, spread, or optional chaining idiomatically
   - implementing functional patterns like map/filter/reduce pipelines
   - explaining or teaching a modern JS feature
-category: development
+category: frontend
 tier: atom
 ---
 

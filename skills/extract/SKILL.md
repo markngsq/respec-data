@@ -15,7 +15,7 @@ triggers:
   - extracting reusable components or design tokens from a feature
   - consolidating repeated patterns into the design system
   - refactoring UI code into a shared component library
-category: development
+category: ui-design
 tier: atom
 ---
 

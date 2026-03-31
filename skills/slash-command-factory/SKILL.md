@@ -5,7 +5,7 @@ description: >-
 vibe: Generate custom Claude Code commands
 maturity: seed
 evolution_count: 0
-category: customization
+category: respec
 tier: atom
 triggers:
   - creating custom Claude Code slash commands

@@ -15,7 +15,7 @@ triggers:
   - simplifying an over-engineered or cluttered UI
   - stripping a design to its essential elements
   - reducing visual noise or unnecessary complexity in a component
-category: development
+category: ui-design
 tier: atom
 ---
 

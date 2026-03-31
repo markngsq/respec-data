@@ -5,7 +5,7 @@ description: >-
 vibe: Discover expert methodologies for skills
 maturity: seed
 evolution_count: 0
-category: customization
+category: respec
 tier: atom
 triggers:
   - creating a skill that embodies world-class domain expertise

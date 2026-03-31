@@ -13,7 +13,7 @@ triggers:
   - needing an execution plan before starting a complex coding task
   - deciding which skills to apply and in what order
   - delegating sub-tasks to parallel agents with specific skills
-category: orchestration
+category: respec
 tier: meta
 ---
 

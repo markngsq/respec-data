@@ -16,7 +16,7 @@ triggers:
   - fixing spacing, alignment, or consistency issues
   - making a component feel finished and intentional
   - sweating the details on typography, states, transitions
-category: development
+category: ui-design
 tier: atom
 ---
 

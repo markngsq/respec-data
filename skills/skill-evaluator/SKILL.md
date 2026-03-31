@@ -6,7 +6,7 @@ description: >-
 vibe: 5-layer security analysis for skill quality
 maturity: seed
 evolution_count: 0
-category: customization
+category: respec
 tier: atom
 triggers:
   - evaluating a third-party skill before installation

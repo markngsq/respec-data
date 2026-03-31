@@ -15,7 +15,7 @@ triggers:
   - improving button labels, error messages, or microcopy
   - making instructions, tooltips, or empty states clearer
   - reviewing UX copy for clarity and consistency
-category: development
+category: ui-design
 tier: atom
 ---
 

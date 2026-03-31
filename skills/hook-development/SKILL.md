@@ -6,7 +6,7 @@ vibe: Event-driven Claude Code automation
 version: 0.1.0
 maturity: seed
 evolution_count: 0
-category: customization
+category: respec
 tier: atom
 triggers:
   - adding hooks to a Claude Code plugin

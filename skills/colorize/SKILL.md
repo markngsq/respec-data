@@ -15,7 +15,7 @@ triggers:
   - adding strategic color to a monochromatic or flat-looking UI
   - making an interface more visually engaging or expressive
   - introducing color hierarchy or accent tones to a design
-category: development
+category: ui-design
 tier: atom
 ---
 

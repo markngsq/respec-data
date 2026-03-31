@@ -15,7 +15,7 @@ triggers:
   - creating a landing page, poster, or visual artifact
   - making frontend code that avoids "AI slop" aesthetics
   - needing opinionated guidance on typography, color, spacing, or motion
-category: fullstack
+category: frontend
 tier: atom
 ---
 

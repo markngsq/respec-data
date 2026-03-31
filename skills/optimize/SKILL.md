@@ -15,7 +15,7 @@ triggers:
   - improving frontend performance: load speed, animations, bundle size
   - fixing layout shift, jank, or slow renders in a UI
   - optimising images, lazy loading, or animation frame rate
-category: performance
+category: frontend
 tier: atom
 ---
 

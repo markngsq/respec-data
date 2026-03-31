@@ -15,7 +15,7 @@ triggers:
   - getting a UX critique or design review of a component or page
   - evaluating visual hierarchy, clarity, or emotional resonance
   - asking for honest feedback on a design before iterating
-category: development
+category: ui-design
 tier: atom
 maturity: seed
 evolution_count: 0

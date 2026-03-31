@@ -17,7 +17,7 @@ triggers:
   - using FastMCP (Python) or the MCP SDK (TypeScript)
   - designing tools, resources, or prompts for an MCP server
   - debugging an MCP connection or tool response
-category: ai-llm
+category: ai-engineering
 tier: atom
 ---
 

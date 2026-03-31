@@ -6,7 +6,7 @@ description: >-
 vibe: Capture ideas, track todos, organize projects
 maturity: seed
 evolution_count: 0
-category: knowledge
+category: maintenance
 tier: atom
 triggers:
   - capturing a brain dump of ideas or todos

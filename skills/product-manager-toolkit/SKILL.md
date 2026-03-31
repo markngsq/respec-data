@@ -14,7 +14,7 @@ triggers:
   - synthesising customer interview findings
   - running product discovery or defining a problem space
   - planning a go-to-market strategy or launch
-category: scoping
+category: product
 tier: atom
 ---
 

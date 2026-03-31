@@ -15,7 +15,7 @@ triggers:
   - making a UI robust: error states, empty states, edge cases
   - adding i18n support or handling text overflow in a component
   - preparing a UI feature for production with real-world data
-category: development
+category: ui-design
 tier: atom
 ---
 

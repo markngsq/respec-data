@@ -11,7 +11,7 @@ triggers:
   - setting up persistent design guidelines for a project
   - running first-time design context capture for Claude
   - initialising impeccable design conventions for a new repo
-category: development
+category: ui-design
 tier: atom
 ---
 

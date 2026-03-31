@@ -15,7 +15,7 @@ triggers:
   - needing chain-of-thought, tree-of-thoughts, or ReAct patterns
   - solving a logic puzzle, arithmetic chain, or symbolic problem
   - designing a reasoning scaffold for an agent or prompt system
-category: reasoning
+category: ai-engineering
 tier: atom
 ---
 

@@ -17,7 +17,7 @@ triggers:
   - choosing between RAG vs fine-tuning vs prompting
   - structuring prompts or managing context windows in production
   - building a prompt IDE or playground
-category: ai-llm
+category: ai-engineering
 tier: atom
 ---
 

@@ -3,7 +3,7 @@ name: shadcn
 displayName: shadcn/ui
 emoji: 🎨
 vibe: Copy-paste components that you own
-category: fullstack
+category: frontend
 description: shadcn/ui component library patterns with Radix UI primitives and Tailwind CSS. Use when creating tables, forms, dialogs, cards, buttons, or any UI component using shadcn/ui, installing shadcn components, or styling with shadcn patterns.
 version: 1.0.0
 maturity: seed

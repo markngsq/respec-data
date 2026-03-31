@@ -5,7 +5,7 @@ description: >-
 vibe: Chain skills into custom workflows
 maturity: seed
 evolution_count: 0
-category: customization
+category: respec
 tier: atom
 triggers:
   - chaining multiple skills into a custom workflow

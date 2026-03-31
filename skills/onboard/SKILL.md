@@ -15,7 +15,7 @@ triggers:
   - designing or improving an onboarding flow or empty state
   - helping first-time users understand the value of a feature
   - creating a guided first-run experience for a product
-category: development
+category: ui-design
 tier: atom
 ---
 

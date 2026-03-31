@@ -15,7 +15,7 @@ triggers:
   - adding moments of joy or personality to a UI
   - making an interface memorable or fun to use
   - elevating a functional component with a delightful touch
-category: development
+category: ui-design
 tier: atom
 ---
 

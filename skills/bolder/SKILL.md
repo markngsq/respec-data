@@ -14,7 +14,7 @@ triggers:
   - making a safe or boring design more visually striking
   - amplifying the visual impact of a component or page
   - pushing a design further when it feels timid or generic
-category: development
+category: ui-design
 tier: atom
 ---
 
