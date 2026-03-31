@@ -15,6 +15,8 @@ triggers:
   - adding purposeful animations or micro-interactions to a UI
   - making transitions, loading states, or state changes feel polished
   - implementing motion that improves usability without distracting
+category: development
+tier: atom
 ---
 
 Analyze a feature and strategically add animations and micro-interactions that enhance understanding, provide feedback, and create delight.

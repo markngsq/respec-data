@@ -5,6 +5,13 @@ description: >-
 vibe: Documentation audit and maintenance
 maturity: seed
 evolution_count: 0
+category: documentation
+tier: atom
+triggers:
+  - auditing documentation structure for a Rustie Method project
+  - fixing scattered or misplaced markdown files
+  - checking for broken doc references or staleness
+  - syncing README pointers to agent-docs hierarchy
 ---
 
 # Rustie Docs Skill

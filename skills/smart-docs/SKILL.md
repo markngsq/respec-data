@@ -13,6 +13,13 @@ allowed-tools:
   - 'Bash(cloc:*)'
 maturity: seed
 evolution_count: 0
+category: documentation
+tier: atom
+triggers:
+  - documenting an unfamiliar or complex codebase
+  - generating architecture overviews and C4 diagrams
+  - creating developer guides from code analysis
+  - producing technical documentation for a project
 ---
 
 # Smart Documentation Generator

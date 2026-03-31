@@ -2,6 +2,15 @@
 name: documentation-lookup
 description: Use up-to-date library and framework docs via Context7 MCP instead of training data. Activates for setup questions, API references, code examples, or when the user names a framework (e.g. React, Next.js, Prisma).
 origin: ECC
+category: documentation
+tier: atom
+triggers:
+  - asking about a library, framework, or API reference
+  - looking up setup instructions or configuration options
+  - needing current docs for React, Next.js, Prisma, or similar
+  - asking for code examples from official documentation
+maturity: seed
+evolution_count: 0
 ---
 
 # Documentation Lookup (Context7)

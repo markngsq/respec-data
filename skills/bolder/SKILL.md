@@ -14,6 +14,8 @@ triggers:
   - making a safe or boring design more visually striking
   - amplifying the visual impact of a component or page
   - pushing a design further when it feels timid or generic
+category: development
+tier: atom
 ---
 
 Increase visual impact and personality in designs that are too safe, generic, or visually underwhelming, creating more engaging and memorable experiences.

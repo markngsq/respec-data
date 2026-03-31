@@ -1,6 +1,15 @@
 ---
 name: astrology-chinese
 description: Use when users ask about Chinese astrology, zodiac compatibility, BaZi (Four Pillars) birth charts, Five Elements, Zi Wei Dou Shu, Flying Stars Feng Shui, or Qi Men Dun Jia timing. Calculates signs from birth data, interprets charts, and provides forecasts. (project)
+category: knowledge
+tier: atom
+triggers:
+  - asking about Chinese zodiac or astrology
+  - requesting BaZi or Four Pillars birth chart analysis
+  - calculating Five Elements or Zi Wei Dou Shu
+  - asking about Flying Stars Feng Shui or Qi Men Dun Jia
+maturity: seed
+evolution_count: 0
 ---
 
 # project-astrology-chinese

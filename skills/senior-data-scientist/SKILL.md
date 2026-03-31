@@ -16,6 +16,8 @@ triggers:
   - performing causal inference or attribution analysis
   - engineering features or evaluating model performance
   - producing a data-driven report or BI dashboard
+category: data-science
+tier: atom
 ---
 
 # Senior Data Scientist

@@ -15,6 +15,8 @@ triggers:
   - improving frontend performance: load speed, animations, bundle size
   - fixing layout shift, jank, or slow renders in a UI
   - optimising images, lazy loading, or animation frame rate
+category: performance
+tier: atom
 ---
 
 Identify and fix performance issues to create faster, smoother user experiences.

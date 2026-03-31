@@ -2,6 +2,13 @@
 name: api-design
 description: REST API design patterns including resource naming, status codes, pagination, filtering, error responses, versioning, and rate limiting for production APIs.
 origin: ECC
+category: architecture
+tier: atom
+triggers:
+  - designing new REST API endpoints
+  - reviewing existing API contracts for consistency
+  - implementing pagination, filtering, or sorting
+  - defining error response structures
 ---
 
 # API Design Patterns

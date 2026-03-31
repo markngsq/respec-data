@@ -2,7 +2,7 @@
 name: prisma
 emoji: 🗄️
 vibe: Type-safe database queries with zero boilerplate
-category: backend
+category: database
 description: Prisma ORM patterns including Prisma Client usage, queries, mutations, relations, transactions, and schema management. Use when working with Prisma database operations or schema definitions.
 maturity: seed
 evolution_count: 0
@@ -17,6 +17,7 @@ triggers:
   - working with Prisma transactions or nested writes
   - debugging a Prisma query or N+1 problem
   - seeding the database or using Prisma Client
+tier: atom
 ---
 
 # Prisma ORM Patterns

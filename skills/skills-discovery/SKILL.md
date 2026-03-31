@@ -5,6 +5,13 @@ description: >-
 vibe: Search and install agent skills on-demand
 maturity: seed
 evolution_count: 0
+category: discovery
+tier: atom
+triggers:
+  - searching for skills in the claude-plugins.dev registry
+  - installing a skill to extend Claude Code capabilities
+  - finding skills that encode domain best practices
+  - managing installed skills
 ---
 
 # Skills Discovery

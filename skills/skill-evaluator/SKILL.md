@@ -6,6 +6,13 @@ description: >-
 vibe: 5-layer security analysis for skill quality
 maturity: seed
 evolution_count: 0
+category: customization
+tier: atom
+triggers:
+  - evaluating a third-party skill before installation
+  - auditing a skill for security vulnerabilities
+  - validating a skill before publishing to the registry
+  - reviewing skill structure and documentation quality
 ---
 
 # Skill Evaluator

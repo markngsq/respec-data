@@ -9,7 +9,13 @@ dependencies:
   - name: OpenClaw Gateway
     url: https://openclaw.ai
     tier: free
-
+category: orchestration
+tier: meta
+triggers:
+  - orchestrating multi-agent Gas Town convoys
+  - managing polecats, rigs, or work-slinging via gt/bd CLI
+  - running parallel AI agents on a project simultaneously
+  - handling agent lifecycle or crash recovery
 ---
 
 # Gas Town Skill

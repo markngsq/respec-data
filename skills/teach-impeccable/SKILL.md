@@ -11,6 +11,8 @@ triggers:
   - setting up persistent design guidelines for a project
   - running first-time design context capture for Claude
   - initialising impeccable design conventions for a new repo
+category: development
+tier: atom
 ---
 
 Gather design context for this project, then persist it for all future sessions.

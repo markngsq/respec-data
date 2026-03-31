@@ -15,6 +15,8 @@ triggers:
   - aligning a component or page to the project design system
   - fixing inconsistent spacing, tokens, or styles across the UI
   - making a new feature look like it belongs with the rest
+category: development
+tier: atom
 ---
 
 Analyze and redesign the feature to perfectly match our design system standards, aesthetics, and established patterns.

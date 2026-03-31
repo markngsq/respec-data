@@ -6,6 +6,13 @@ description: >-
 vibe: Capture ideas, track todos, organize projects
 maturity: seed
 evolution_count: 0
+category: knowledge
+tier: atom
+triggers:
+  - capturing a brain dump of ideas or todos
+  - running a daily review or triaging backlog
+  - externalizing working memory with zero friction
+  - managing a brain dump CLI session
 ---
 
 # Brain Dump Assistant

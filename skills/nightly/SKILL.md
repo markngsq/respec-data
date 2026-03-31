@@ -5,6 +5,13 @@ description: >-
 vibe: End-of-day cleanup with Sleep Score
 maturity: seed
 evolution_count: 0
+category: maintenance
+tier: atom
+triggers:
+  - running end-of-day cleanup and maintenance
+  - calculating a Sleep Score for the project state
+  - ensuring a clean, resumable project state at end of day
+  - capturing session state to STATUS.json
 ---
 
 # Nightly Routine

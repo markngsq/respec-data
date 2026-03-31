@@ -17,6 +17,10 @@ triggers:
   - checking if an interface looks generic or AI-generated
   - running a quality review before shipping a feature
   - getting a prioritised list of issues in a component or page
+category: development
+tier: atom
+maturity: seed
+evolution_count: 0
 ---
 
 Run systematic quality checks and generate a comprehensive audit report with prioritized issues and actionable recommendations. Don't fix issues - document them for other commands to address.

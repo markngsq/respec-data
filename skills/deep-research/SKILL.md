@@ -2,6 +2,13 @@
 name: deep-research
 description: Multi-source deep research using firecrawl and exa MCPs. Searches the web, synthesizes findings, and delivers cited reports with source attribution. Use when the user wants thorough research on any topic with evidence and citations.
 origin: ECC
+category: knowledge
+tier: atom
+triggers:
+  - needing thorough research on any topic with cited sources
+  - searching the web and synthesizing findings into a report
+  - gathering evidence from multiple sources with attribution
+  - performing multi-source deep research
 ---
 
 # Deep Research

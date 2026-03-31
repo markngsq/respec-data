@@ -2,7 +2,7 @@
 name: docker-containerization
 emoji: 🐳
 vibe: Ship anywhere with zero config drift
-category: deployment
+category: infrastructure
 description: Docker containerization patterns for Next.js, React, and Node.js applications. Use when containerizing applications, creating Dockerfiles, docker-compose configurations, or deploying containers to Kubernetes, ECS, Cloud Run, etc.
 maturity: seed
 evolution_count: 0
@@ -17,6 +17,7 @@ triggers:
   - deploying a container to Kubernetes, ECS, or Cloud Run
   - debugging a container that won't start or build
   - setting up a CI/CD pipeline with Docker
+tier: atom
 ---
 
 # Docker Containerization Skill

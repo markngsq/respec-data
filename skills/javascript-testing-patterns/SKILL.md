@@ -19,6 +19,7 @@ triggers:
   - implementing TDD — writing tests before implementation
   - testing React components with Testing Library
   - improving test coverage or fixing flaky tests
+tier: atom
 ---
 
 # JavaScript Testing Patterns

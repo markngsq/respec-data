@@ -14,6 +14,8 @@ triggers:
   - toning down a visually aggressive or overwhelming UI
   - reducing intensity while keeping design quality
   - making a bold design more refined and approachable
+category: development
+tier: atom
 ---
 
 Reduce visual intensity in designs that are too bold, aggressive, or overstimulating, creating a more refined and approachable aesthetic without losing effectiveness.

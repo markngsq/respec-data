@@ -15,6 +15,8 @@ triggers:
   - improving button labels, error messages, or microcopy
   - making instructions, tooltips, or empty states clearer
   - reviewing UX copy for clarity and consistency
+category: development
+tier: atom
 ---
 
 Identify and improve unclear, confusing, or poorly written interface text to make the product easier to understand and use.

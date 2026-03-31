@@ -5,6 +5,12 @@ description: >-
 vibe: Chain skills into custom workflows
 maturity: seed
 evolution_count: 0
+category: customization
+tier: atom
+triggers:
+  - chaining multiple skills into a custom workflow
+  - creating a multi-step pipeline that orchestrates several skills
+  - automating a complex task requiring sequential skill handoffs
 ---
 
 # Skill Composer Studio

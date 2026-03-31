@@ -5,6 +5,13 @@ description: >-
 vibe: Generate custom Claude Code commands
 maturity: seed
 evolution_count: 0
+category: customization
+tier: atom
+triggers:
+  - creating custom Claude Code slash commands
+  - generating .md command files with YAML frontmatter
+  - automating a business research or content workflow as a command
+  - building documentation automation slash commands
 ---
 
 # Slash Command Factory

@@ -15,6 +15,8 @@ triggers:
   - updating all call sites for a changed function signature
   - making a consistent pattern change across the codebase
   - extracting repeated logic into a shared utility
+category: code-quality
+tier: atom
 ---
 
 # Code Refactor

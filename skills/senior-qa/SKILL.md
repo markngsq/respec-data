@@ -19,6 +19,7 @@ triggers:
   - analyzing test coverage gaps
   - setting up Jest or Playwright config for a project
   - debugging a failing or flaky test
+tier: atom
 ---
 
 # Senior QA Engineer

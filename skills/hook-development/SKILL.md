@@ -6,6 +6,13 @@ vibe: Event-driven Claude Code automation
 version: 0.1.0
 maturity: seed
 evolution_count: 0
+category: customization
+tier: atom
+triggers:
+  - adding hooks to a Claude Code plugin
+  - implementing PreToolUse, PostToolUse, or Stop hooks
+  - blocking dangerous commands via hook logic
+  - setting up event-driven automation in Claude Code
 ---
 
 # Hook Development for Claude Code Plugins

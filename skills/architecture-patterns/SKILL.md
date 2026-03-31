@@ -15,6 +15,8 @@ triggers:
   - refactoring a monolith or tangled codebase into layers
   - designing repository patterns, use cases, or domain entities
   - deciding on folder structure for a new backend service
+category: architecture
+tier: atom
 ---
 
 # Architecture Patterns

@@ -2,7 +2,7 @@
 name: git-advanced-workflows
 emoji: 🌿
 vibe: Clean history through fearless rebasing
-category: devops
+category: git
 description: Master advanced Git workflows including rebasing, cherry-picking, bisect, worktrees, and reflog to maintain clean history and recover from any situation. Use when managing complex Git histories, collaborating on feature branches, or troubleshooting repository issues.
 maturity: seed
 evolution_count: 0
@@ -16,6 +16,7 @@ triggers:
   - recovering lost commits with git reflog
   - resolving a complex merge conflict
   - setting up git worktrees for parallel work
+tier: atom
 ---
 
 # Git Advanced Workflows

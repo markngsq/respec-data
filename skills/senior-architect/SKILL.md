@@ -16,6 +16,8 @@ triggers:
   - choosing a database or evaluating tech stack options
   - planning for scale, reliability, or observability
   - reviewing system design for a new feature or service
+category: architecture
+tier: atom
 ---
 
 # Senior Architect

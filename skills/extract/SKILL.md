@@ -15,6 +15,8 @@ triggers:
   - extracting reusable components or design tokens from a feature
   - consolidating repeated patterns into the design system
   - refactoring UI code into a shared component library
+category: development
+tier: atom
 ---
 
 Identify reusable patterns, components, and design tokens, then extract and consolidate them into the design system for systematic reuse.

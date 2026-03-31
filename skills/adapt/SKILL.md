@@ -18,6 +18,8 @@ triggers:
   - adapting a UI to work across different screen sizes or devices
   - making a desktop-first design work well on mobile
   - ensuring consistent experience across varied contexts or platforms
+category: development
+tier: atom
 ---
 
 Adapt existing designs to work effectively across different contexts - different screen sizes, devices, platforms, or use cases.

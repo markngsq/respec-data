@@ -17,6 +17,8 @@ triggers:
   - reviewing code for common vulnerabilities (XSS, CSRF, SQLi)
   - storing secrets, credentials, or sensitive data
   - setting up security headers, CORS, or rate limiting
+category: security
+tier: atom
 ---
 
 # Software Security Skill (Project CodeGuard)

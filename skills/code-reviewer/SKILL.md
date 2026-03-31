@@ -16,6 +16,8 @@ triggers:
   - auditing for SOLID violations or anti-patterns
   - generating a review checklist before merging
   - analyzing complexity or risk in a changeset
+category: code-quality
+tier: atom
 ---
 
 # Code Reviewer

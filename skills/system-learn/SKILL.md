@@ -5,6 +5,12 @@ description: >-
 vibe: Ingest procedural memory into vector DB
 maturity: seed
 evolution_count: 0
+category: knowledge
+tier: atom
+triggers:
+  - ingesting a new pattern or guide into the agent's memory
+  - adding procedural documentation to the vector database
+  - storing a reusable workflow for future semantic retrieval
 ---
 
 # Learning Skill

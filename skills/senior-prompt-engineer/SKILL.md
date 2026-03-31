@@ -16,6 +16,8 @@ triggers:
   - reducing token usage or improving prompt efficiency
   - structuring output schemas or tool-calling prompts
   - building a multi-step agentic workflow with prompts
+category: ai-llm
+tier: atom
 ---
 
 # Senior Prompt Engineer

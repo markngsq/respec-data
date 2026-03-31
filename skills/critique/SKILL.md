@@ -15,6 +15,10 @@ triggers:
   - getting a UX critique or design review of a component or page
   - evaluating visual hierarchy, clarity, or emotional resonance
   - asking for honest feedback on a design before iterating
+category: development
+tier: atom
+maturity: seed
+evolution_count: 0
 ---
 
 Conduct a holistic design critique, evaluating whether the interface actually works—not just technically, but as a designed experience. Think like a design director giving feedback.

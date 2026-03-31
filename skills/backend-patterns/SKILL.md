@@ -2,6 +2,13 @@
 name: backend-patterns
 description: Backend architecture patterns, API design, database optimization, and server-side best practices for Node.js, Express, and Next.js API routes.
 origin: ECC
+category: architecture
+tier: atom
+triggers:
+  - designing REST or GraphQL API endpoints
+  - implementing repository, service, or controller layers
+  - optimizing database queries or connection pooling
+  - building scalable Node.js or Express services
 ---
 
 # Backend Development Patterns

@@ -15,6 +15,8 @@ triggers:
   - designing or improving an onboarding flow or empty state
   - helping first-time users understand the value of a feature
   - creating a guided first-run experience for a product
+category: development
+tier: atom
 ---
 
 Create or improve onboarding experiences that help users understand, adopt, and succeed with the product quickly.

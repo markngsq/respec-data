@@ -6,6 +6,13 @@ allowed-tools: 'Read, Glob, Grep, Bash, Skill'
 vibe: Single source of truth for Claude docs
 maturity: seed
 evolution_count: 0
+category: documentation
+tier: atom
+triggers:
+  - searching or browsing Claude Code documentation
+  - finding docs by category or keyword
+  - rebuilding or maintaining the local docs index
+  - detecting doc drift or stale references
 ---
 
 # Claude Docs Management

@@ -23,6 +23,7 @@ dependencies:
   - name: Anthropic API
     url: https://console.anthropic.com
     tier: paid
+tier: atom
 ---
 
 # LLM Security Guidelines (OWASP Top 10 for LLM 2025)

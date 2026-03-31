@@ -5,6 +5,13 @@ description: >-
 vibe: Discover expert methodologies for skills
 maturity: seed
 evolution_count: 0
+category: customization
+tier: atom
+triggers:
+  - creating a skill that embodies world-class domain expertise
+  - researching domain masters before skill generation
+  - extracting expert frameworks and methodologies
+  - handing off to skill-creator after research phase
 ---
 
 # Skill From Masters

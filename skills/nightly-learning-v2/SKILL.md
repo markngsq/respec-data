@@ -1,3 +1,19 @@
+---
+name: nightly-learning-v2
+description: Multi-model iterative refinement for high-quality learning labs using ARIS-inspired cross-model review loops. Use for end-of-day deep learning sessions with executor/critic review cycles.
+vibe: Cross-model iterative refinement
+category: maintenance
+tier: atom
+maturity: seed
+evolution_count: 0
+tags:
+  - learning
+  - ai
+  - nightly
+triggers:
+  - running a nightly learning session
+  - creating iterative cross-model knowledge artifacts
+---
 # Nightly Learning v2 — ARIS-Inspired Review Loop
 
 Multi-model iterative refinement for high-quality learning labs.

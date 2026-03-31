@@ -16,6 +16,8 @@ triggers:
   - fixing spacing, alignment, or consistency issues
   - making a component feel finished and intentional
   - sweating the details on typography, states, transitions
+category: development
+tier: atom
 ---
 
 **First**: Use the frontend-design skill for design principles and anti-patterns.

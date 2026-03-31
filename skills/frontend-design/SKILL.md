@@ -15,6 +15,8 @@ triggers:
   - creating a landing page, poster, or visual artifact
   - making frontend code that avoids "AI slop" aesthetics
   - needing opinionated guidance on typography, color, spacing, or motion
+category: fullstack
+tier: atom
 ---
 
 This skill guides creation of distinctive, production-grade frontend interfaces that avoid generic "AI slop" aesthetics. Implement real working code with exceptional attention to aesthetic details and creative choices.
